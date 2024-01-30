@@ -1,8 +1,21 @@
 body{
 	text-align: center;
+	background-color: red;
+	list-style-position: inside;
 }
 
 h1{
 	font-size: 100px;
-	color: red;
+	color: white;
+}
+
+p, ul{
+	font-size: 35px;
+	color: white;
+}
+
+hr {
+	color: white;
+	border: none;
+	height: 4px;
 }
