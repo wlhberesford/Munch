@@ -16,7 +16,7 @@ def get_menu():
 
     url = 'https://rpi.sodexomyway.com/dining-near-me/russell-sage'
     data = requests.get(url)
-    soup = BeautifulSoup(html_content, "lxml")
+    soup = BeautifulSoup(data, "html.parser")
 
     content_element = soup.find("main", id="content")
     content_element = soup.find("div", id="bottom_half")
