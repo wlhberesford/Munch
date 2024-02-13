@@ -10,13 +10,28 @@ import requests
 
 from bs4 import BeautifulSoup
 
+def get_menu():
+
+    #THIS DOES NOT WORK YET
+
+    url = 'https://rpi.sodexomyway.com/dining-near-me/russell-sage'
+    data = requests.get(url)
+    soup = BeautifulSoup(html_content, "lxml")
+
+    content_element = soup.find("main", id="content")
+    content_element = soup.find("div", id="bottom_half")
+    content_element = soup.find("div", id="main_content")
+    content_element = soup.find("div", id="bite_menu")
+
+    print (content_element)
+
 def get_hrs():
     
     #THIS DOES NOT WORK YET
 
     hrs = []
 
-    url = 'https://rpi.sodexomyway.com/dining-near-me/russell-sage'
+    url = 'https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'
     data = requests.get(url)
     html = BeautifulSoup(data.text, 'html.parser')
     times = html.select('todays-hrs-block')
@@ -32,6 +47,7 @@ def get_hrs():
     return hrs
 
 def menu_sage(request):
+    print(get_menu())
     print(get_hrs())
     return render(request, 'munchapp/menu.html')
 
