@@ -10,6 +10,9 @@ soup = BeautifulSoup(page.content, "html.parser")
 dining_groups = soup.find_all("li", class_="dining-group")
 
 for group in dining_groups:
+    print(group, end="\n"*2)
+
+for group in dining_groups:
     group_name = group.find('h2').text
     print(f"Group: {group_name}")
     dining_locations = group.find_all("div", class_="dining-block")
@@ -20,10 +23,11 @@ for group in dining_groups:
         special_hours = location.find_all("div", class_="spechours")
         if regular_hours:
             print("Regular Hours:")
-            regular_days = regular_hours.find_all("dt", class_="dining-block-days")
+            regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
             regular_times = regular_hours.find_all("span", class_="dining-block-hours")
-            for day, time in zip(regular_days, regular_times):
-                print(f"{day.text.strip()}: {time.text.strip()}")
+            # Show days of the week
+            for days_tag, time in zip(regular_days_tag, regular_times):
+                print(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
         if special_hours:
             for special_hour in special_hours:
                 print("\nSpecial Hours:")
