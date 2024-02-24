@@ -10,6 +10,34 @@ import requests
 
 from bs4 import BeautifulSoup
 
+posts = [
+    #testing, creating posts to show data
+    #in the posts, we have blocks of info with each block containing text data ex. name, allergens, station
+    {
+    'author': 'Munch_Team',
+    'title': 'Dining meal',
+    'content': 'Grilled Mexican Vegetables',
+    'diningHall': 'Commons'
+    },
+
+
+    {
+    'author': 'Munch_Team',
+    'title': 'Dining meal',
+    'content': 'Spicy Tofu Stir-fry',
+    'diningHall': 'Commons'
+    }
+
+
+]
+
+
+
+
+
+
+
+
 def get_menu():
 
     #THIS DOES NOT WORK YET
@@ -53,3 +81,13 @@ def menu_sage(request):
 
 def about(request):
     return HttpResponse('<h1>rcos munch dining hall project rpi</h1>')
+
+def home(request):
+    context = {
+    #"(context) dictionary"
+        'posts': posts,
+        'title': 'Munch Home' 
+        #'key': from above
+    }
+    return render(request, 'munchapp/home.html', context)
+
