@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munch Web App</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #fff8f0;
+        font-family: Arial, sans-serif;
+    }
+    .header {
+        background: #1e1e24;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .navigation {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation button {
+        background: #92140c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .navigation button.active {
+        background: #540b04;
+    }
+    .content {
+        padding: 20px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #1e1e24;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Munch Web App</h1>
+</div>
+
+<div class="navigation">
+    <button id="commonsBtn" onclick="toggleActive(this)">Commons</button>
+    <button id="sageBtn" onclick="toggleActive(this)">Sage</button>
+    <button id="barhBtn" onclick="toggleActive(this)">BARH</button>
+</div>
+
+<div class="content">
+    <!-- Content goes here -->
+</div>
+
+<div class="footer">
+    <p>Footer content</p>
+</div>
+
+<script>
+function toggleActive(button) {
+    var buttons = document.querySelectorAll('.navigation button');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+    button.classList.add('active');
+}
+</script>
+
+</body>
+</html>
