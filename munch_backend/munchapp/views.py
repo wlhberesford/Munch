@@ -10,6 +10,8 @@ import requests
 
 from bs4 import BeautifulSoup
 
+from datetime import datetime
+
 posts = [
     #testing, creating posts to show data
     #in the posts, we have blocks of info with each block containing text data ex. name, allergens, station
@@ -27,31 +29,29 @@ posts = [
     'content': 'Spicy Tofu Stir-fry',
     'diningHall': 'Commons'
     }
-
-
 ]
 
-
-
-
-
-
-
+def get_day():
+    current_date_time = datetime.now()
+    return str(current_date_time.day)
 
 def get_menu():
 
-    #THIS DOES NOT WORK YET
+    #THIS DOES NOT WORK YET but almost done
 
-    url = 'https://rpi.sodexomyway.com/dining-near-me/russell-sage'
+    url = 'https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'
     data = requests.get(url)
-    soup = BeautifulSoup(data, "html.parser")
+    soup = BeautifulSoup(data.content, "html.parser")
 
     content_element = soup.find("main", id="content")
-    content_element = soup.find("div", id="bottom_half")
-    content_element = soup.find("div", id="main_content")
-    content_element = soup.find("div", id="bite_menu")
+    bottom_half = content_element.find_all("div", class_="bottom-half")
+    main_content = bottom_half[0].find_all("div", class_="main-content")
+    bite_menu = main_content[0].find_all("div", id="bite-menu")
+    name = "menuid-"+get_day()+"-day"
+    bite_menu2 = bite_menu.find_all("div", id=name)
 
-    print (content_element)
+
+    print("HI ", bite_menu2)
 
 def get_hrs():
     
