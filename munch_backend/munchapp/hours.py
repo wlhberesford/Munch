@@ -14,8 +14,8 @@ soup = BeautifulSoup(page.content, "html.parser")
 dining_groups = soup.find_all("li", class_="dining-group")
 
 # Print each dining group with a blank line between them
-for group in dining_groups:
-    print(group, end="\n"*2)
+# for group in dining_groups:
+#     print(group, end="\n"*2)
 
 # Iterate through each dining group
 for group in dining_groups:
@@ -26,6 +26,11 @@ for group in dining_groups:
     # Find all dining locations within the group
     dining_locations = group.find_all("div", class_="dining-block")
 
+    #check if dining group is resident dining
+    resident = False;
+    if(group_name == "Resident Dining"):
+        resident = True
+   
     # Iterate through each dining location
     for location in dining_locations:
         # Extract the location name from the h3 tag
@@ -43,12 +48,22 @@ for group in dining_groups:
             print("Regular Hours:")
             # Find all dt tags with the attribute "data-arrayregdays"
             regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
+            #Find all dining-block-notes
+            meal_time = regular_hours.find_all("span", class_="dining-block-note")
             # Find all span tags with class "dining-block-hours"
             regular_times = regular_hours.find_all("span", class_="dining-block-hours")
-            # Iterate through each pair of days and corresponding hours
-            for days_tag, time in zip(regular_days_tag, regular_times):
-                # Print the days and hours
-                print(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+
+            #Chekc if it is resident dining so we can display whether it is breakfast, lunch, or dinner
+            if(resident == False):
+                # Iterate through each pair of days and corresponding hours
+                for days_tag, time in zip(regular_days_tag, regular_times):
+                    # Print the days and hours
+                    print(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+            else:
+                #same but with meal time
+                for days_tag, meal, time in zip(regular_days_tag, meal_time, regular_times):
+                    # Print the days and hours
+                    print(f"{days_tag['data-arrayregdays']} {meal.text.strip()}: {time.text.strip()}")
 
         # If special hours are found, print them
         if special_hours:
