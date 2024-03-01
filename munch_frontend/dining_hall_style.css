@@ -68,11 +68,27 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#52A5F7 ;
 }
-
+/*-------------- about -------------- */
+#about{
+    padding: 80px 0;
+    color: #080808;
+}
 .row {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    font-size: 20px;
 }
 
 .sub-title{
@@ -169,6 +185,11 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+/*-------------- portfolio -------------- */
+
+#portfolio{
+    padding: 50px 0;
+}
 
 .work-list{
     display: grid;
@@ -247,6 +268,12 @@ nav ul li a:hover::after{
     color:#080808;
 }
 
+
+/*-------------- favorite artists -------------- */
+
+#personal_projects{
+    padding: 50px 0;
+}
 
 .work-list{
     display: grid;
@@ -395,6 +422,54 @@ form .btn2{
 .copyright i{
     color: #E5BCFF;
 }
+
+
+
+
+
+/*-------------- css for small screens -------------- 
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/trial.png)
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+*/
+
+
 
 #msg{
     color: #BB8CEA;
