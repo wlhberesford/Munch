@@ -48,7 +48,10 @@ def get_menu():
     main_content = bottom_half[0].find_all("div", class_="main-content")
     bite_menu = main_content[0].find_all("div", id="bite-menu")
     name = "menuid-"+get_day()+"-day"
-    bite_menu2 = bite_menu.find_all("div", id=name)
+    print("HI ", name)
+    bite_menu2 = bite_menu[0].find_all("div", id=name)
+    accordian = bite_menu2[0].find_all("div", class_="accordion")
+
 
 
     print("HI ", bite_menu2)
