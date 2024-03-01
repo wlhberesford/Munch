@@ -59,10 +59,12 @@
     <button id="commonsBtn" onclick="toggleActive(this)">Commons</button>
     <button id="sageBtn" onclick="toggleActive(this)">Sage</button>
     <button id="barhBtn" onclick="toggleActive(this)">BARH</button>
+    <button id="blitBtn" onclick="toggleActive(this)">Blitman</button>
 </div>
 
 <div class="content">
     <!-- Content goes here -->
+
 </div>
 
 <div class="footer">
@@ -70,6 +72,31 @@
 </div>
 
 <script>
+    // JavaScript to make the button act like a link
+    document.getElementById("sageBtn").onclick = function () {
+        window.location.href = "https://rpi.sodexomyway.com/dining-near-me/russell-sage";
+    };
+</script>
+<script>
+    // JavaScript to make the button act like a link
+    document.getElementById("commonsBtn").onclick = function () {
+        window.location.href = "https://rpi.sodexomyway.com/dining-near-me/commons-dining-hall";
+    };
+</script>
+<script>
+    // JavaScript to make the button act like a link
+    document.getElementById("barhBtn").onclick = function () {
+        window.location.href = "https://rpi.sodexomyway.com/dining-near-me/barh-dining-hall";
+    };
+</script>
+<script>
+    // JavaScript to make the button act like a link
+    document.getElementById("blitBtn").onclick = function () {
+        window.location.href = "https://rpi.sodexomyway.com/dining-near-me/blitman-dining-hall";
+    };
+</script>
+
+    
 function toggleActive(button) {
     var buttons = document.querySelectorAll('.navigation button');
     buttons.forEach(function(btn) {
