@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munch Web App</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+        font-family: Arial, sans-serif;
+    }
+    .header, .footer {
+        background: linear-gradient(to bottom, #000000, #282828);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .navigation {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px; /* Same height as header */
+    }
+    .navigation button {
+        background: linear-gradient(to right, #92140c, #a52a2a);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        outline: none;
+    }
+    .navigation button:hover {
+        background: linear-gradient(to right, #540b04, #6e1505);
+    }
+    .navigation button.active {
+        background: linear-gradient(to right, #540b04, #6e1505);
+    }
+    .sidebar {
+        position: fixed;
+        top: 50px; /* Same height as header */
+        bottom: 50px; /* Same height as footer */
+        left: 0;
+        width: 25%;
+        background: #fff8f0;
+        overflow-y: auto;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .main-content {
+        margin-left: 25%; /* Same width as sidebar */
+        margin-top: 50px; /* Same height as header */
+        padding: 20px;
+        height: calc(100% - 100px); /* Height minus header and footer */
+        overflow-y: auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Munch Web App</h1>
+</div>
+
+<div class="sidebar">
+    <h2>List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="navigation">
+        <button id="commonsBtn" onclick="toggleActive(this)">Commons</button>
+        <button id="sageBtn" onclick="toggleActive(this)">Sage</button>
+        <button id="barhBtn" onclick="toggleActive(this)">BARH</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Footer content</p>
+</div>
+
+<script>
+function toggleActive(button) {
+    var buttons = document.querySelectorAll('.navigation button');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+    button.classList.add('active');
+}
+</script>
+
+</body>
+</html>
