@@ -12,14 +12,17 @@
 </head>
 <body>
 	<!--
-		curlypercent this is a for code block, also need an endfor to end a loop percentcurly
+		curlypercent this is a for code block, also need an endfor to end a loop percent curly
+		To access a variable we need to do double open and close curly braces
 	-->
 	{% for post in posts%}
 		<h1>{{ post.title }}</h1>
 		<!-- 
-			To access a variable we need to do double open and close curly braces
+			the 'post' (passed in from views) has a .variable which needs to match
+			what the models.py has.
+			If models.py is updated, make migration and update the html code
 		-->
-		<p>By {{post.author}} at {{post.diningHall}}</p>
+		<p>By {{post.author}} on {{post.date_posted|date:"F d, Y"}}</p>
 		<p>{{post.content}}</p>
 		
 	{% endfor%}
