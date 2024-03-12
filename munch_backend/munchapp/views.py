@@ -1,35 +1,49 @@
 from django.shortcuts import render
 
-# Create your views here.
+#Run the commented pip installs if you haven't installed
 
 from django.http import HttpResponse
 
 from django.template import loader
 
 import requests
+#pip install requests
 
 from bs4 import BeautifulSoup
-
+#pip install beautifulsoup4
 from datetime import datetime
 
-posts = [
+from .models import Post
+#.models from models file in current directory
+#posts = [
     #testing, creating posts to show data
     #in the posts, we have blocks of info with each block containing text data ex. name, allergens, station
-    {
-    'author': 'Munch_Team',
-    'title': 'Dining meal',
-    'content': 'Grilled Mexican Vegetables',
-    'diningHall': 'Commons'
-    },
+#    {
+    #'author': 'Munch_Team',
+    #'title': 'Dining meal',
+    #'content': 'Grilled Mexican Vegetables',
+    #'diningHall': 'Commons'
+#    },
 
 
-    {
-    'author': 'Munch_Team',
-    'title': 'Dining meal',
-    'content': 'Spicy Tofu Stir-fry',
-    'diningHall': 'Commons'
-    }
-]
+#    {
+    #'author': 'Munch_Team',
+    #'title': 'Dining meal',
+    #'content': 'Spicy Tofu Stir-fry',
+    #'diningHall': 'Commons'
+    #}
+#]
+#^ dummy data, testing data in the db.sqlite3 file
+#to access, python manage.py shell
+#type from munchapp.models import Post
+#type from django.contrib.auth.models import User
+#this allows developers to access posts and users
+
+#User.objects.all()
+#Post.objects.all()
+#user = User.objects.get(id=1)
+#OR user = User.objects.filter(username='').first()
+#To create post post_# = Post(title = '', content = '', author = user)
 
 def get_day():
     current_date_time = datetime.now()
@@ -97,7 +111,7 @@ def about(request):
 def home(request):
     context = {
     #"(context) dictionary"
-        'posts': posts,
+        'posts': Post.objects.all(),
         'title': 'Munch Home' 
         #'key': from above
     }
