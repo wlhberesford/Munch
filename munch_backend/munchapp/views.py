@@ -224,6 +224,8 @@ def get_menu(url):
     for i in dinner_elements:
         print(i, dinner_elements[i])
     '''
+
+    return {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements}
         
 def get_hrs():
     
