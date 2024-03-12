@@ -49,9 +49,9 @@
 .nav_div{
     background-color: var(--clr-dark);
     width: 100%;
-    height: 5vh;
+    height: auto;
+
     text-align: center;
-    vertical-align: middle;
 
     position: fixed;
     top: 0;
@@ -59,19 +59,27 @@
 
 .nav_list{
     list-style-type: none;
-    overflow: hidden;
-    padding: auto;
-    
-    position: fixed;
+    position: relative;
+    margin-top: 1%;
     top: 0; 
-
-
 }
 
 .nav_item{
     margin: 10px;
     display: inline-block;
+
+    margin-left: 3%;
+    margin-right: 3%;
+
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 3dvh;
+
+}
+
+.nav_link{
     color: var(--clr-accent);
-    
+    text-decoration:none;
+
 }
 
