@@ -14,36 +14,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 from .models import Post
-#.models from models file in current directory
-#posts = [
-    #testing, creating posts to show data
-    #in the posts, we have blocks of info with each block containing text data ex. name, allergens, station
-#    {
-    #'author': 'Munch_Team',
-    #'title': 'Dining meal',
-    #'content': 'Grilled Mexican Vegetables',
-    #'diningHall': 'Commons'
-#    },
 
-
-#    {
-    #'author': 'Munch_Team',
-    #'title': 'Dining meal',
-    #'content': 'Spicy Tofu Stir-fry',
-    #'diningHall': 'Commons'
-    #}
-#]
-#^ dummy data, testing data in the db.sqlite3 file
-#to access, python manage.py shell
-#type from munchapp.models import Post
-#type from django.contrib.auth.models import User
-#this allows developers to access posts and users
-
-#User.objects.all()
-#Post.objects.all()
-#user = User.objects.get(id=1)
-#OR user = User.objects.filter(username='').first()
-#To create post post_# = Post(title = '', content = '', author = user)
+import json
 
 def get_day():
     current_date_time = datetime.now()
@@ -211,7 +183,8 @@ def get_menu(url):
                         calories = calories[0:len(calories)-3]
                         calories = int(calories)
                     
-                    temp = [calories, food_tags]
+                    temp = [calories, food_
+                            tags]
                     dinner_elements[text] = temp
 
     '''
@@ -249,8 +222,7 @@ def get_hrs():
     return hrs
 
 def menu_sage(request):
-    print(get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'))
-    print(get_hrs())
+    get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall')
     return render(request, 'munchapp/menu.html')
 
 def about(request):
