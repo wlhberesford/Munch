@@ -50,15 +50,13 @@ def get_day():
     return str(current_date_time.day)
 
 def parse_out_items():
-    #data-fooditemname
     all_food_items = []
+    item_tag = "data-fooditemname"
 
 
-def get_menu():
+def get_menu(url):
 
     #THIS DOES NOT WORK YET but almost done
-
-    url = 'https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'
     data = requests.get(url)
     soup = BeautifulSoup(data.content, "html.parser")
 
@@ -101,7 +99,7 @@ def get_hrs():
     return hrs
 
 def menu_sage(request):
-    print(get_menu())
+    print(get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'))
     print(get_hrs())
     return render(request, 'munchapp/menu.html')
 
