@@ -49,34 +49,182 @@ def get_day():
     current_date_time = datetime.now()
     return str(current_date_time.day)
 
-def parse_out_items():
-    all_food_items = []
-    item_tag = "data-fooditemname"
-
-
 def get_menu(url):
+    #This parses the menu from the dining hall assuming its current website format, will not work if website changes
 
-    #THIS DOES NOT WORK YET but almost done
     data = requests.get(url)
     soup = BeautifulSoup(data.content, "html.parser")
 
     content_element = soup.find("main", id="content")
+    if content_element is None:
+        return {"Error":"No content found"}
     bottom_half = content_element.find_all("div", class_="bottom-half")
+    if len(bottom_half) == 0:
+        return {"Error":"No bottom half found"}
     main_content = bottom_half[0].find_all("div", class_="main-content")
+    if len(main_content) == 0:
+        return {"Error":"No main content found"}
     bite_menu = main_content[0].find_all("div", id="bite-menu")
+    if len(bite_menu) == 0:
+        return {"Error":"No bite menu found"}
     name = "menuid-"+get_day()+"-day"
     bite_menu2 = bite_menu[0].find_all("div", id=name)
+    if len(bite_menu2) == 0:
+        return {"Error":"No bite menu 2 found"}
     accordian = bite_menu2[0].find_all("div", class_="accordion")
+    if len(accordian) == 0:
+        return {"Error":"No accordian found"}
     breakfast = accordian[0].find_all("div", class_="accordion-block breakfast")
+    if len(breakfast) == 0:
+        return {"Error":"No breakfast found"}
     lunch = accordian[0].find_all("div", class_="accordion-block lunch")
+    if len(lunch) == 0:
+        return {"Error":"No lunch found"}
     dinner = accordian[0].find_all("div", class_="accordion-block dinner")
+    if len(dinner) == 0:
+        return {"Error":"No dinner found"}
     breakfast_items = breakfast[0].find_all("div", class_="accordion-panel rtf hide")
+    if len(breakfast_items) == 0:
+        return {"Error":"No breakfast items found"}
     lunch_items = lunch[0].find_all("div", class_="accordion-panel rtf hide")
+    if len(lunch_items) == 0:
+        return {"Error":"No lunch items found"}
     dinner_items = dinner[0].find_all("div", class_="accordion-panel rtf hide")
+    if len(dinner_items) == 0:
+        return {"Error":"No dinner items found"}
+    
+    breakfast_elements = dict()
+    lunch_elements = dict()
+    dinner_elements = dict()
 
+    for div in breakfast_items[0]:
+        associated_list = div.find_next_sibling("ul")
+        if associated_list is None:
+            continue
+        else:
+            li_elements = associated_list.find_all("li")
+            for i in li_elements:
+                if i is None:
+                    continue
+                else:
+                    li_div1 = i.find_all("div", class_="col-xs-9")
+                    text = ""
+                    food_tags = []
+                    if li_div1 is None:
+                        continue
+                    else:
+                        li_div1 = li_div1[0]
+                        a_tag = li_div1.find_all("a")
+                        text = a_tag[0].get_text()
+                        if text=="Have A Nice Day!":
+                            continue
+                        allergen_div = li_div1.find_all("div")
+                        img_tags = allergen_div[0].find_all("img")
+                        for img in img_tags:
+                            if "alt" in img.attrs:
+                                food_tags.append(img["alt"])
+                    
+                    calories = ""
+                    li_div2 = i.find_all("div", class_="col-xs-3 text-right")
+                    if li_div2 is None:
+                        continue
+                    else:
+                        calories = (li_div2[0].get_text()).strip()
+                        calories = calories[0:len(calories)-3]
+                        calories = int(calories)
+                    
+                    temp = [calories, food_tags]
+                    breakfast_elements[text] = temp
 
-    print("HI ", type(breakfast_items), type(lunch_items), type(dinner_items))
+    for div in lunch_items[0]:
+        associated_list = div.find_next_sibling("ul")
+        if associated_list is None:
+            continue
+        else:
+            li_elements = associated_list.find_all("li")
+            for i in li_elements:
+                if i is None:
+                    continue
+                else:
+                    li_div1 = i.find_all("div", class_="col-xs-9")
+                    text = ""
+                    food_tags = []
+                    if li_div1 is None:
+                        continue
+                    else:
+                        li_div1 = li_div1[0]
+                        a_tag = li_div1.find_all("a")
+                        text = a_tag[0].get_text()
+                        if text=="Have A Nice Day!":
+                            continue
+                        allergen_div = li_div1.find_all("div")
+                        img_tags = allergen_div[0].find_all("img")
+                        for img in img_tags:
+                            if "alt" in img.attrs:
+                                food_tags.append(img["alt"])
+                    
+                    calories = ""
+                    li_div2 = i.find_all("div", class_="col-xs-3 text-right")
+                    if li_div2 is None:
+                        continue
+                    else:
+                        calories = (li_div2[0].get_text()).strip()
+                        calories = calories[0:len(calories)-3]
+                        calories = int(calories)
+                    
+                    temp = [calories, food_tags]
+                    lunch_elements[text] = temp
 
+    for div in dinner_items[0]:
+        associated_list = div.find_next_sibling("ul")
+        if associated_list is None:
+            continue
+        else:
+            li_elements = associated_list.find_all("li")
+            for i in li_elements:
+                if i is None:
+                    continue
+                else:
+                    li_div1 = i.find_all("div", class_="col-xs-9")
+                    text = ""
+                    food_tags = []
+                    if li_div1 is None:
+                        continue
+                    else:
+                        li_div1 = li_div1[0]
+                        a_tag = li_div1.find_all("a")
+                        text = a_tag[0].get_text()
+                        if text=="Have A Nice Day!":
+                            continue
+                        allergen_div = li_div1.find_all("div")
+                        img_tags = allergen_div[0].find_all("img")
+                        for img in img_tags:
+                            if "alt" in img.attrs:
+                                food_tags.append(img["alt"])
+                    
+                    calories = ""
+                    li_div2 = i.find_all("div", class_="col-xs-3 text-right")
+                    if li_div2 is None:
+                        continue
+                    else:
+                        calories = (li_div2[0].get_text()).strip()
+                        calories = calories[0:len(calories)-3]
+                        calories = int(calories)
+                    
+                    temp = [calories, food_tags]
+                    dinner_elements[text] = temp
+
+    '''
+    for i in breakfast_elements:
+        print(i, breakfast_elements[i])
+
+    for i in lunch_elements:
+        print(i, lunch_elements[i])
+
+    for i in dinner_elements:
+        print(i, dinner_elements[i])
+    '''
+        
 def get_hrs():
     
     #THIS DOES NOT WORK YET
