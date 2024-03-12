@@ -1,0 +1,6 @@
+requirements
+
+python 3.11.8
+django 5.0.1
+beautiful soup 4.12.3
+requests 2.31.0

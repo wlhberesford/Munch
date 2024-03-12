@@ -35,6 +35,11 @@ def get_day():
     current_date_time = datetime.now()
     return str(current_date_time.day)
 
+def parse_out_items():
+    #data-fooditemname
+    all_food_items = []
+
+
 def get_menu():
 
     #THIS DOES NOT WORK YET but almost done
@@ -48,13 +53,17 @@ def get_menu():
     main_content = bottom_half[0].find_all("div", class_="main-content")
     bite_menu = main_content[0].find_all("div", id="bite-menu")
     name = "menuid-"+get_day()+"-day"
-    print("HI ", name)
     bite_menu2 = bite_menu[0].find_all("div", id=name)
     accordian = bite_menu2[0].find_all("div", class_="accordion")
+    breakfast = accordian[0].find_all("div", class_="accordion-block breakfast")
+    lunch = accordian[0].find_all("div", class_="accordion-block lunch")
+    dinner = accordian[0].find_all("div", class_="accordion-block dinner")
+    breakfast_items = breakfast[0].find_all("div", class_="accordion-panel rtf hide")
+    lunch_items = lunch[0].find_all("div", class_="accordion-panel rtf hide")
+    dinner_items = dinner[0].find_all("div", class_="accordion-panel rtf hide")
 
 
-
-    print("HI ", bite_menu2)
+    print("HI ", type(breakfast_items), type(lunch_items), type(dinner_items))
 
 def get_hrs():
     
