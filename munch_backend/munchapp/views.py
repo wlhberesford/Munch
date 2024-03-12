@@ -198,7 +198,11 @@ def get_menu(url):
         print(i, dinner_elements[i])
     '''
 
-    return {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements}
+    final_dict = {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements}
+
+    
+
+    return final_dict
         
 def get_hrs():
     
