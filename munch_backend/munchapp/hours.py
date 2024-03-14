@@ -4,85 +4,92 @@ from bs4 import BeautifulSoup
 # Define the URL of the webpage to scrape
 URL = "https://rpi.sodexomyway.com/dining-near-me/hours"
 
-# Send an HTTP GET request to the URL and store the response
-page = requests.get(URL)
+def parse_information(soup):
+    """
+    Parse the information from the BeautifulSoup object and save location and hours in a data structure.
 
-# Parse the HTML content of the page using BeautifulSoup
-soup = BeautifulSoup(page.content, "html.parser")
+    Args:
+    soup: BeautifulSoup object representing the parsed HTML content of the page.
 
-# Find all div elements with class "dining-location"
-dining_groups = soup.find_all("li", class_="dining-group")
+    Returns:
+    A dictionary containing location names as keys and their corresponding hours as values.
+    """
+    locations_hours = {}
+    dining_groups = soup.find_all("li", class_="dining-group")
+    for group in dining_groups:
+        group_name = group.find('h2').text
+        dining_locations = group.find_all("div", class_="dining-block")
+        for location in dining_locations:
+            location_name = location.find('h3').text
+            regular_hours = location.find("div", class_="reghours")
+            special_hours = location.find_all("div", class_="spechours")
+            location_hours = []
+            if regular_hours:
+                regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
+                meal_time = regular_hours.find_all("span", class_="dining-block-note")
+                regular_times = regular_hours.find_all("span", class_="dining-block-hours")
+                for days_tag, time in zip(regular_days_tag, regular_times):
+                    if meal_time:
+                        for meal, time in zip(meal_time, regular_times):
+                            location_hours.append(f"{days_tag['data-arrayregdays']} {meal.text.strip()}: {time.text.strip()}")
+                    else:
+                        location_hours.append(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+            if special_hours:
+                for special_hour in special_hours:
+                    special_dates = special_hour.find_all("span", class_="specweekstart")
+                    for date in special_dates:
+                        end_date = date.find_next("span", class_="specweekend")
+                        location_hours.append(f"From {date.text.strip()} - {end_date.text.strip()}")
+                    special_days = special_hour.find_all("p", class_="dining-block-days")
+                    special_times = special_hour.find_all("p", class_="dining-block-hours")
+                    for days, times in zip(special_days, special_times):
+                        location_hours.append(f"{days.text.strip()}: {times.text.strip()}")
+            locations_hours[location_name] = location_hours
+    return locations_hours
 
-# Print each dining group with a blank line between them
-# for group in dining_groups:
-#     print(group, end="\n"*2)
+def get_hours(location_name, locations_hours):
+    """
+    Get the hours for a specific location.
 
-# Iterate through each dining group
-for group in dining_groups:
-    # Extract the group name from the h2 tag
-    group_name = group.find('h2').text
-    print(f"Group: {group_name}")
+    Args:
+    location_name: Name of the location for which hours are to be retrieved.
+    locations_hours: Dictionary containing location names as keys and their corresponding hours as values.
 
-    # Find all dining locations within the group
-    dining_locations = group.find_all("div", class_="dining-block")
+    Returns:
+    A list of strings representing the hours for the specified location.
+    """
+    return locations_hours.get(location_name, [])
 
-    #check if dining group is resident dining
-    resident = False;
-    if(group_name == "Resident Dining"):
-        resident = True
-   
-    # Iterate through each dining location
-    for location in dining_locations:
-        # Extract the location name from the h3 tag
-        location_name = location.find('h3').text
-        print(f"\nLocation: {location_name}")
-
-        # Find the regular hours for the location
-        regular_hours = location.find("div", class_="reghours")
-
-        # Find special hours for the location, if any
-        special_hours = location.find_all("div", class_="spechours")
-
-        # If regular hours are found, print them
+def main():
+    # Send an HTTP GET request to the URL and store the response
+    page = requests.get(URL)
+    # Parse the HTML content of the page using BeautifulSoup
+    soup = BeautifulSoup(page.content, "html.parser")
+    # Parse information and save location and hours in a data structure
+    locations_hours = parse_information(soup)
+    # Get hours for a specific location
+    location_name = "The Commons Dining Hall"  # Replace "Location Name" with the desired location
+    hours = get_hours(location_name, locations_hours)
+    if hours:
+        regular_hours = []
+        special_hours = []
+        for hour in hours:
+            if "Regular Hours:" in hour:
+                regular_hours.append(hour)
+            elif "Special Hours:" in hour:
+                special_hours.append(hour)
+        
         if regular_hours:
             print("Regular Hours:")
-            # Find all dt tags with the attribute "data-arrayregdays"
-            regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
-            #Find all dining-block-notes
-            meal_time = regular_hours.find_all("span", class_="dining-block-note")
-            # Find all span tags with class "dining-block-hours"
-            regular_times = regular_hours.find_all("span", class_="dining-block-hours")
-
-            #Chekc if it is resident dining so we can display whether it is breakfast, lunch, or dinner
-            if(resident == False):
-                # Iterate through each pair of days and corresponding hours
-                for days_tag, time in zip(regular_days_tag, regular_times):
-                    # Print the days and hours
-                    print(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
-            else:
-                #same but with meal time
-                for days_tag, meal, time in zip(regular_days_tag, meal_time, regular_times):
-                    # Print the days and hours
-                    print(f"{days_tag['data-arrayregdays']} {meal.text.strip()}: {time.text.strip()}")
-
-        # If special hours are found, print them
+            for hour in regular_hours:
+                print(hour)
+                
         if special_hours:
-            for special_hour in special_hours:
-                print("\nSpecial Hours:")
-                # Find all span tags with class "specweekstart"
-                special_dates = special_hour.find_all("span", class_="specweekstart")
-                # Iterate through each special date range
-                for date in special_dates:
-                    # Print the start and end dates of the special period
-                    print(f"From {date.text.strip()}", end=" - ")
-                    end_date = date.find_next("span", class_="specweekend")
-                    print(f"{end_date.text.strip()}")
-                # Find all p tags with class "dining-block-days" and "dining-block-hours"
-                special_days = special_hour.find_all("p", class_="dining-block-days")
-                special_times = special_hour.find_all("p", class_="dining-block-hours")
-                # Iterate through each special day and corresponding hours
-                for days, times in zip(special_days, special_times):
-                    # Print the special days and hours
-                    print(f"{days.text.strip()}: {times.text.strip()}")
+            print("\nSpecial Hours:")
+            for hour in special_hours:
+                print(hour)
+    else:
+        print(f"No hours found for {location_name}.")
 
-        print()  # Add a blank line after each location's information
+if __name__ == "__main__":
+    main()
