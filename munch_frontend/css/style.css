@@ -21,6 +21,7 @@
     padding: 0;
 }
 
+/* HEADER - logo and nav */
 .logo_div{
     background-color: var(--clr-accent);
 
@@ -49,9 +50,10 @@
 .nav_div{
     background-color: var(--clr-dark);
     width: 100%;
-    height: auto;
+    height: 7vh;
 
     text-align: center;
+    padding: 0%;
 
     position: fixed;
     top: 0;
@@ -59,7 +61,6 @@
 
 .nav_list{
     list-style-type: none;
-    position: relative;
     margin-top: 1%;
     top: 0; 
 }
@@ -71,10 +72,19 @@
     margin-left: 3%;
     margin-right: 3%;
 
+    height: 100%;
+
     list-style-type: none;
     font-weight: bolder;
     font-size: 3dvh;
+}
 
+.nav_item:hover{
+    background-color: var(--clr-accent);
+
+    .nav_link{
+        color: var(--clr-dark);
+    }
 }
 
 .nav_link{
@@ -83,3 +93,51 @@
 
 }
 
+/* BODY - Current food at dining halls */
+.current_food_div{
+    margin-top: 25vh;
+    width: 100%;
+
+}
+
+#current_food_title{
+    color: var(--clr-dark);
+    text-align: center;
+    font-size: 5dvh;
+}
+
+
+.current_dh_div{
+    padding: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: var(--clr-accent);
+    
+    
+}
+
+.current_dh{
+    color: var(--clr-light);
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--clr-dark);
+    text-align: center;
+}
+
+.last_update{
+    color: var(--clr-accent);
+}
+
+.footer_note{
+    color: var(--clr-accent);
+}
+
+.footer_link{
+    list-style: none;
+    color: var(--clr-accent);
+}
