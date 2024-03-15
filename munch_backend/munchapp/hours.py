@@ -16,6 +16,11 @@ def parse_information(soup):
     """
     locations_hours = {}
     dining_groups = soup.find_all("li", class_="dining-group")
+
+    #prints the html
+    for group in dining_groups:
+        print(group, end="\n"*2)
+
     for group in dining_groups:
         group_name = group.find('h2').text
         dining_locations = group.find_all("div", class_="dining-block")
@@ -71,23 +76,9 @@ def main():
     location_name = "The Commons Dining Hall"  # Replace "Location Name" with the desired location
     hours = get_hours(location_name, locations_hours)
     if hours:
-        regular_hours = []
-        special_hours = []
+        print(f"Hours for {location_name}:")
         for hour in hours:
-            if "Regular Hours:" in hour:
-                regular_hours.append(hour)
-            elif "Special Hours:" in hour:
-                special_hours.append(hour)
-        
-        if regular_hours:
-            print("Regular Hours:")
-            for hour in regular_hours:
-                print(hour)
-                
-        if special_hours:
-            print("\nSpecial Hours:")
-            for hour in special_hours:
-                print(hour)
+            print(hour)
     else:
         print(f"No hours found for {location_name}.")
 
