@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 from .models import Post
+<<<<<<< HEAD
 
 import json
 
@@ -32,6 +33,10 @@ from django.http import HttpResponse
 #user = User.objects.get(id=1)
 #OR user = User.objects.filter(username='').first()
 #To create post post_# = Post(title = '', content = '', author = user)
+=======
+
+import json
+>>>>>>> 0bfdaaf9b656f29f9fed76fa2a4b2e60a7c51048
 
 def get_day():
     current_date_time = datetime.now()
@@ -64,41 +69,41 @@ def get_menu(url):
 
     content_element = soup.find("main", id="content")
     if content_element is None:
-        return {"Error":"No content found"}
+        return {"error":"no content found"}
     bottom_half = content_element.find_all("div", class_="bottom-half")
     if len(bottom_half) == 0:
-        return {"Error":"No bottom half found"}
+        return {"error":"no bottom half found"}
     main_content = bottom_half[0].find_all("div", class_="main-content")
     if len(main_content) == 0:
-        return {"Error":"No main content found"}
+        return {"error":"no main content found"}
     bite_menu = main_content[0].find_all("div", id="bite-menu")
     if len(bite_menu) == 0:
-        return {"Error":"No bite menu found"}
+        return {"error":"no bite menu found"}
     name = "menuid-"+get_day()+"-day"
     bite_menu2 = bite_menu[0].find_all("div", id=name)
     if len(bite_menu2) == 0:
-        return {"Error":"No bite menu 2 found"}
+        return {"error":"no bite menu 2 found"}
     accordian = bite_menu2[0].find_all("div", class_="accordion")
     if len(accordian) == 0:
-        return {"Error":"No accordian found"}
+        return {"error":"no accordian found"}
     breakfast = accordian[0].find_all("div", class_="accordion-block breakfast")
     if len(breakfast) == 0:
-        return {"Error":"No breakfast found"}
+        return {"error":"no breakfast found"}
     lunch = accordian[0].find_all("div", class_="accordion-block lunch")
     if len(lunch) == 0:
-        return {"Error":"No lunch found"}
+        return {"error":"no lunch found"}
     dinner = accordian[0].find_all("div", class_="accordion-block dinner")
     if len(dinner) == 0:
-        return {"Error":"No dinner found"}
+        return {"error":"no dinner found"}
     breakfast_items = breakfast[0].find_all("div", class_="accordion-panel rtf hide")
     if len(breakfast_items) == 0:
-        return {"Error":"No breakfast items found"}
+        return {"error":"no breakfast items found"}
     lunch_items = lunch[0].find_all("div", class_="accordion-panel rtf hide")
     if len(lunch_items) == 0:
-        return {"Error":"No lunch items found"}
+        return {"error":"no lunch items found"}
     dinner_items = dinner[0].find_all("div", class_="accordion-panel rtf hide")
     if len(dinner_items) == 0:
-        return {"Error":"No dinner items found"}
+        return {"error":"no dinner items found"}
     
     breakfast_elements = dict()
     lunch_elements = dict()
@@ -218,7 +223,8 @@ def get_menu(url):
                         calories = calories[0:len(calories)-3]
                         calories = int(calories)
                     
-                    temp = [calories, food_tags]
+                    temp = [calories, food_
+                            tags]
                     dinner_elements[text] = temp
 
     '''
@@ -235,7 +241,11 @@ def get_menu(url):
     testingjson(lunch_elements, 1)
     testingjson(dinner_elements, 2)
 
-    return {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements}
+    final_dict = {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements, "error":"none"}
+
+
+
+    return final_dict
         
 def get_hrs():
     
@@ -259,8 +269,7 @@ def get_hrs():
     return hrs
 
 def menu_sage(request):
-    print(get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'))
-    print(get_hrs())
+    get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall')
     return render(request, 'munchapp/menu.html')
 
 def about(request):
