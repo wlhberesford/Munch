@@ -14,26 +14,14 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 from .models import Post
+
+import json
+
+from django.http import HttpResponse
+
 #.models from models file in current directory
-#posts = [
-    #testing, creating posts to show data
-    #in the posts, we have blocks of info with each block containing text data ex. name, allergens, station
-#    {
-    #'author': 'Munch_Team',
-    #'title': 'Dining meal',
-    #'content': 'Grilled Mexican Vegetables',
-    #'diningHall': 'Commons'
-#    },
 
-
-#    {
-    #'author': 'Munch_Team',
-    #'title': 'Dining meal',
-    #'content': 'Spicy Tofu Stir-fry',
-    #'diningHall': 'Commons'
-    #}
-#]
-#^ dummy data, testing data in the db.sqlite3 file
+#testing data in the db.sqlite3 file
 #to access, python manage.py shell
 #type from munchapp.models import Post
 #type from django.contrib.auth.models import User
@@ -48,6 +36,25 @@ from .models import Post
 def get_day():
     current_date_time = datetime.now()
     return str(current_date_time.day)
+
+def testingjson(dictionarytest, nums):
+    #return JsonResponse(dictionarytest)
+    
+    #testing_string = json.dumps(dictionarytest)
+    #print(testing_string)
+    if nums==0:
+        with open('breakfast.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+    if (nums == 1):
+        with open('lunch.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+
+    if (nums ==2):
+        with open('dinner.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+    
+
+    return
 
 def get_menu(url):
     #This parses the menu from the dining hall assuming its current website format, will not work if website changes
@@ -224,6 +231,9 @@ def get_menu(url):
     for i in dinner_elements:
         print(i, dinner_elements[i])
     '''
+    testingjson(breakfast_elements, 0)
+    testingjson(lunch_elements, 1)
+    testingjson(dinner_elements, 2)
 
     return {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements}
         

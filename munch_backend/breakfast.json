@@ -1,0 +1,152 @@
+{
+    "Chocolate Syrup": [
+        23,
+        [
+            "vegetarian"
+        ]
+    ],
+    "Vanilla Belgian Waffle": [
+        261,
+        [
+            "vegetarian",
+            "contains milk",
+            "contains wheat",
+            "contains soy",
+            "contains gluten"
+        ]
+    ],
+    "Strawberry Topping": [
+        92,
+        [
+            "vegetarian"
+        ]
+    ],
+    "Whipped Topping": [
+        22,
+        [
+            "vegetarian",
+            "contains milk",
+            "contains soy"
+        ]
+    ],
+    "Pancake Syrup": [
+        112,
+        [
+            "vegetarian",
+            "vegan"
+        ]
+    ],
+    "Sriracha Sauce": [
+        6,
+        [
+            "vegetarian"
+        ]
+    ],
+    "French Toast Sticks With Syrup": [
+        495,
+        [
+            "vegetarian",
+            "contains milk",
+            "contains egg",
+            "contains wheat",
+            "contains soy",
+            "contains gluten"
+        ]
+    ],
+    "Warm Pancake Syrup": [
+        112,
+        [
+            "vegetarian",
+            "vegan"
+        ]
+    ],
+    "Strawberry Pie Filling": [
+        83,
+        [
+            "vegetarian",
+            "vegan",
+            "mindful"
+        ]
+    ],
+    "French Toast": [
+        112,
+        [
+            "vegetarian",
+            "mindful",
+            "contains milk",
+            "contains egg",
+            "contains wheat",
+            "contains soy",
+            "contains gluten"
+        ]
+    ],
+    "Hash Browned Potatoes": [
+        58,
+        [
+            "vegetarian",
+            "vegan",
+            "mindful"
+        ]
+    ],
+    "Turkey Sausage": [
+        43,
+        []
+    ],
+    "Mexican Scrambled Eggs": [
+        207,
+        [
+            "vegetarian",
+            "contains milk",
+            "contains egg",
+            "contains soy"
+        ]
+    ],
+    "Scrambled Eggs": [
+        191,
+        [
+            "vegetarian",
+            "contains milk",
+            "contains egg",
+            "contains soy"
+        ]
+    ],
+    "Fruit Salad": [
+        36,
+        [
+            "vegetarian",
+            "vegan",
+            "mindful"
+        ]
+    ],
+    "Low Fat Vanilla Yogurt": [
+        97,
+        [
+            "vegetarian",
+            "mindful",
+            "contains milk"
+        ]
+    ],
+    "Low Fat Strawberry Yogurt": [
+        25,
+        [
+            "vegetarian",
+            "contains milk"
+        ]
+    ],
+    "Assorted Seasonal Fresh Fruit": [
+        88,
+        [
+            "vegetarian",
+            "vegan",
+            "mindful"
+        ]
+    ],
+    "Oatmeal": [
+        114,
+        [
+            "vegetarian",
+            "vegan",
+            "mindful"
+        ]
+    ]
+}
