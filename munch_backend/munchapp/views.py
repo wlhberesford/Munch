@@ -183,8 +183,7 @@ def get_menu(url):
                         calories = calories[0:len(calories)-3]
                         calories = int(calories)
                     
-                    temp = [calories, food_
-                            tags]
+                    temp = [calories, food_tags]
                     dinner_elements[text] = temp
 
     '''
