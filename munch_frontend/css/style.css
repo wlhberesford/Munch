@@ -50,7 +50,7 @@
 .nav_div{
     background-color: var(--clr-dark);
     width: 100%;
-    height: 7vh;
+    height: auto;
 
     text-align: center;
     padding: 0%;
@@ -95,30 +95,50 @@
 
 /* BODY - Current food at dining halls */
 .current_food_div{
-    margin-top: 25vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
 
 }
 
 #current_food_title{
+    margin-top: 25vh;
     color: var(--clr-dark);
     text-align: center;
     font-size: 5dvh;
 }
 
+#current_food_title::after{
+    content: '';
+    display: block;
+    margin: auto;
+    background-color: var(--clr-accent);
+    width: 70%;
+    height: 2px;
+}
+
 
 .current_dh_div{
-    padding: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 5%;
+    margin: 20px;
 
-    background-color: var(--clr-accent);
+    text-align: center;
     
+    background-color: var(--clr-accent);
+    border-radius: 10px;
+    border-color: var(--clr-dark);
+    border-width: 3px;
     
 }
 
 .current_dh{
     color: var(--clr-light);
+    margin-top: 0%;
+
+    font-size: 4dvh;
+
 }
 
 
