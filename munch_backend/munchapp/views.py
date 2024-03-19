@@ -21,6 +21,21 @@ def get_day():
     current_date_time = datetime.now()
     return str(current_date_time.day)
 
+
+def testingjson(dictionarytest, nums):
+
+    if nums==0:
+        with open('breakfast.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+    if (nums == 1):
+        with open('lunch.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+
+    if (nums ==2):
+        with open('dinner.json', 'w') as json_file:
+            json.dump(dictionarytest, json_file, indent=4)
+
+
 def get_menu(url):
     #This parses the menu from the dining hall assuming its current website format, will not work if website changes
 
@@ -196,6 +211,9 @@ def get_menu(url):
     for i in dinner_elements:
         print(i, dinner_elements[i])
     '''
+    testingjson(breakfast_elements, 0)
+    testingjson(lunch_elements, 1)
+    testingjson(dinner_elements, 2)
 
     final_dict = {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements, "error":"none"}
 
