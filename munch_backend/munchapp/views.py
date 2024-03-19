@@ -212,24 +212,29 @@ def get_hrs():
     url = 'https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'
     data = requests.get(url)
     html = BeautifulSoup(data.text, 'html.parser')
-    times = html.select('todays-hrs-block')
-
-    print(times)
+    times = html.select('.todays-hrs-block')
 
     for time in times:
-        start_time = time.select('start-hours').get_text()
-        end_time = time.select('end-hours').get_text()
+        start_time = time.select_one('.start-hours').get_text(strip=True)
+        end_time = time.select_one('.end-hours').get_text(strip=True)
 
-        hrs.append(start_time + end_time)
+        hrs.append(start_time + ' - ' + end_time)
 
     return hrs
+
+'''
+^^^
+dining_hours = get_hrs()
+for i, hour in enumerate(dining_hours, start=1):
+    print(f"Day {i}: {hour}")
+'''
 
 def menu_sage(request):
     get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall')
     return render(request, 'munchapp/menu.html')
 
 def about(request):
-    return HttpResponse('<h1>rcos munch dining hall project rpi</h1>')
+    return HttpResponse('<h1>RCOS Munch Dining Hall Project RPI</h1>')
 
 def home(request):
     context = {
