@@ -244,6 +244,7 @@ def get_menu(url):
                         brunch[text] = temp
 
     
+    '''
     for i in breakfast_elements:
         print(i, breakfast_elements[i])
 
@@ -255,6 +256,7 @@ def get_menu(url):
 
     for i in brunch_elements:
         print(i, brunch[i])
+    '''
 
     if bf_avail == 1:
         breakfast_elements = {"none":"no breakfast available"}
