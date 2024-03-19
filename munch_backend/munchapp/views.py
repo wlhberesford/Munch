@@ -306,4 +306,3 @@ def home(request):
         #'key': from above
     }
     return render(request, 'munchapp/home.html', context)
-
