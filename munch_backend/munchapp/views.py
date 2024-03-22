@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 #pip install beautifulsoup4
 from datetime import datetime
 
-from .models import Post
+#from .models import Post
 
 import json
 
@@ -286,32 +286,36 @@ def get_menu(url):
 
 
     return final_dict
-        
-def get_hrs():
-    
-    #THIS DOES NOT WORK YET
 
-    hrs = []
+def get_hrs(dining_name):
+   
+   hours_list = []
+  
+   url = 'https://rpi.sodexomyway.com/dining-near-me/' + dining_name
+   result = requests.get(url)
+   content = result.text
+   soup = BeautifulSoup(content, 'lxml')
+   blocks = soup.find_all('div', class_='ca-operation-hours-block')
 
-    url = 'https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall'
-    data = requests.get(url)
-    html = BeautifulSoup(data.text, 'html.parser')
-    times = html.select('.todays-hrs-block')
+   hours_list = []
 
-    for time in times:
-        start_time = time.select_one('.start-hours').get_text(strip=True)
-        end_time = time.select_one('.end-hours').get_text(strip=True)
+   for block in blocks:
+       meal = block['data-reghourstitle']
+       start_time = block['data-formatreghoursstart']
+       end_time = block['data-formatreghoursend']
+       days = block['data-regdays']
+       hours = f"{meal} ({days}): {start_time} - {end_time}"
+       hours_list.append(hours)
 
-        hrs.append(start_time + ' - ' + end_time)
 
-    return hrs
+   return hours_list
 
-'''
-^^^
-dining_hours = get_hrs()
-for i, hour in enumerate(dining_hours, start=1):
-    print(f"Day {i}: {hour}")
-'''
+
+
+
+dining_hours = get_hrs("russell-sage")
+print(dining_hours)
+
 
 def menu_sage(request):
     get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall')
