@@ -17,10 +17,6 @@ def parse_information(soup):
     locations_hours = {}
     dining_groups = soup.find_all("li", class_="dining-group")
 
-    #prints the html
-    for group in dining_groups:
-        print(group, end="\n"*2)
-
     for group in dining_groups:
         group_name = group.find('h2').text
         dining_locations = group.find_all("div", class_="dining-block")
@@ -31,14 +27,9 @@ def parse_information(soup):
             location_hours = []
             if regular_hours:
                 regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
-                meal_time = regular_hours.find_all("span", class_="dining-block-note")
                 regular_times = regular_hours.find_all("span", class_="dining-block-hours")
                 for days_tag, time in zip(regular_days_tag, regular_times):
-                    if meal_time:
-                        for meal, time in zip(meal_time, regular_times):
-                            location_hours.append(f"{days_tag['data-arrayregdays']} {meal.text.strip()}: {time.text.strip()}")
-                    else:
-                        location_hours.append(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+                    location_hours.append(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
             if special_hours:
                 for special_hour in special_hours:
                     special_dates = special_hour.find_all("span", class_="specweekstart")
