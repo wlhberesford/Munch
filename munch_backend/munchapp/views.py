@@ -287,6 +287,14 @@ def get_menu(url):
 
     return final_dict
 
+
+'''
+The function iterates over each operation hours block, 
+extracting details such as meal type, start time, 
+end time, and days of operation. It then formats this 
+information into a string and appends it to the hours_list. 
+Finally, it returns the list containing the formatted operating hours.
+'''
 def get_hrs(dining_name):
    
    hours_list = []
