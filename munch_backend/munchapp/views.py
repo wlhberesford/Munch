@@ -17,27 +17,56 @@ from .models import Post
 
 import json
 
+import os
+
+import shutil
+
 def get_day():
     current_date_time = datetime.now()
     return str(current_date_time.day)
 
 
-def testingjson(dictionarytest, nums):
+def savingJson(saved_dict, name):
 
+    '''
     if nums==0:
         with open('breakfast.json', 'w') as json_file:
             json.dump(dictionarytest, json_file, indent=4)
     if (nums == 1):
         with open('lunch.json', 'w') as json_file:
             json.dump(dictionarytest, json_file, indent=4)
-
     if (nums ==2):
         with open('dinner.json', 'w') as json_file:
             json.dump(dictionarytest, json_file, indent=4)
+    '''
+
+    folder = "menus"
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
+    name = os.path.join(folder, name)
+
+    with open(name, 'w') as json_file:
+        json.dump(saved_dict, json_file, indent=4)
 
 
-def get_menu(url):
+
+def get_menu(url, name):
     #This parses the menu from the dining hall assuming its current website format, will not work if website changes
+
+    if os.path.exists(os.path.join("menus",(name+"_data.json"))):
+        path = os.path.join("menus",(name+"_data.json"))
+        with open(path, 'r') as json_file:
+            current = json.load(json_file)
+            last_date = current["last_updated"]["date"]
+            today = get_current_time()["date"]
+            if (last_date == today):
+                return current
+            else:
+                archive_folder = os.path.join("menus", "archive", last_date)
+                os.makedirs(archive_folder, exist_ok=True)
+                new_path = os.path.join(archive_folder, name + "_data.json")
+                shutil.move(path, new_path)
 
     data = requests.get(url)
     soup = BeautifulSoup(data.content, "html.parser")
@@ -45,19 +74,26 @@ def get_menu(url):
     content_element = soup.find("main", id="content")
     if content_element is None:
         return {"error":"no content found"}
+    
     bottom_half = content_element.find_all("div", class_="bottom-half")
     if len(bottom_half) == 0:
         return {"error":"no bottom half found"}
+    
     main_content = bottom_half[0].find_all("div", class_="main-content")
     if len(main_content) == 0:
         return {"error":"no main content found"}
+    
     bite_menu = main_content[0].find_all("div", id="bite-menu")
     if len(bite_menu) == 0:
         return {"error":"no bite menu found"}
-    name = "menuid-"+get_day()+"-day"
-    bite_menu2 = bite_menu[0].find_all("div", id=name)
+    
+    day = get_day()
+    id_name = "menuid-"+day+"-day"
+    bite_menu2 = bite_menu[0].find_all("div", id=id_name)
+
     if len(bite_menu2) == 0:
         return {"error":"no bite menu 2 found"}
+    
     accordian = bite_menu2[0].find_all("div", class_="accordion")
     if len(accordian) == 0:
         return {"error":"no accordian found"}
@@ -273,20 +309,31 @@ def get_menu(url):
         print(i, brunch[i])
     '''
 
-    if bf_avail == 1:
-        breakfast_elements = {"none":"no breakfast available"}
-    if brunch_avail == 1:
-        brunch = {"none":"no brunch available"}
-    if lunch_avail == 1:
-        lunch_elements = {"none":"no lunch available"}
-    if dinner_avail == 1:
-        dinner_elements = {"none":"no dinner available"}
+    final_dict = dict()
 
-    final_dict = {"breakfast":breakfast_elements, "lunch":lunch_elements, "dinner":dinner_elements, "brunch:":brunch_elements, "error":"none"}
+    if bf_avail != 1:
+        final_dict["breakfast"] = breakfast_elements
+    if brunch_avail != 1:
+        final_dict["brunch"] = brunch_elements
+    if lunch_avail != 1:
+        final_dict["lunch"] = lunch_elements
+    if dinner_avail != 1:
+        final_dict["dinner"] = dinner_elements
 
+    final_dict["last_updated"]=get_current_time()
+
+    savingJson(final_dict, name+"_data.json")
 
     return final_dict
         
+def get_current_time():
+    # Get the current date and time
+    current_datetime = datetime.now()
+    current_date = str(current_datetime.date())
+    current_time = current_datetime.time()
+    current_time = current_time.strftime("%H:%M")
+    return {"date": current_date, "time": current_time}
+
 def get_hrs():
     
     #THIS DOES NOT WORK YET
@@ -314,8 +361,32 @@ for i, hour in enumerate(dining_hours, start=1):
 '''
 
 def menu_sage(request):
-    get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall')
-    return render(request, 'munchapp/menu.html')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','sage')
+    context = {
+        'menu': menu
+    }
+    return render(request, 'munchapp/russel_sage.html', context)
+
+def menu_commons(request):
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons')
+    context = {
+        'menu': menu
+    }
+    return render(request, 'munchapp/commons.html', context)
+
+def menu_blitman(request):
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman')
+    context = {
+        'menu': menu
+    }
+    return render(request, 'munchapp/blitman.html', context)
+
+def menu_barh(request):
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh')
+    context = {
+        'menu': menu
+    }
+    return render(request, 'munchapp/barh.html', context)
 
 def about(request):
     return HttpResponse('<h1>RCOS Munch Dining Hall Project RPI</h1>')
