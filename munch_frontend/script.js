@@ -11,15 +11,11 @@ function getCurrentMeal(){
     }else if ( hour < 16){
         document.getElementById("current_food_title").innerHTML="What's For Lunch?";
 
-    } else if ( hour < 21){
+    } else if ( hour < 23){
         document.getElementById("current_food_title").innerHTML="What's For Dinner?";
 
     }else{
-        document.getElementById("current_food_title").innerHTML="Yout gotta wait for food my boi";
+        document.getElementById("current_food_title").innerHTML="You gotta wait for food my boi";
 
     }
-    
-    
-
-    
 }
