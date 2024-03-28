@@ -101,6 +101,7 @@
     flex-wrap: wrap;
     margin: auto;
 
+
 }
 
 #current_food_title{
@@ -147,14 +148,23 @@
 .footer{
     background-color: var(--clr-dark);
     text-align: center;
+    padding: 2vh;
+    margin: auto;
+
+    bottom: 0;
 }
 
 .last_update{
     color: var(--clr-accent);
+    margin: 1vh;
+    font-size: larger;
+
 }
 
 .footer_note{
     color: var(--clr-accent);
+    font-size: larger;
+    margin: 1vh;
 }
 
 .footer_link{
