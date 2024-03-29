@@ -3,40 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commons Dining Hall</title>
+    <title>Munch</title>
 
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">        
     <link rel="icon" type="image/png" href="img/Munch_condensed_logo.png">
-
-    <style>
-        .footer {
-            background-color: rgb(211, 211, 211);
-            padding: 1px;
-            text-align: center;
-            width: 100%;
-            margin-top: auto;
-            font-size: 12px; 
-        }
-
-        .footer p {
-            margin: 10px 0; 
-        }
-
-        current_food_div {
-            display: flex;
-        }
-
-        .current_dh_div {
-            flex: 1; /* Each box takes up equal space */
-            box-sizing: border-box;
-            padding: 10px;
-        }
-
-        .current_dh_div h3 {
-            margin-top: 0;
-        }
-
-    </style>
 </head>
 <body>
     <div class="logo_div">
@@ -44,47 +14,50 @@
     </div>
     <div class="nav_div">
         <ul class="nav_list">
-            <li class="nav_item"><a class="nav_link" href="index.html" >Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="commons.html" >Commons</a></li>
             <li class="nav_item"><a class="nav_link" href="russel_sage.html" >Russell Sage</a></li>
             <li class="nav_item"><a class="nav_link" href="Barh.html" >BarH</a></li>
             <li class="nav_item"><a class="nav_link" href="blitman.html" >Blitman</a></li>
+            <li class="nav_item"><a class="nav_link" href="a" >Other</a></li>
         </ul>
     </div>
-    <h2 class="section_title" id="current_food_title">The Commons Dining Hall</h2>
-    <select name="simpleDropdown" id="simpleDropdown">
-        <option value="option1">Breakfast</option>
-        <option value="option2">Lunch</option>
-        <option value="option3">Dinner</option>
-        <option value="option4">Brunch</option>
-    </select>
+    <h2 class="section_title" id="current_food_title">What's For Lunch</h2>
     <div class="current_food_div">
         <div class="current_dh_div">
-            <h3 class="current_dh" id="pacifica">Pacifica</h3>
+            <h3 class="current_dh" id="commons_now">Commons</h3>
 
             <h4>Station Name</h4>
             <p>Meal</p>
             <p>Sides</p>
 
         </div>
-
         <div class="current_dh_div">
-            <h3 class="current_dh" id="entre">Entree</h3>
+            <h3 class="current_dh" id="sage_now">Russell Sage</h3>
 
             <h4>Station Name</h4>
             <p>Meal</p>
             <p>Sides</p>
 
         </div>
-
         <div class="current_dh_div">
-            <h3 class="current_dh" id="grill">Grill</h3>
+            <h3 class="current_dh" id="barh_now">Barh</h3>
 
             <h4>Station Name</h4>
             <p>Meal</p>
             <p>Sides</p>
 
         </div>
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="blit_now">Blitman</h3>
+            
+            <h4>Station Name</h4>
+            <p>Meal</p>
+            <p>Sides</p>
 
+        </div>
+
+
+    </div>
     <div class="footer">
         <p class="last_update">Last updated __ mins/hours/days/years ago</p>
         <p class="footer_note">Munch is an RCOS project <a class="footer_link" href="https://new.rcos.io/projects/munch/?semester=202401">new.rcos.io</a> 

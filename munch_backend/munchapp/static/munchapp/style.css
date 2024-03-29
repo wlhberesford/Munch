@@ -1,0 +1,23 @@
+body {
+    background-color: aquamarine;
+    color: red;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+hr {
+    border: 7px solid red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 40px;
+  margin: 20px;
+}
+.box {
+  height: auto;
+  background-color: mediumspringgreen;
+  border: 1px solid red;
+  box-sizing: border-box;
+}

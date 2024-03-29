@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munch</title>
-
+    
     <link rel="stylesheet" href="css/style.css">        
     <link rel="icon" type="image/png" href="img/Munch_condensed_logo.png">
+
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload = "getCurrentMeal()">
     <div class="logo_div">
         <img class="logo" src="img/Munch_logo_v1.png" alt="Munch Logo">
     </div>
@@ -21,6 +23,9 @@
         </ul>
     </div>
     <h2 class="section_title" id="current_food_title">What's For Lunch</h2>
+    
+
+
     <div class="current_food_div">
         <div class="current_dh_div">
             <h3 class="current_dh" id="commons_now">Commons</h3>

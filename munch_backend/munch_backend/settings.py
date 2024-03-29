@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'munchapp.apps.MunchappConfig',
 
-    'django_cron',
+    #'django_cron',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -51,6 +51,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CRON_CLASSES = [
+    'munchapp.cron.update_menu',
 ]
 
 ROOT_URLCONF = 'munch_backend.urls'
