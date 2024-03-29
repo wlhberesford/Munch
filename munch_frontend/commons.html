@@ -21,6 +21,21 @@
         .footer p {
             margin: 10px 0; 
         }
+
+        current_food_div {
+            display: flex;
+        }
+
+        .current_dh_div {
+            flex: 1; /* Each box takes up equal space */
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .current_dh_div h3 {
+            margin-top: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -37,9 +52,10 @@
     </div>
 
     <h2 class="section_title" id="current_food_title">The Commons Dining Hall</h2>
+    
     <div class="current_food_div">
         <div class="current_dh_div">
-            <h3 class="current_dh" id="commons_now">Commons</h3>
+            <h3 class="current_dh" id="pacifica">Pacifica</h3>
 
             <h4>Station Name</h4>
             <p>Meal</p>
@@ -47,7 +63,24 @@
 
         </div>
 
-    <p>The hours for this week are</p>
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="entre">Entree</h3>
+
+            <h4>Station Name</h4>
+            <p>Meal</p>
+            <p>Sides</p>
+
+        </div>
+
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="grill">Grill</h3>
+
+            <h4>Station Name</h4>
+            <p>Meal</p>
+            <p>Sides</p>
+
+        </div>
+
     <div class="footer">
         <p class="last_update">Last updated __ mins/hours/days/years ago</p>
         <p class="footer_note">Munch is an RCOS project <a class="footer_link" href="https://new.rcos.io/projects/munch/?semester=202401">new.rcos.io</a> 
