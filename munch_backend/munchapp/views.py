@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 #pip install beautifulsoup4
 from datetime import datetime
 
-from .models import Post
+#from .models import Post
 
 import json
 
@@ -54,7 +54,10 @@ def savingJson(saved_dict, name):
 def get_menu(url, name):
     #This parses the menu from the dining hall assuming its current website format, will not work if website changes
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     if os.path.exists(os.path.join("menus",(name+"_data.json"))):
         path = os.path.join("menus",(name+"_data.json"))
         with open(path, 'r') as json_file:
@@ -64,13 +67,19 @@ def get_menu(url, name):
             if (last_date == today):
                 return current
             else:
+<<<<<<< HEAD
                 json_file.close()
+=======
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
                 archive_folder = os.path.join("menus", "archive", last_date)
                 os.makedirs(archive_folder, exist_ok=True)
                 new_path = os.path.join(archive_folder, name + "_data.json")
                 shutil.move(path, new_path)
+<<<<<<< HEAD
                 os.remove(path)
 
+=======
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
 
     data = requests.get(url)
     soup = BeautifulSoup(data.content, "html.parser")
@@ -383,7 +392,11 @@ def get_menu(url, name):
     savingJson(final_dict, name+"_data.json")
 
     return final_dict
+<<<<<<< HEAD
         
+=======
+  
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
 def get_current_time():
     # Get the current date and time
     current_datetime = datetime.now()
@@ -419,6 +432,7 @@ def get_hrs(dining_name):
        hours = f"{meal} ({days}): {start_time} - {end_time}"
        hours_list.append(hours)
 
+<<<<<<< HEAD
    return hours_list
 
 def menu_sage(request):
@@ -427,33 +441,64 @@ def menu_sage(request):
     context = {
         'menu': menu,
         'hours': hours
+=======
+
+   return hours_list
+
+
+
+
+dining_hours = get_hrs("russell-sage")
+print(dining_hours)
+
+
+def menu_sage(request):
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','sage')
+    context = {
+        'menu': menu
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     }
     return render(request, 'munchapp/russel_sage.html', context)
 
 def menu_commons(request):
     menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons')
+<<<<<<< HEAD
     hours = get_hrs('commons-dining-hall')
     context = {
         'menu': menu,
         'hours': hours
+=======
+    context = {
+        'menu': menu
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     }
     return render(request, 'munchapp/commons.html', context)
 
 def menu_blitman(request):
     menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman')
+<<<<<<< HEAD
     hours = get_hrs('blitman-dining-hall')
     context = {
         'menu': menu,
         'hours': hours
+=======
+    context = {
+        'menu': menu
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     }
     return render(request, 'munchapp/blitman.html', context)
 
 def menu_barh(request):
     menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh')
+<<<<<<< HEAD
     hours = get_hrs('barh-dining-hall')
     context = {
         'menu': menu,
         'hours': hours 
+=======
+    context = {
+        'menu': menu
+>>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     }
     return render(request, 'munchapp/barh.html', context)
 

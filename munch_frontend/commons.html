@@ -5,14 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commons Dining Hall</title>
 
-    <link rel="stylesheet" href="dining_hall_style.css">    
+    <link rel="stylesheet" href="css/style.css">    
     <link rel="icon" type="image/png" href="img/Munch_condensed_logo.png">
+
+    <style>
+        .footer {
+            background-color: rgb(211, 211, 211);
+            padding: 1px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+            font-size: 12px; 
+        }
+
+        .footer p {
+            margin: 10px 0; 
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
-        <h1>Commons Dining Hall</h1>
-        <h2>1969 Burdett Ave, Troy, NY, 12180</h2>
-    </header>
+    <div class="logo_div">
+        <img class="logo" src="img/Munch_logo_v1.png" alt="Munch Logo">
+    </div>
+    <div class="nav_div">
+        <ul class="nav_list">
+            <li class="nav_item"><a class="nav_link" href="index.html" >Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="russel_sage.html" >Russell Sage</a></li>
+            <li class="nav_item"><a class="nav_link" href="Barh.html" >BarH</a></li>
+            <li class="nav_item"><a class="nav_link" href="blitman.html" >Blitman</a></li>
+        </ul>
+    </div>
+
+    <h2 class="section_title" id="current_food_title">The Commons Dining Hall</h2>
+    <div class="current_food_div">
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="commons_now">Commons</h3>
+
+            <h4>Station Name</h4>
+            <p>Meal</p>
+            <p>Sides</p>
+
+        </div>
+
     <p>The hours for this week are</p>
+    <div class="footer">
+        <p class="last_update">Last updated __ mins/hours/days/years ago</p>
+        <p class="footer_note">Munch is an RCOS project <a class="footer_link" href="https://new.rcos.io/projects/munch/?semester=202401">new.rcos.io</a> 
+            <a class="footer_link" href="https://github.com/wlhberesford/Munch">source code</a> (MIT license)</p>
+    </div>
 </body>
 </html>
