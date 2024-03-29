@@ -24,7 +24,6 @@ def parse_information(soup):
         # Iterate through each dining location within the group
         for location in dining_locations:
             location_name = location.find('h3').text
-            print(location_name)
             regular_hours = location.find("div", class_="reghours")
             special_hours = location.find_all("div", class_="spechours")
             location_hours = []
@@ -62,6 +61,13 @@ def get_hours(location_name, locations_hours):
     """
     return locations_hours.get(location_name, [])
 
+def get_locations(location_hours):
+    locations = []
+    for location in location_hours:
+        locations.append(location)
+
+    return locations
+
 def main():
     # Send an HTTP GET request to the URL and store the response
     page = requests.get(URL)
@@ -69,14 +75,17 @@ def main():
     soup = BeautifulSoup(page.content, "html.parser")
     # Parse information and save location and hours in a data structure
     locations_hours = parse_information(soup)
-    # Get hours for a specific location
-    location_name = input("Location: ")  # Replace "Location Name" with the desired location
-    hours = get_hours(location_name, locations_hours)
-    if hours:
-        for hour in hours:
-            print(hour)
-    else:
-        print(f"No hours found for {location_name}.")
+    # Print each location name and their hours
+    for location_name in get_locations(locations_hours):
+        print(location_name)
+        hours = get_hours(location_name, locations_hours)
+        if hours:
+            for hour in hours:
+                print(hour)
+        else:
+            print(f"No hours found for {location_name}.")
+        print()
+    
 
 if __name__ == "__main__":
     main()
