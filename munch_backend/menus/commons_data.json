@@ -1,1359 +1,1583 @@
 {
     "breakfast": {
-        "Raspberry White Chocolate Scone": [
-            262,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "BAKERY": [
+            {
+                "Double Chocolate Chip Muffin": [
+                    173,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cherry Danish": [
+                    322,
+                    [
+                        "vegetarian",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
         ],
-        "Banana Streusel Muffin": [
-            227,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "GRILL": [
+            {
+                "Blueberry Filling": [
+                    37,
+                    [
+                        "vegetarian",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Warm Pancake Syrup": [
+                    112,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Scrambled Eggs": [
+                    191,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Whipped Topping": [
+                    22,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Chocolate Sauce": [
+                    226,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "One Buttermilk Pancake": [
+                    114,
+                    [
+                        "vegetarian",
+                        "mindful",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Pork Sausage Link": [
+                    95,
+                    []
+                ]
+            },
+            {
+                "Caramel Topping": [
+                    71,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Sriracha Sauce": [
+                    17,
+                    [
+                        "vegetarian"
+                    ]
+                ]
+            },
+            {
+                "Fried Tater Tots": [
+                    252,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Spinach & Pesto Scrambed Eggs": [
+                    181,
+                    [
+                        "contains milk",
+                        "contains egg"
+                    ]
+                ]
+            }
         ],
-        "Scrambled Eggs": [
-            191,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
+        "MISCELLANEOUS": [],
+        "SALAD": [
+            {
+                "Fruit Salad": [
+                    36,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Strawberries": [
+                    14,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Assorted Seasonal Fresh Fruit": [
+                    88,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Cottage Cheese": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Strawberry Yogurt": [
+                    25,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Vanilla Yogurt": [
+                    97,
+                    [
+                        "vegetarian",
+                        "mindful",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Vanilla Greek Yogurt": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
         ],
-        "Whipped Topping": [
-            22,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains soy"
-            ]
+        "SAUTE": [
+            {
+                "Vegan Shredded Cheddar Cheese": [
+                    84,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains tree nuts"
+                    ]
+                ]
+            }
         ],
-        "Chocolate Sauce": [
-            226,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains soy"
-            ]
-        ],
-        "Hash Brown Patty": [
-            132,
-            [
-                "vegetarian",
-                "vegan",
-                "contains soy"
-            ]
-        ],
-        "Caramel Topping": [
-            71,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Bacon Slices": [
-            70,
-            []
-        ],
-        "Cinnamon French Toast With Berry Compote": [
-            330,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Country Style Scrambled Eggs": [
-            168,
-            [
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
-        ],
-        "Sriracha Sauce": [
-            17,
-            [
-                "vegetarian"
-            ]
-        ],
-        "Warm Pancake Syrup": [
-            112,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Low Fat Strawberry Yogurt": [
-            25,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Low Fat Vanilla Yogurt": [
-            97,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk"
-            ]
-        ],
-        "Vanilla Greek Yogurt": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Fresh Strawberries": [
-            14,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Assorted Seasonal Fresh Fruit": [
-            88,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Low Fat Cottage Cheese": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Vegan Shredded Cheddar Cheese": [
-            84,
-            [
-                "vegetarian",
-                "vegan",
-                "contains tree nuts"
-            ]
-        ],
-        "Egg Substitute": [
-            88,
-            [
-                "vegetarian",
-                "mindful",
-                "contains egg"
-            ]
+        "SOUP": [
+            {
+                "Oatmeal": [
+                    114,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ]
     },
     "lunch": {
-        "Salted Caramel & Bacon Whoopie Pie": [
-            170,
-            [
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Double Chocolate Chip Cookie": [
-            167,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Two Chocolate Chip Cookies": [
-            227,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Orange Angel Cupcake": [
-            162,
-            [
-                "vegetarian",
-                "mindful",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Oatmeal Raisin Vegan Cookie": [
-            156,
-            [
-                "vegetarian",
-                "vegan",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "Shredded Lettuce": [
-            2,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sour Cream": [
-            28,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Chipotle Chicken Tinga Tacos": [
-            446,
-            []
-        ],
-        "Cheddar Cheese Sauce": [
-            89,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains soy"
-            ]
-        ],
-        "Arroz Verde": [
-            159,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Part Skim Shredded Mozzarella Cheese": [
-            81,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Shredded Cheddar Cheese": [
-            111,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Baja Black Beans": [
-            75,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Smoked Ham": [
-            37,
-            []
-        ],
-        "American Cheese": [
-            47,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains soy"
-            ]
-        ],
-        "Sliced Pepperoncini": [
-            4,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Cheddar Cheese": [
-            57,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Pepper Jack Cheese, Sliced": [
-            53,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Deli Turkey Breast": [
-            51,
-            []
-        ],
-        "Roast Beef": [
-            64,
-            []
-        ],
-        "Chili Dog": [
-            362,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Cheese Sauce": [
-            65,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Bratwurst Sandwich": [
-            477,
-            [
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "French Fries": [
-            205,
-            [
-                "vegetarian",
-                "vegan",
-                "contains soy"
-            ]
-        ],
-        "Biryani Chicken": [
-            244,
-            []
-        ],
-        "Naan Bread": [
-            261,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "Fresh Vegetable Curry": [
-            40,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk"
-            ]
-        ],
-        "Breaded Cauliflower": [
-            299,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Grilled Vegetable Pizza": [
-            271,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Pepperoni Pizza": [
-            277,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Cheese Pizza": [
-            248,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Vegetarian Biryani": [
-            154,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk"
-            ]
-        ],
-        "Grilled Chicken Breast Strips": [
-            48,
-            []
-        ],
-        "Thousand Island Dressing": [
-            139,
-            [
-                "vegetarian",
-                "contains egg"
-            ]
-        ],
-        "Ranch Dressing": [
-            48,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
-        ],
-        "Diced Bacon": [
-            72,
-            []
-        ],
-        "Vanilla Greek Yogurt": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Fresh Blueberries": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Cantaloupe Cubes": [
-            10,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Julienne Red Peppers": [
-            9,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Crumbled Bacon": [
-            48,
-            []
-        ],
-        "Fresh Strawberries": [
-            14,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Cucumber": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Julienne Green Peppers": [
-            6,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Roasted Red Grape Tomatoes": [
-            419,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Low Fat Cottage Cheese": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Yoplait Low Fat Vanilla Yogurt": [
-            24,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Hardboiled Eggs": [
-            44,
-            [
-                "vegetarian",
-                "contains egg"
-            ]
-        ],
-        "Spring Mix": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Chopped Romaine": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Spinach": [
-            7,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Shredded Carrots": [
-            6,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Low Fat Strawberry Yogurt": [
-            25,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Hummus": [
-            78,
-            [
-                "vegetarian",
-                "vegan",
-                "contains sesame"
-            ]
-        ],
-        "Fresh Red Onions": [
-            11,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Flax Seeds": [
-            56,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Cherry Tomatoes": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Balsamic Vinaigrette": [
-            103,
-            [
-                "vegetarian",
-                "contains soy"
-            ]
-        ],
-        "Homestyle Croutons": [
-            62,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "Fresh Honeydew Melon Cubes": [
-            10,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sliced Jalapeno Peppers": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sauteed Onions": [
-            21,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Saut\u00e9ed Mushrooms": [
-            16,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sauteed Spinach With Garlic": [
-            46,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Blanched Fresh Broccoli": [
-            11,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Tomatoes": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Extra Firm Tofu": [
-            29,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains soy"
-            ]
-        ],
-        "Alfredo Sauce": [
-            195,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Fresh Garlic": [
-            4,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Dal (lentils)": [
-            222,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Tomato Basil Marinara": [
-            18,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Shredded Parmesan Cheese": [
-            20,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Grilled Chicken Breast": [
-            141,
-            []
-        ],
-        "Sauteed Green Peppers": [
-            17,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Zucchini Saute": [
-            58,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Grilled Lemon Thyme Chicken": [
-            151,
-            []
-        ],
-        "Green Beans & Stewed Tomatoes": [
-            43,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Garlic And Oregano Roasted Red Potatoes": [
-            118,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Cream Of Mushroom Soup": [
-            163,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "House Grilled Chicken Tortilla Soup": [
-            121,
-            []
+        "BAKERY": [
+            {
+                "Two Chocolate Chip Cookies": [
+                    227,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Chocolate Chip Vegan Cookie": [
+                    186,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Gingersnap Cookie": [
+                    74,
+                    [
+                        "vegetarian",
+                        "contains egg",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Dulce De Leche Cream Cheese Brownie": [
+                    339,
+                    [
+                        "vegetarian",
+                        "mindful",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Big Top Cupcake": [
+                    281,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "CHEFS TABLE": [
+            {
+                "Roasted Brussels Sprouts": [
+                    20,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Old Bay Cod Fillet": [
+                    77,
+                    [
+                        "contains fish"
+                    ]
+                ]
+            },
+            {
+                "Garlic Rice": [
+                    157,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
+        ],
+        "DELI": [
+            {
+                "Smoked Ham": [
+                    37,
+                    []
+                ]
+            },
+            {
+                "Shredded Cheddar Cheese": [
+                    111,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "American Cheese": [
+                    47,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Cheddar Cheese": [
+                    57,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Sliced Pepperoncini": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Roast Beef": [
+                    64,
+                    []
+                ]
+            },
+            {
+                "Deli Turkey Breast": [
+                    51,
+                    []
+                ]
+            },
+            {
+                "Pepper Jack Cheese, Sliced": [
+                    53,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
+        ],
+        "GRILL": [
+            {
+                "Fried Shrimp": [
+                    186,
+                    [
+                        "contains shellfish",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cheeseburger": [
+                    373,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Hamburger": [
+                    312,
+                    [
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "French Fries": [
+                    205,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains soy"
+                    ]
+                ]
+            }
+        ],
+        "MISCELLANEOUS": [],
+        "PACIFICA": [
+            {
+                "Ginger Soy Vegetables": [
+                    57,
+                    [
+                        "vegetarian",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Szechuan Chicken Stir Fry": [
+                    343,
+                    [
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Vegetable Fried Rice": [
+                    146,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "PIZZA": [
+            {
+                "Pepperoni Pizza": [
+                    285,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cheese Pizza": [
+                    248,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Antipasto Pizza": [
+                    356,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "POWER PLANT": [
+            {
+                "Vegetable Fried Rice": [
+                    146,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Ginger Soy Vegetables": [
+                    57,
+                    [
+                        "vegetarian",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Ginger Tofu And Vegetable Stir Fry": [
+                    232,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "SALAD": [
+            {
+                "Thousand Island Dressing": [
+                    139,
+                    [
+                        "vegetarian",
+                        "contains egg"
+                    ]
+                ]
+            },
+            {
+                "Spring Mix": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Balsamic Vinaigrette": [
+                    103,
+                    [
+                        "vegetarian",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Yoplait Low Fat Vanilla Yogurt": [
+                    24,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Cottage Cheese": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Ranch Dressing": [
+                    48,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Blanched Fresh Broccoli": [
+                    11,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Strawberry Yogurt": [
+                    25,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Fresh Strawberries": [
+                    14,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Red Onions": [
+                    11,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Julienne Green Peppers": [
+                    6,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Cucumber": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Homestyle Croutons": [
+                    62,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Fresh Spinach": [
+                    7,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Honeydew Melon Cubes": [
+                    10,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Grilled Chicken Breast Strips": [
+                    48,
+                    []
+                ]
+            },
+            {
+                "Julienne Red Peppers": [
+                    9,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Crumbled Bacon": [
+                    48,
+                    []
+                ]
+            },
+            {
+                "Hardboiled Eggs": [
+                    44,
+                    [
+                        "vegetarian",
+                        "contains egg"
+                    ]
+                ]
+            },
+            {
+                "Cherry Tomatoes": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Sliced Jalapeno Peppers": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Vanilla Greek Yogurt": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Hummus": [
+                    78,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains sesame"
+                    ]
+                ]
+            },
+            {
+                "Roasted Red Grape Tomatoes": [
+                    419,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Chopped Romaine": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Cantaloupe Cubes": [
+                    10,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Flax Seeds": [
+                    56,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Shredded Carrots": [
+                    6,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Blueberries": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
+        ],
+        "SAUTE": [
+            {
+                "Sauteed Spinach With Garlic": [
+                    46,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Grilled Chicken Breast": [
+                    141,
+                    []
+                ]
+            },
+            {
+                "Sauteed Onions": [
+                    21,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Zucchini Saute": [
+                    58,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Alfredo Sauce": [
+                    195,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Extra Firm Tofu": [
+                    29,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Fresh Tomatoes": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Saut\u00e9ed Mushrooms": [
+                    16,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Shredded Parmesan Cheese": [
+                    20,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Tomato Basil Marinara": [
+                    18,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Sauteed Green Peppers": [
+                    17,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Garlic": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            }
+        ],
+        "SIMPLE SERVINGS": [
+            {
+                "Herbed Potatoes": [
+                    128,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Balsamic Grilled Flank Steak": [
+                    239,
+                    []
+                ]
+            },
+            {
+                "Green Beans With Oregano": [
+                    92,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
+        ],
+        "SOUP": [
+            {
+                "Seafood Chowder": [
+                    183,
+                    [
+                        "contains milk",
+                        "contains fish",
+                        "contains shellfish",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "American Bounty Vegetable Soup": [
+                    44,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ]
     },
     "dinner": {
-        "Double Chocolate Chip Cookie": [
-            167,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Oatmeal Raisin Vegan Cookie": [
-            156,
-            [
-                "vegetarian",
-                "vegan",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "White Cake With Fudge Icing": [
-            204,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Two Chocolate Chip Cookies": [
-            227,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Salted Caramel & Bacon Whoopie Pie": [
-            170,
-            [
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Apple Crisp": [
-            92,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Baja Roasted Vegetables": [
-            28,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Chipotle Chicken": [
-            152,
-            []
-        ],
-        "Cuban Black Beans And Rice": [
-            172,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sliced Pepperoncini": [
-            4,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "American Cheese": [
-            47,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains soy"
-            ]
-        ],
-        "Cheddar Cheese": [
-            57,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Smoked Ham": [
-            37,
-            []
-        ],
-        "Shredded Cheddar Cheese": [
-            111,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Deli Turkey Breast": [
-            51,
-            []
-        ],
-        "Pepper Jack Cheese, Sliced": [
-            53,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Roast Beef": [
-            64,
-            []
-        ],
-        "Cheese Quesadilla": [
-            325,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "French Fries": [
-            205,
-            [
-                "vegetarian",
-                "vegan",
-                "contains soy"
-            ]
-        ],
-        "Hamburger": [
-            312,
-            [
-                "contains wheat",
-                "contains soy",
-                "contains sesame",
-                "contains gluten"
-            ]
-        ],
-        "Cheeseburger": [
-            373,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains sesame",
-                "contains gluten"
-            ]
-        ],
-        "Sesame Ginger Green Beans": [
-            84,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains sesame"
-            ]
-        ],
-        "Vegetable Egg Roll": [
-            188,
-            [
-                "vegetarian",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains sesame",
-                "contains gluten"
-            ]
-        ],
-        "Chicken Pad Thai": [
-            353,
-            [
-                "contains fish"
-            ]
-        ],
-        "Pepperoni Pizza": [
-            277,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Grilled Vegetable Pizza": [
-            271,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Cheese Pizza": [
-            248,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Tofu Pad Thai": [
-            330,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Garlic Lemon Ginger Broccoli": [
-            29,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Thousand Island Dressing": [
-            139,
-            [
-                "vegetarian",
-                "contains egg"
-            ]
-        ],
-        "Spring Mix": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Shredded Carrots": [
-            6,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Spinach": [
-            7,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Blueberries": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Cucumber": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Chopped Romaine": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Crumbled Bacon": [
-            48,
-            []
-        ],
-        "Sliced Jalapeno Peppers": [
-            4,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Grilled Chicken Breast Strips": [
-            48,
-            []
-        ],
-        "Hummus": [
-            78,
-            [
-                "vegetarian",
-                "vegan",
-                "contains sesame"
-            ]
-        ],
-        "Ranch Dressing": [
-            48,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
-        ],
-        "Balsamic Vinaigrette": [
-            103,
-            [
-                "vegetarian",
-                "contains soy"
-            ]
-        ],
-        "Cherry Tomatoes": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Julienne Red Peppers": [
-            9,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Low Fat Strawberry Yogurt": [
-            25,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Homestyle Croutons": [
-            62,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "Fresh Red Onions": [
-            11,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Honeydew Melon Cubes": [
-            10,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Cantaloupe Cubes": [
-            10,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Flax Seeds": [
-            56,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Vanilla Greek Yogurt": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Diced Bacon": [
-            72,
-            []
-        ],
-        "Roasted Red Grape Tomatoes": [
-            419,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Hardboiled Eggs": [
-            44,
-            [
-                "vegetarian",
-                "contains egg"
-            ]
-        ],
-        "Yoplait Low Fat Vanilla Yogurt": [
-            24,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Fresh Strawberries": [
-            14,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Low Fat Cottage Cheese": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Julienne Green Peppers": [
-            6,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sauteed Green Peppers": [
-            17,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Fresh Garlic": [
-            4,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Shredded Parmesan Cheese": [
-            20,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Blanched Fresh Broccoli": [
-            11,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Alfredo Sauce": [
-            195,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Grilled Chicken Breast": [
-            141,
-            []
-        ],
-        "Fresh Tomatoes": [
-            5,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Tomato Basil Marinara": [
-            18,
-            [
-                "vegetarian",
-                "vegan"
-            ]
-        ],
-        "Sauteed Onions": [
-            21,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Zucchini Saute": [
-            58,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Sauteed Spinach With Garlic": [
-            46,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Saut\u00e9ed Mushrooms": [
-            16,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Simple Pork Green Chile": [
-            142,
-            []
-        ],
-        "Cilantro Lime Basmati Rice": [
-            137,
-            [
-                "vegetarian",
-                "mindful"
-            ]
-        ],
-        "Peperonata": [
-            56,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Chicken Tortilla Soup": [
-            123,
-            [
-                "contains milk",
-                "contains soy"
-            ]
-        ],
-        "Cream Of Mushroom Soup": [
-            163,
-            [
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "BAKERY": [
+            {
+                "Chocolate Chip Vegan Cookie": [
+                    186,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Two Chocolate Chip Cookies": [
+                    227,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Bread Pudding": [
+                    249,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cherry Pie": [
+                    322,
+                    [
+                        "vegetarian",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Gingersnap Cookie": [
+                    74,
+                    [
+                        "vegetarian",
+                        "contains egg",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "CHEFS TABLE": [
+            {
+                "Curry Roasted Vegetables": [
+                    65,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Caribbean Red Beans & Rice": [
+                    149,
+                    [
+                        "vegetarian",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Jamaican Jerk Lemon Pork Loin": [
+                    295,
+                    []
+                ]
+            }
+        ],
+        "DELI": [
+            {
+                "Sliced Pepperoncini": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "American Cheese": [
+                    47,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Pepper Jack Cheese, Sliced": [
+                    53,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Smoked Ham": [
+                    37,
+                    []
+                ]
+            },
+            {
+                "Deli Turkey Breast": [
+                    51,
+                    []
+                ]
+            },
+            {
+                "Shredded Cheddar Cheese": [
+                    111,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Roast Beef": [
+                    64,
+                    []
+                ]
+            },
+            {
+                "Cheddar Cheese": [
+                    57,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
+        ],
+        "GRILL": [
+            {
+                "French Fries": [
+                    205,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Nashville-style Chick'n Sandwich": [
+                    579,
+                    [
+                        "vegetarian",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Hamburger": [
+                    312,
+                    [
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cheeseburger": [
+                    373,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "MISCELLANEOUS": [],
+        "PIZZA": [
+            {
+                "Pepperoni Pizza": [
+                    277,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Antipasto Pizza": [
+                    356,
+                    [
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Cheese Pizza": [
+                    248,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
+        ],
+        "POWER PLANT": [
+            {
+                "Naan Bread": [
+                    261,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Mixed Vegetable Makhani With Rice & Chutney": [
+                    376,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
+        ],
+        "SALAD": [
+            {
+                "Yoplait Low Fat Vanilla Yogurt": [
+                    24,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Homestyle Croutons": [
+                    62,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Grilled Chicken Breast Strips": [
+                    48,
+                    []
+                ]
+            },
+            {
+                "Hardboiled Eggs": [
+                    44,
+                    [
+                        "vegetarian",
+                        "contains egg"
+                    ]
+                ]
+            },
+            {
+                "Fresh Spinach": [
+                    7,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Cottage Cheese": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Ranch Dressing": [
+                    48,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Flax Seeds": [
+                    56,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Vanilla Greek Yogurt": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Sliced Jalapeno Peppers": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Cucumber": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Chopped Romaine": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Roasted Red Grape Tomatoes": [
+                    419,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Shredded Carrots": [
+                    6,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Red Onions": [
+                    11,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Hummus": [
+                    78,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains sesame"
+                    ]
+                ]
+            },
+            {
+                "Crumbled Bacon": [
+                    48,
+                    []
+                ]
+            },
+            {
+                "Julienne Green Peppers": [
+                    6,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Strawberry Yogurt": [
+                    25,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Blanched Fresh Broccoli": [
+                    11,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Cherry Tomatoes": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Fresh Strawberries": [
+                    14,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Spring Mix": [
+                    4,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Thousand Island Dressing": [
+                    139,
+                    [
+                        "vegetarian",
+                        "contains egg"
+                    ]
+                ]
+            },
+            {
+                "Balsamic Vinaigrette": [
+                    103,
+                    [
+                        "vegetarian",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Julienne Red Peppers": [
+                    9,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Diced Bacon": [
+                    72,
+                    []
+                ]
+            },
+            {
+                "Fresh Blueberries": [
+                    5,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
+        ],
+        "SIMPLE SERVINGS": [
+            {
+                "Chipotle Chicken": [
+                    152,
+                    []
+                ]
+            },
+            {
+                "Cilantro Lime Rice": [
+                    141,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            },
+            {
+                "Roasted Vegetables": [
+                    9,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
+        ],
+        "SOUP": [
+            {
+                "Seafood Chowder": [
+                    183,
+                    [
+                        "contains milk",
+                        "contains fish",
+                        "contains shellfish",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "American Bounty Vegetable Soup": [
+                    44,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ]
     },
     "last_updated": {
-        "date": "2024-03-26",
-        "time": "12:33"
+        "date": "2024-03-29",
+        "time": "16:48"
     }
 }
