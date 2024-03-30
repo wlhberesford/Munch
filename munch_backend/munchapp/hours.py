@@ -17,10 +17,18 @@ def parse_information(soup):
     locations_hours = {}
     dining_groups = soup.find_all("li", class_="dining-group")
 
+    #prints the html
+    # for group in dining_groups:
+    #     print(group, end="\n"*2)
+
     # Iterate through each dining group
     for group in dining_groups:
         group_name = group.find('h2').text
         dining_locations = group.find_all("div", class_="dining-block")
+        print(group_name)
+        res_dining = False
+        if(group_name == "Resident Dining"):
+            res_dining = True
         # Iterate through each dining location within the group
         for location in dining_locations:
             location_name = location.find('h3').text
@@ -31,8 +39,13 @@ def parse_information(soup):
             if regular_hours:
                 regular_days_tag = regular_hours.find_all("dt", {"data-arrayregdays": True})
                 regular_times = regular_hours.find_all("span", class_="dining-block-hours")
-                for days_tag, time in zip(regular_days_tag, regular_times):
-                    location_hours.append(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+                if(res_dining == False):
+                    for days_tag, time in zip(regular_days_tag, regular_times):
+                        location_hours.append(f"{days_tag['data-arrayregdays']}: {time.text.strip()}")
+                else:
+                    dining_block = regular_hours.find_all("span", class_="dining-block-note")
+                    for days_tag, block, time in zip(regular_days_tag, dining_block, regular_times):
+                        location_hours.append(f"{days_tag['data-arrayregdays']} {block.text.strip()} {time.text.strip()}")
             # Extract special hours if available
             if special_hours:
                 for special_hour in special_hours:
@@ -43,7 +56,7 @@ def parse_information(soup):
                     special_days = special_hour.find_all("p", class_="dining-block-days")
                     special_times = special_hour.find_all("p", class_="dining-block-hours")
                     for days, times in zip(special_days, special_times):
-                        location_hours.append(f"{days.text.strip()}: {times.text.strip()}")
+                        location_hours.append(f"{days.text.strip()}{times.text.strip()}")
             # Store the location hours in the dictionary
             locations_hours[location_name] = location_hours
     return locations_hours
@@ -62,12 +75,28 @@ def get_hours(location_name, locations_hours):
     return locations_hours.get(location_name, [])
 
 def get_locations(location_hours):
+    """
+    Get a list of location names
+
+    Args:
+    location_hours: Dictionary containing location names as key and their corresponding hours as values
+
+    Returns:
+    A list of location names as strings
+
+    """
     locations = []
     for location in location_hours:
         locations.append(location)
 
     return locations
 
+
+"""
+
+Main to to help me debug and test code
+
+"""
 def main():
     # Send an HTTP GET request to the URL and store the response
     page = requests.get(URL)
