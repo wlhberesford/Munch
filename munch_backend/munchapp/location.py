@@ -24,5 +24,18 @@ import requests
 import geocoder
 
 sage_address = '1649 15th St, Troy, NY'
-commons_address = '1969 Burdett Ave, Troy, NY'
 barh_address = '100 Albright Ct, Troy, NY'
+blitman_address = '1800 6th Ave, Troy, NY'
+commons_address = '1969 Burdett Ave, Troy, NY'
+
+
+def find_student_location():
+    try:
+        student_location = geocoder.ip("me")
+        if student_location.ok:
+            student_lat, student_long = student_location.latlng
+        else: 
+            raise Exception('Unable to get location of user')
+    except Exception as e:
+        raise SystemError(f"Could not get student's IP address: {e}")
+    return (student_lat, student_long)
