@@ -22,7 +22,7 @@
             margin: 10px 0; 
         }
 
-        current_food_div {
+        .current_food_div {
             display: flex;
         }
 
@@ -36,7 +36,15 @@
             margin-top: 0;
         }
 
+        /* Adjusting the position of the address */
+        .address {
+            margin-top: -25px; /* Adjust this value as needed */
+            text-align: center;
+        }
+
     </style>
+
+
 </head>
 <body>
     <div class="logo_div">
@@ -45,12 +53,15 @@
     <div class="nav_div">
         <ul class="nav_list">
             <li class="nav_item"><a class="nav_link" href="index.html" >Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="commons.html" >Commons</a></li>
             <li class="nav_item"><a class="nav_link" href="russel_sage.html" >Russell Sage</a></li>
-            <li class="nav_item"><a class="nav_link" href="Barh.html" >BarH</a></li>
+            <li class="nav_item"><a class="nav_link" href="Barh.html" >BARH</a></li>
             <li class="nav_item"><a class="nav_link" href="blitman.html" >Blitman</a></li>
         </ul>
     </div>
-    <h2 class="section_title" id="current_food_title">The Commons Dining Hall</h2>
+    <h2 class="section_title" id="current_food_title">Commons Dining Hall</h2>
+    <p class="address">1999 Burdett Ave, Troy, NY, 12180</p> <!-- Updated position of the address -->
+
     <select name="simpleDropdown" id="simpleDropdown">
         <option value="option1">Breakfast</option>
         <option value="option2">Lunch</option>
