@@ -1,280 +1,382 @@
 {
     "breakfast": {
-        "Double Chocolate Chip Muffin": [
-            173,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "BAKERY": [
+            {
+                "Double Chocolate Chip Muffin": [
+                    173,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
         ],
-        "Scrambled Egg & Cheese On Bagel": [
-            297,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "BREAKFAST": [
+            {
+                "Scrambled Egg & Cheese On Bagel": [
+                    297,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Scrambled Eggs": [
+                    191,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Egg & Cheese Bagel With Sausage": [
+                    501,
+                    [
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Chocolate Chip Pancakes": [
+                    375,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
         ],
-        "Chocolate Chip Pancakes": [
-            375,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "CONDIMENT/GARNISH": [
+            {
+                "Vanilla Greek Yogurt": [
+                    23,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Shredded Cheddar Cheese": [
+                    111,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
         ],
-        "Scrambled Eggs": [
-            191,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
+        "ENTREE": [
+            {
+                "Hickory Smoked Pit Ham": [
+                    73,
+                    []
+                ]
+            },
+            {
+                "One Cage Free Fried Egg": [
+                    108,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Bacon Slices": [
+                    70,
+                    []
+                ]
+            }
         ],
-        "Egg & Cheese Bagel With Sausage": [
-            501,
-            [
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "MISCELLANEOUS": [],
+        "SALAD": [
+            {
+                "Fruit Salad": [
+                    48,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ],
-        "Shredded Cheddar Cheese": [
-            111,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
+        "SNACK": [
+            {
+                "Assorted Seasonal Fresh Fruit": [
+                    88,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "Low Fat Strawberry Yogurt": [
+                    25,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            }
         ],
-        "Vanilla Greek Yogurt": [
-            23,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Hickory Smoked Pit Ham": [
-            73,
-            []
-        ],
-        "One Cage Free Fried Egg": [
-            108,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains soy"
-            ]
-        ],
-        "Bacon Slices": [
-            70,
-            []
-        ],
-        "Fruit Salad": [
-            48,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Assorted Seasonal Fresh Fruit": [
-            88,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Low Fat Strawberry Yogurt": [
-            25,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
-        ],
-        "Hash Brown Patty": [
-            132,
-            [
-                "vegetarian",
-                "vegan",
-                "contains soy"
-            ]
+        "STARCH": [
+            {
+                "Hash Brown Patty": [
+                    132,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains soy"
+                    ]
+                ]
+            }
         ]
     },
     "dinner": {
-        "6\" Hearty Grain Tortillas": [
-            173,
-            [
-                "vegetarian",
-                "vegan",
-                "contains wheat",
-                "contains gluten"
-            ]
+        "BAKERY": [
+            {
+                "Yellow Taco Shell": [
+                    51,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            },
+            {
+                "6\" Hearty Grain Tortillas": [
+                    173,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            }
         ],
-        "Yellow Taco Shell": [
-            51,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
+        "CONDIMENT/GARNISH": [
+            {
+                "Shredded Cheddar Jack Cheese": [
+                    214,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Shredded Cheddar Cheese": [
+                    111,
+                    [
+                        "vegetarian",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Sweet & Sour Sauce": [
+                    63,
+                    [
+                        "vegetarian",
+                        "contains soy"
+                    ]
+                ]
+            }
         ],
-        "Shredded Cheddar Jack Cheese": [
-            214,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
+        "DESSERT": [
+            {
+                "Caramel Macchiato Cake": [
+                    104,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Dutch Apple Pie": [
+                    475,
+                    [
+                        "vegetarian",
+                        "contains milk",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            }
         ],
-        "Sweet & Sour Sauce": [
-            63,
-            [
-                "vegetarian",
-                "contains soy"
-            ]
+        "ENTREE": [
+            {
+                "Fried Chicken Breast Parmesan": [
+                    446,
+                    [
+                        "contains milk",
+                        "contains egg",
+                        "contains wheat",
+                        "contains soy",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Shrimp Fried Rice": [
+                    533,
+                    [
+                        "vegetarian",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Asian Noodle Stir Fry": [
+                    178,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful",
+                        "contains wheat",
+                        "contains soy",
+                        "contains sesame",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Old-fashioned Beef Stew": [
+                    132,
+                    []
+                ]
+            },
+            {
+                "Braised Shredded Chicken": [
+                    76,
+                    []
+                ]
+            }
         ],
-        "Shredded Cheddar Cheese": [
-            111,
-            [
-                "vegetarian",
-                "contains milk"
-            ]
+        "FILLING/FROSTING": [
+            {
+                "Beef Taco Meat": [
+                    106,
+                    []
+                ]
+            }
         ],
-        "Dutch Apple Pie": [
-            475,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "MISCELLANEOUS": [],
+        "SALAD": [
+            {
+                "Blue Ribbon Slaw": [
+                    50,
+                    [
+                        "vegetarian",
+                        "mindful"
+                    ]
+                ]
+            }
         ],
-        "Caramel Macchiato Cake": [
-            104,
-            [
-                "vegetarian",
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
+        "SNACK": [
+            {
+                "Assorted Seasonal Fresh Fruit": [
+                    88,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ],
-        "Asian Noodle Stir Fry": [
-            178,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains wheat",
-                "contains soy",
-                "contains sesame",
-                "contains gluten"
-            ]
+        "STARCH": [
+            {
+                "Mashed Potatoes": [
+                    92,
+                    [
+                        "vegetarian",
+                        "mindful",
+                        "contains milk"
+                    ]
+                ]
+            },
+            {
+                "Shoestring Fries": [
+                    201,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "contains soy"
+                    ]
+                ]
+            },
+            {
+                "Penne Pasta": [
+                    100,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful",
+                        "contains wheat",
+                        "contains gluten"
+                    ]
+                ]
+            },
+            {
+                "Baja Black Beans": [
+                    91,
+                    [
+                        "vegetarian",
+                        "vegan",
+                        "mindful"
+                    ]
+                ]
+            }
         ],
-        "Old-fashioned Beef Stew": [
-            132,
-            []
-        ],
-        "Fried Chicken Breast Parmesan": [
-            446,
-            [
-                "contains milk",
-                "contains egg",
-                "contains wheat",
-                "contains soy",
-                "contains gluten"
-            ]
-        ],
-        "Shrimp Fried Rice": [
-            533,
-            [
-                "vegetarian",
-                "contains soy"
-            ]
-        ],
-        "Braised Shredded Chicken": [
-            76,
-            []
-        ],
-        "Beef Taco Meat": [
-            106,
-            []
-        ],
-        "Blue Ribbon Slaw": [
-            50,
-            [
-                "vegetarian",
-                "mindful"
-            ]
-        ],
-        "Assorted Seasonal Fresh Fruit": [
-            88,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Mashed Potatoes": [
-            92,
-            [
-                "vegetarian",
-                "mindful",
-                "contains milk"
-            ]
-        ],
-        "Shoestring Fries": [
-            201,
-            [
-                "vegetarian",
-                "vegan",
-                "contains soy"
-            ]
-        ],
-        "Baja Black Beans": [
-            91,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful"
-            ]
-        ],
-        "Penne Pasta": [
-            100,
-            [
-                "vegetarian",
-                "vegan",
-                "mindful",
-                "contains wheat",
-                "contains gluten"
-            ]
-        ],
-        "Marinara Sauce": [
-            22,
-            [
-                "vegetarian",
-                "vegan"
-            ]
+        "STOCK & SAUCE": [
+            {
+                "Marinara Sauce": [
+                    22,
+                    [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                ]
+            }
         ]
     },
     "last_updated": {
-        "date": "2024-03-26",
-        "time": "12:34"
+        "date": "2024-04-02",
+        "time": "17:09"
     }
 }

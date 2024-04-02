@@ -1,0 +1,147 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russell Sage</title>
+    <link rel="stylesheet" href = "{% static 'munchapp/style.css' %}" >        
+    <body>  
+        <h1> 
+            {{ dining_hall }}
+        </h1>
+        
+        {% for key, value in menu.items %}
+            {% if key == "breakfast" %}
+
+                <h2>Breakfast</h2>
+
+                {% for key2, value2 in menu.breakfast.items %}
+
+                    {% if key2 != "MISCELLANEOUS" %}
+
+                    <h3>{{ key2 }}</h3>
+
+                        <div class="container">
+                        {% for meals in value2 %}
+                        {% for key3, value3 in meals.items%}
+                            <div class="box">
+                            <h4>{{ key3 }}</h4>
+                            <p>Calories: {{ value3.0 }}</p>
+                            <h6>ALLERGENS:</h6>
+                            {% for item in value3.1 %}
+                                <p>{{ item }}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+                <hr>
+            {% endif %}
+
+            {% if key == "brunch" %}
+
+                <h2>Brunch</h2>
+
+                {% for key2, value2 in menu.brunch.items %}
+
+                    {% if key2 != "MISCELLANEOUS" %}
+
+                        <h3>{{ key2 }}</h3>
+
+                        <div class="container">
+                        {% for meals in value2 %}
+                        {% for key3, value3 in meals.items%}
+                            <div class="box">
+                            <h4>{{ key3 }}</h4>
+                            <p>Calories: {{ value3.0 }}</p>
+                            <h6>ALLERGENS:</h6>
+                            {% for item in value3.1 %}
+                                <p>{{ item }}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+                <hr>
+            {% endif %}
+
+            {% if key == "lunch" %}
+
+                <h2>Lunch</h2>
+
+                {% for key2, value2 in menu.lunch.items %}
+
+                    {% if key2 != "MISCELLANEOUS" %}
+
+                        <h3>{{ key2 }}</h3>
+
+                        <div class="container">
+                        {% for meals in value2 %}
+                        {% for key3, value3 in meals.items%}
+                            <div class="box">
+                            <h4>{{ key3 }}</h4>
+                            <p>Calories: {{ value3.0 }}</p>
+                            <h6>ALLERGENS:</h6>
+                            {% for item in value3.1 %}
+                                <p>{{ item }}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+                <hr>
+            {% endif %}
+
+            {% if key == "dinner" %}
+
+                <h2>Dinner</h2>
+
+                {% for key2, value2 in menu.dinner.items %}
+
+                    {% if key2 != "MISCELLANEOUS" %}
+
+                        <h3>{{ key2 }}</h3>
+
+                        <div class="container">
+                        {% for meals in value2 %}
+                        {% for key3, value3 in meals.items%}
+                            <div class="box">
+                            <h4>{{ key3 }}</h4>
+                            <p>Calories: {{ value3.0 }}</p>
+                            <h6>ALLERGENS:</h6>
+                            {% for item in value3.1 %}
+                                <p>{{ item }}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+                <hr>
+            {% endif %}
+
+        {% endfor %}
+
+    </body>
+</head>
