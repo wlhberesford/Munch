@@ -1,6 +1,5 @@
 {
     "breakfast": {
-<<<<<<< HEAD
         "BAKERY": [
             {
                 "Chocolate Syrup": [
@@ -207,6 +206,7 @@
             }
         ]
     },
+
     "lunch": {
         "ACTION STATION": [
             {
@@ -1510,10 +1510,13 @@
             }
         ]
     },
+
     "last_updated": {
         "date": "2024-03-29",
         "time": "16:14"
-=======
+    },
+    
+    "breakfast": {
         "Strawberry Topping": [
             92,
             [
@@ -2678,6 +2681,5 @@
     "last_updated": {
         "date": "2024-03-26",
         "time": "11:18"
->>>>>>> fa43b9e16f524c053667cccdf75f23be626442f1
     }
 }
