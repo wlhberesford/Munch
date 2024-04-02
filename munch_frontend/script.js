@@ -19,3 +19,42 @@ function getCurrentMeal(){
 
     }
 }
+
+function makeCards(diningHall){
+
+}
+
+let currentCardIndex = 0;
+const commonsStations = document.querySelectorAll('.Commons_Station');
+const sageStations = document.querySelectorAll('.Sage_Station');
+const barhStations = document.querySelectorAll('.Barh_Station');
+const blitmanStations = document.querySelectorAll('.Blitman_Station');
+
+let maxcards = cards.length;
+
+function showCard(index) {
+    cards.forEach((card, i) => {
+      const offset = i - index;
+      card.style.transform = `translateX(${offset * 100}%)`;
+    });
+}
+
+function prevCard() {
+    if (currentCardIndex > 0) {
+      currentCardIndex--;
+      showCard(currentCardIndex);
+    }else{
+      currentCardIndex=maxcards-1;
+      showCard(currentCardIndex);
+    }
+}
+
+function nextCard() {
+    if (currentCardIndex < cards.length - 1) {
+      currentCardIndex++;
+      showCard(currentCardIndex);
+    }else{
+      currentCardIndex=0;
+      showCard(currentCardIndex);
+    }
+}
