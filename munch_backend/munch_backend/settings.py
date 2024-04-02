@@ -53,10 +53,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CRON_CLASSES = [
-    'munchapp.cron.update_menu',
-]
-
 ROOT_URLCONF = 'munch_backend.urls'
 
 TEMPLATES = [
