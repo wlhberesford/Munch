@@ -39,3 +39,8 @@ def find_student_location():
     except Exception as e:
         raise SystemError(f"Could not get student's IP address: {e}")
     return (student_lat, student_long)
+
+
+def find_address_location(address):
+    # Returns tuple of lat/lon for given address string
+    return address
