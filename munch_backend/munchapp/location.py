@@ -25,3 +25,4 @@ import geocoder
 
 sage_address = '1649 15th St, Troy, NY'
 commons_address = '1969 Burdett Ave, Troy, NY'
+barh_address = '100 Albright Ct, Troy, NY'
