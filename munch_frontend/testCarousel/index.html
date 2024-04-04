@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">        
+    <script type="text/javascript" src="script.js"></script>
+
+
+<title>Clickable Card Carousel</title>
+
+</head>
+<body onLoad="setUp()">
+
+<div class="card-container">
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <div class="card"data-active id="card1">Card 1 Content</div>
+  <div class="card" id="card2">Card 2 Content</div>
+  <div class="card" id="card3">Card 3 Content</div>
+  <button class="next" onclick="nextSlide()">❯</button>
+</div>
+
+</body>
+</html>
