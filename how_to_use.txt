@@ -1,0 +1,17 @@
+first you want to clone or download the repo onto your own computer
+
+first install python
+
+then you want to install django (you should probably do this in a virtual environement but it'll work either way)
+
+install the stuff in requirements using "pip install"
+
+cd into munch_backend
+
+run the following command:
+
+python manage.py runserver
+
+then localhost:8000 will be the root url
+
+looks at urls.py for any urls you can use
