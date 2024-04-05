@@ -30,9 +30,9 @@
   opacity: 1;
 }
 
-#card1 { background-color: #F44336; }
-#card2 { background-color: #2196F3; }
-#card3 { background-color: #4CAF50; }
+#test-card1 { background-color: #F44336; }
+#test-card2 { background-color: #2196F3; }
+#test-card3 { background-color: #4CAF50; }
 .prev, .next {
   cursor: pointer;
   position: absolute;

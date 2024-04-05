@@ -1,13 +1,21 @@
 class SlideCarousel{
-    constructor(slides){
-        this.slides=slides;
-        this.slideCount= slides.length
+    constructor(){
+        this.className;
+        this.slides;
+        this.slideCount= 0;
         this.slideIndex=0;
     }
 
-    setUp(){
+    setUp(idName){
         this.slideIndex = 0;
+        var jQeryPre='[id^="';
+        var jQeryPost='"]';
+
+        this.slides=$(jQeryPre+idName+jQeryPost);
         this.slideCount= this.slides.length;
+        console.log("Total slides: ",this.slideCount," ",this.slides.length);
+        console.log("Currently: ",this.slideIndex);
+
         this.slides[this.slideIndex].dataset.active = true;
     }
 
@@ -32,56 +40,9 @@ class SlideCarousel{
     }
 }
 
-function setUp(slideList){
-    slideList.forEach(i => {
-        i.setUp();
-    });
-}
-
-let carousel = [];
-carousel[0] = new SlideCarousel(document.getElementsByClassName("card"));
-
-setUp(carousel);
-
-
-
-
-
-
-/*
-let slideIndex = 0;
-const cards = document.getElementsByClassName("card");
-let cardCount;
+let test = new SlideCarousel();
 
 function setUp(){
-    slideIndex = 0;
-    cardCount= cards.length;
-    
-    console.log(cards)
-    console.log(cards.length)
-};
-
-
-function prevSlide(){
-    slideIndex -= 1;
-    showSlide(slideIndex+1);
-};
-
-function nextSlide(){
-    slideIndex += 1;
-    showSlide(slideIndex-1);
-};
-
-function showSlide(p){
-    if (slideIndex <0 ) {slideIndex = cardCount-1; }
-    if (slideIndex >= cardCount) {slideIndex = 0; }
-
-    console.log(p,slideIndex)
-
-
-    cards[slideIndex].dataset.active = true;
-    delete cards[p].dataset.active;
-
-
-};
-*/
+    test.setUp("test-card")
+    console.log("READY")
+}
