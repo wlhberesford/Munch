@@ -21,7 +21,30 @@
         .footer p {
             margin: 10px 0; 
         }
+
+        .current_food_div {
+            display: flex;
+        }
+
+        .current_dh_div {
+            flex: 1; /* Each box takes up equal space */
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .current_dh_div h3 {
+            margin-top: 0;
+        }
+
+        /* Adjusting the position of the address */
+        .address {
+            margin-top: -25px; /* Adjust this value as needed */
+            text-align: center;
+        }
+
     </style>
+
+
 </head>
 <body>
     <div class="logo_div">
@@ -30,33 +53,69 @@
     <div class="nav_div">
         <ul class="nav_list">
             <li class="nav_item"><a class="nav_link" href="index.html" >Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="commons.html" >Commons</a></li>
             <li class="nav_item"><a class="nav_link" href="russel_sage.html" >Russell Sage</a></li>
-            <li class="nav_item"><a class="nav_link" href="Barh.html" >BarH</a></li>
+            <li class="nav_item"><a class="nav_link" href="Barh.html" >BARH</a></li>
             <li class="nav_item"><a class="nav_link" href="blitman.html" >Blitman</a></li>
         </ul>
     </div>
     <h2 class="section_title" id="current_food_title">Commons Dining Hall</h2>
+    <p class="address">1999 Burdett Ave, Troy, NY, 12180</p> <!-- Updated position of the address -->
+
     <select name="simpleDropdown" id="simpleDropdown">
         <option value="option1">Breakfast</option>
         <option value="option2">Lunch</option>
         <option value="option3">Dinner</option>
         <option value="option4">Brunch</option>
     </select>
+
+    <select name="simpleDropdown" id="simpleDropdown">
+        <option value="option1">Vegetarian</option>
+        <option value="option2">Vegan</option>
+        <option value="option3">Allergens (select later)</option>
+        <option value="option4">Lactose Intolerant</option>
+    </select>
+
     <div class="current_food_div">
         <div class="current_dh_div">
-            <h3 class="current_dh" id="commons_now">Commons</h3>
+            <h3 class="current_dh" id="pacifica">Pacifica</h3>
 
-            <h4>Station Name</h4>
             <p>Meal</p>
             <p>Sides</p>
 
         </div>
-    
-    <p>The hours for this week are</p>
+
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="entre">Entree</h3>
+
+            <p>Meal</p>
+            <p>Sides</p>
+
+        </div>
+
+        <div class="current_dh_div">
+            <h3 class="current_dh" id="grill">Grill</h3>
+
+            <p>Meal</p>
+            <p>Sides</p>
+
+        </div>
+
     <div class="footer">
         <p class="last_update">Last updated __ mins/hours/days/years ago</p>
         <p class="footer_note">Munch is an RCOS project <a class="footer_link" href="https://new.rcos.io/projects/munch/?semester=202401">new.rcos.io</a> 
             <a class="footer_link" href="https://github.com/wlhberesford/Munch">source code</a> (MIT license)</p>
     </div>
+
+<!--
+    <h2>Toggle Button</h2>
+
+<label class="switch">
+  <input type="checkbox" id="toggleButton">
+  <span class="slider round"></span>
+</label> 
+-->
+    
+
 </body>
 </html>
