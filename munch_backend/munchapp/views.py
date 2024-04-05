@@ -427,11 +427,7 @@ def menu_sage(request):
     context = {
         'menu': menu,
         'hours': hours,
-<<<<<<< HEAD
         'dining_hall':"Russel Sage"
-=======
-        'dining_hall':"Russell Sage"
->>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -461,11 +457,7 @@ def menu_barh(request):
     context = {
         'menu': menu,
         'hours': hours,
-<<<<<<< HEAD
-        'dining_hall':"BarH"
-=======
         'dining_hall':"BARH"
->>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
