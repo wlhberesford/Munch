@@ -4,3 +4,4 @@ python 3.11.8
 django 5.0.1
 beautifulsoup 4.12.3
 requests 2.31.0
+lxml 5.1.0

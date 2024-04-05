@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 #pip install beautifulsoup4
 from datetime import datetime
 
-#from .models import Post
+from .models import Post
 
 import json
 
@@ -427,7 +427,11 @@ def menu_sage(request):
     context = {
         'menu': menu,
         'hours': hours,
+<<<<<<< HEAD
         'dining_hall':"Russel Sage"
+=======
+        'dining_hall':"Russell Sage"
+>>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -457,7 +461,11 @@ def menu_barh(request):
     context = {
         'menu': menu,
         'hours': hours,
+<<<<<<< HEAD
         'dining_hall':"BarH"
+=======
+        'dining_hall':"BARH"
+>>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -471,4 +479,4 @@ def home(request):
         'title': 'Munch Home' 
         #'key': from above
     }
-    return render(request, 'munchapp/home.html', context)
+    return render(request, 'munchapp/index.html', context)
