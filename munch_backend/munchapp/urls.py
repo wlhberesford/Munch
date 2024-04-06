@@ -9,4 +9,7 @@ urlpatterns = [
     path('menu/blitman/', views.menu_blitman, name="menu_blitman"),
     path('menu/barh/', views.menu_barh, name="menu_barh"),
     path('about/', views.about, name="about"),
+    path('register/', views.register, name="register"),
+    path('login/', views.login, name="login"),
+    path('userhome/', views.userhome, name="userhome"),
 ]

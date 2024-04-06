@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 #Run the commented pip installs if you haven't installed
 
@@ -15,11 +15,15 @@ from datetime import datetime
 
 from .models import Post
 
+from . forms import CreateUserForm
+
 import json
 
 import os
 
 import shutil
+
+
 
 def get_day():
     current_date_time = datetime.now()
@@ -27,18 +31,6 @@ def get_day():
 
 
 def savingJson(saved_dict, name):
-
-    '''
-    if nums==0:
-        with open('breakfast.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    if (nums == 1):
-        with open('lunch.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    if (nums ==2):
-        with open('dinner.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    '''
 
     folder = "menus"
     if not os.path.exists(folder):
@@ -427,11 +419,7 @@ def menu_sage(request):
     context = {
         'menu': menu,
         'hours': hours,
-<<<<<<< HEAD
-        'dining_hall':"Russel Sage"
-=======
         'dining_hall':"Russell Sage"
->>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -461,11 +449,7 @@ def menu_barh(request):
     context = {
         'menu': menu,
         'hours': hours,
-<<<<<<< HEAD
-        'dining_hall':"BarH"
-=======
         'dining_hall':"BARH"
->>>>>>> 8becf260266f466f1f3aef2b1b6cc587cf970311
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -480,3 +464,26 @@ def home(request):
         #'key': from above
     }
     return render(request, 'munchapp/index.html', context)
+
+def register (request):
+    form = CreateUserForm()
+
+    if request.method == "POST":
+        form = CreateUserForm(request.POST)
+        
+        if form.is_valid():
+
+            form.save()
+
+            return redirect("login/")
+
+
+    context = {'registerform':form}
+
+    return render(request, 'munchapp/register.html', context=context)
+
+def login (request):
+    return render(request, 'munchapp/login.html')
+
+def userhome (request):
+    return render(request, 'munchapp/userhome.html')
