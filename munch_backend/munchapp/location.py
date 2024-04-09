@@ -73,20 +73,30 @@ def calculate_walking_time(origin, destination):
         raise SystemError(f"Google Maps API request failed: {e}")
     return (total_distance, total_duration)
 
-# Get the locations of the student and the dining halls
-student_location = find_student_location()
-sage_location = find_address_location(sage_address)
-barh_location = find_address_location(barh_address)
-blitman_location = find_address_location(blitman_address)
-commons_location = find_address_location(commons_address)
 
+def find_closest_locations(locations):
+    student_location = find_student_location()
+    sage_location = find_address_location(sage_address)
+    barh_location = find_address_location(barh_address)
+    blitman_location = find_address_location(blitman_address)
+    commons_location = find_address_location(commons_address)
+    
+    # Get the locations of the student and the dining hall
+    sage_time = calculate_walking_time(student_location, sage_location)
+    barh_time = calculate_walking_time(student_location, barh_location)
+    blitman_time = calculate_walking_time(student_location, blitman_location)
+    commons_time = calculate_walking_time(student_location, commons_location)
+    
+    total = [sage_time, barh_time, blitman_time, commons_time]
+    total.sort()
+    
+    # Return the closest one that is within a reasonable distance
+    if total[0] == sage_time:
+        return "Closest Dinning hall is Sage: \n\tdistance: " + sage_time[0] + "\n\ttime: " + sage_time[1] + "\n\tDinning Hall Location: " + sage_address
+    if total[0] == barh_time:
+        return "Closest Dinning hall is BARH: \n\tdistance: " + barh_time[0] + "\n\ttime: " + barh_time[1] + "\n\tDinning Hall Location: " + barh_address
+    if total[0] == blitman_time:
+        return "Closest Dinning hall is Blitman: \n\tdistance: " + blitman_time[0] + "\n\ttime: " + blitman_time[1] + "\n\tDinning Hall Location: " + blitman_address
+    if total[0] == commons_time:
+        return "Closest Dinning hall is Commons: \n\tdistance: " + commons_time[0] + "\n\ttime: " + commons_time[1] + "\n\tDinning Hall Location: " + commons_address
 
-sage_time = calculate_walking_time(student_location, sage_location)
-barh_time = calculate_walking_time(student_location, barh_location)
-blitman_time = calculate_walking_time(student_location, blitman_location)
-commons_time = calculate_walking_time(student_location, commons_location)
-
-print(f"Walking time to Sage: {sage_time}")
-print(f"Walking time to BARH: {barh_time}")
-print(f"Walking time to Blitman: {blitman_time}")
-print(f"Walking time to Commons: {commons_time}")
