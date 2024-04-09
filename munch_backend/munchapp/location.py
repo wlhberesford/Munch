@@ -3,6 +3,8 @@ To test this method you would need to install geocoder
 by doing the following command in your terminal:
 pip install geocoder
 pip install -U googlemaps
+pip install requests
+pip install folium
 """
 
 """
