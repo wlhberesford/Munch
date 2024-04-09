@@ -60,11 +60,18 @@ def find_address_location(address):
 
 def calculate_walking_time(origin, destination):
     # Use Google Maps Distance Matrix API to calculate the walking time
-    matrix = gmaps.distance_matrix(origin, destination, mode='walking')
-    if matrix['status'] == 'OK':
-        return matrix['rows'][0]['elements'][0]['duration']['text']
-    else:
-        raise Exception('Unable to calculate walking time')
+    try: 
+        matrix = gmaps.distance_matrix(origin, destination, mode='walking')
+        if matrix['status'] == 'OK':
+            total_distance, total_duration = 0
+            for step in directions[0]['legs'][0]['steps']:
+                total_distance += step['distance']['text']
+                total_duration += step['duration']['text']
+        else:
+            raise Exception('Unable to calculate walking time')
+    except Exception as e:
+        raise SystemError(f"Google Maps API request failed: {e}")
+    return (total_distance, total_duration)
 
 # Get the locations of the student and the dining halls
 student_location = find_student_location()
