@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
+from . forms import CreateUserForm
+# For user registration
 
 #Run the commented pip installs if you haven't installed
 
@@ -472,3 +475,29 @@ def home(request):
         #'key': from above
     }
     return render(request, 'munchapp/index.html', context)
+
+def register (request):
+    form = CreateUserForm()
+
+    if request.method == "POST":
+        form = CreateUserForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+
+            return redirect("login/")
+
+
+    context = {'registerform':form}
+
+    return render(request, 'munchapp/register.html', context=context)
+
+def login (request):
+    return render(request, 'munchapp/login.html')
+
+def userhome (request):
+    return render(request, 'munchapp/userhome.html')
+
+
+
