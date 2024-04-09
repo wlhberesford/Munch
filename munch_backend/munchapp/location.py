@@ -47,11 +47,16 @@ gmaps = googlemaps.Client(key='YOUR_API_KEY')
 
 def find_address_location(address):
     # Use geocoder to get the location of the address
-    location = geocoder.google(address, key='YOUR_API_KEY')
-    if location.ok:
-        return location.latlng
-    else:
-        raise Exception('Unable to get location of address')
+    try: 
+        location = geocoder.google(address, key='YOUR_API_KEY')
+        if location.ok:
+            address_lat, address_long = student_location.latlng
+        else:
+            raise Exception('Unable to get location of address')
+    except Exception as e:
+        raise SystemError(f"Could not get Address's IP address: {e}")
+    return (address_lat, address_long)
+    
 
 def calculate_walking_time(origin, destination):
     # Use Google Maps Distance Matrix API to calculate the walking time
