@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Image with Fixed Text Size</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 300%;
+        }
+        .content {
+            width: 100px; 
+            margin: 50vh auto 0;
+            text-align: center;
+            transition: width 0.2s; 
+        }
+        .scroll-image {
+            width: 100%; 
+            height: auto;
+        }
+        .text-content {
+            position: relative; 
+            width: 100px; 
+            margin: 0 auto;
+        }
+        .rating {
+            font-size: 16px;
+            color: #333;
+        }
+        .description {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content" class="content">
+    <img id="image" class="scroll-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqH4r-9a9aDiNzFc3MiiTeA2DPLg3WFkBMY1vBbdwn2A&s" alt="Skilled Chef">
+    <div class="text-content">
+        <div class="rating">3.5 Stars</div>
+        <div class="description">Choose your toppings and watch a skilled chef make a meal right in front of you!</div>
+    </div>
+</div>
+
+<script>
+    function adjustContentSize() {
+        var content = document.getElementById('content');
+        var scrollY = window.scrollY || window.pageYOffset;
+        var contentRect = content.getBoundingClientRect();
+        var windowHeight = window.innerHeight;
+
+        var distanceFromCenter = Math.abs(contentRect.top + contentRect.height / 2 - windowHeight / 2);
+        var sizeRatio = Math.max(0, 1 - distanceFromCenter / (windowHeight / 2));
+        var size = 100 + 300 * sizeRatio; 
+
+        content.style.width = size + 'px';
+        document.querySelector('.text-content').style.width = size + 'px'; 
+    }
+
+    window.addEventListener('scroll', adjustContentSize);
+    window.addEventListener('resize', adjustContentSize);
+    adjustContentSize(); 
+</script>
+
+</body>
+</html>
