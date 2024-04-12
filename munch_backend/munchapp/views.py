@@ -60,19 +60,22 @@ def get_menu(url, name):
     
     if os.path.exists(os.path.join("menus",(name+"_data.json"))):
         path = os.path.join("menus",(name+"_data.json"))
-        with open(path, 'r') as json_file:
-            current = json.load(json_file)
-            last_date = current["last_updated"]["date"]
-            today = get_current_time()["date"]
-            if (last_date == today):
-                return current
-            else:
-                json_file.close()
-                archive_folder = os.path.join("menus", "archive", last_date)
-                os.makedirs(archive_folder, exist_ok=True)
-                new_path = os.path.join(archive_folder, name + "_data.json")
-                shutil.move(path, new_path)
-                os.remove(path)
+        
+        if (os.path.exists(path)):
+        
+            with open(path, 'r') as json_file:
+                current = json.load(json_file)
+                last_date = current["last_updated"]["date"]
+                today = get_current_time()["date"]
+                if (last_date == today):
+                    return current
+                else:
+                    json_file.close()
+                    archive_folder = os.path.join("menus", "archive", last_date)
+                    os.makedirs(archive_folder, exist_ok=True)
+                    new_path = os.path.join(archive_folder, name + "_data.json")
+                    shutil.move(path, new_path)
+                    os.remove(path)
 
 
     data = requests.get(url)
