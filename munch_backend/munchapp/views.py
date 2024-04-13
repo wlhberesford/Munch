@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
 
-from . forms import CreateUserForm
+from . forms import CreateUserForm, LoginUserForm
 # For user registration
+from django.contrib.auth.models import auth
+from django.contrib.auth import authenticate, login, logout
+
 
 #Run the commented pip installs if you haven't installed
 
@@ -497,6 +500,22 @@ def register (request):
     return render(request, 'munchapp/register.html', context=context)
 
 def login (request):
+    form = LoginUserForm()
+
+    if request.method == "POST":
+        form = LoginUserForm(request, data = request.POST)
+
+        if form.is_valid():
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
+            user = authenticate (request, username=username, password=password)
+            if user:
+                auth.login(request, user)
+                messages.success(request,f 'Hello, {username.title()}, welcome')
+                return redirect('userhome')
+
+    messages.error(request, f'Invalid Username or Password please try again')
     return render(request, 'munchapp/login.html')
 
 def userhome (request):
