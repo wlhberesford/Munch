@@ -3,6 +3,8 @@ To test this method you would need to install geocoder
 by doing the following command in your terminal:
 pip install geocoder
 pip install -U googlemaps
+pip install requests
+pip install folium
 """
 
 """
@@ -22,6 +24,8 @@ import url
 import requests
 
 import geocoder
+import folium
+
 
 sage_address = '1649 15th St, Troy, NY'
 barh_address = '100 Albright Ct, Troy, NY'
@@ -74,7 +78,7 @@ def calculate_walking_time(origin, destination):
     return (total_distance, total_duration)
 
 
-def find_closest_locations(locations):
+def find_closest_locations():
     student_location = find_student_location()
     sage_location = find_address_location(sage_address)
     barh_location = find_address_location(barh_address)
@@ -92,11 +96,55 @@ def find_closest_locations(locations):
     
     # Return the closest one that is within a reasonable distance
     if total[0] == sage_time:
-        return "Closest Dinning hall is Sage: \n\tdistance: " + sage_time[0] + "\n\ttime: " + sage_time[1] + "\n\tDinning Hall Location: " + sage_address
+        return sage_location
     if total[0] == barh_time:
-        return "Closest Dinning hall is BARH: \n\tdistance: " + barh_time[0] + "\n\ttime: " + barh_time[1] + "\n\tDinning Hall Location: " + barh_address
+        return barh_location
     if total[0] == blitman_time:
-        return "Closest Dinning hall is Blitman: \n\tdistance: " + blitman_time[0] + "\n\ttime: " + blitman_time[1] + "\n\tDinning Hall Location: " + blitman_address
+        return blitman_location
     if total[0] == commons_time:
-        return "Closest Dinning hall is Commons: \n\tdistance: " + commons_time[0] + "\n\ttime: " + commons_time[1] + "\n\tDinning Hall Location: " + commons_address
+        return commons_location
 
+
+def display_closest_dining_hall():
+    closest_dining_hall = find_closest_locations()
+    user_location = find_student_location
+    if closest_dining_hall:
+        # Create a map centered at the user's location
+        map_center = [user_location[0], user_location[1]]
+        map_student_to_dining_hall = folium.Map(location=map_center, zoom_start=15)
+
+        # Add a marker for the student's location
+        folium.Marker(location=map_center, popup="Student's Location", icon=folium.Icon(color="blue")).add_to(map_student_to_dining_hall)
+
+        # Add a marker for the nearest dining hall
+        dining_hall_location = [closest_dining_hall[0], closest_dining_hall[1]]
+        folium.Marker(location=dining_hall_location, popup=closest_dining_hall["name"]).add_to(map_student_to_dining_hall)
+
+        # Get walking directions
+        walking_directions = get_walking_directions(user_location, closest_dining_hall)
+
+        # Add polyline for walking directions
+        folium.PolyLine(locations=folium.PolyLine.decode(walking_directions), color="red").add_to(map_student_to_dining_hall)
+
+        # Display the map
+        map_student_to_dining_hall.save("student_to_dining_hall_map.html")
+        print("Map generated successfully. Please open 'student_to_dining_hall_map.html' to view the route.")
+
+    else:
+        print("No dining halls found.")
+
+def get_walking_directions(user, dining):
+    # Make a request to Google Maps Directions API
+    url = "https://maps.googleapis.com/maps/api/directions/json"
+    params = {
+        "origin": f"{origin[0]},{origin[1]}",
+        "destination": f"{destination[0]},{destination[1]}",
+        "mode": "walking",  # Specify walking mode
+        "key": "YOUR_GOOGLE_MAPS_API_KEY"  # Replace with your Google Maps API key
+    }
+    response = requests.get(url, params=params)
+    data = response.json()
+
+    # Parse the response and extract the polyline points
+    polyline_points = data["routes"][0]["overview_polyline"]["points"]
+    return polyline_points

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slideshow</title>
+<link rel="stylesheet" href="test_slide_style.css">
+</head>
+<body>
+<div id="slideshow" class="slideshow" onclick="nextSlide()">
+  <img src="image1.jpg" class="slide active">
+  <img src="image2.jpg" class="slide">
+  <img src="image3.jpg" class="slide">
+</div>
+<script src="test_slide_script.js"></script>
+</body>
+</html>

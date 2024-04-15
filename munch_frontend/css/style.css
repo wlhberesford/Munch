@@ -1,144 +1,144 @@
 * {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 15vh;
-    padding: 0;
-  }
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 15vh;
+  padding: 0;
+}
 :root{
-    --ff-primary: 'Garamond', serif;
-    --ff-secondary: 'Courier New', monospace;
+  --ff-primary: 'Garamond', serif;
+  --ff-secondary: 'Courier New', monospace;
 
-    --clr-light: #fffff0;
-    --clr-dark: #1e1e24;
-    --clr-accent: #92140c;
+  --clr-light: #fffff0;
+  --clr-dark: #1e1e24;
+  --clr-accent: #92140c;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER - logo and nav */
 .logo_div{
-    background-color: var(--clr-accent);
+  background-color: var(--clr-accent);
 
-    position: fixed;
+  position: fixed;
 
-    width: 100%;
-    height: 15vh;
+  width: 100%;
+  height: 15vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin: 0px;
-    padding: 0px;
-    top: 0;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
 }
 
 .logo{
-    position: relative;
-    height: 190%;
-    margin: 0px;
-    padding: 0px;
+  position: relative;
+  height: 190%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav_div{
-    background-color: var(--clr-dark);
-    width: 100%;
-    height: auto;
+  background-color: var(--clr-dark);
+  width: 100%;
+  height: auto;
 
-    text-align: center;
-    padding: 0%;
+  text-align: center;
+  padding: 0%;
 
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 .nav_list{
-    list-style-type: none;
-    margin-top: 1%;
-    top: 0; 
+  list-style-type: none;
+  margin-top: 1%;
+  top: 0; 
 }
 
 .nav_item{
-    margin: 10px;
-    display: inline-block;
+  margin: 10px;
+  display: inline-block;
 
-    margin-left: 3%;
-    margin-right: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
 
-    height: 100%;
+  height: 100%;
 
-    list-style-type: none;
-    font-weight: bolder;
-    font-size: 3dvh;
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: 3dvh;
 }
 
 .nav_item:hover{
-    background-color: var(--clr-accent);
+  background-color: var(--clr-accent);
 
-    .nav_link{
-        color: var(--clr-dark);
-    }
+  .nav_link{
+      color: var(--clr-dark);
+  }
 }
 
 .nav_link{
-    color: var(--clr-accent);
-    text-decoration:none;
+  color: var(--clr-accent);
+  text-decoration:none;
 
 }
 
 /* BODY - Current food at dining halls */
 .current_food_div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
 
 
 }
 
 #current_food_title{
-    margin-top: 25vh;
-    color: var(--clr-dark);
-    text-align: center;
-    font-size: 5dvh;
+  margin-top: 25vh;
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: 5dvh;
 }
 
 #current_food_title::after{
-    content: '';
-    display: block;
-    margin: auto;
-    background-color: var(--clr-accent);
-    width: 70%;
-    height: 2px;
+  content: '';
+  display: block;
+  margin: auto;
+  background-color: var(--clr-accent);
+  width: 70%;
+  height: 2px;
 }
 
 
 .current_dh_div{
-    padding: 5%;
-    margin: 20px;
+  padding: 5%;
+  margin: 20px;
 
-    text-align: center;
-    
-    background-color: var(--clr-accent);
-    border-radius: 10px;
-    border-color: var(--clr-dark);
-    border-width: 3px;
-    
+  text-align: center;
+  
+  background-color: var(--clr-accent);
+  border-radius: 10px;
+  border-color: var(--clr-dark);
+  border-width: 3px;
+  
 }
 
 .current_dh{
-    color: var(--clr-light);
-    margin-top: 0%;
+  color: var(--clr-light);
+  margin-top: 0%;
 
-    font-size: 4dvh;
+  font-size: 4dvh;
 
 }
 
@@ -146,28 +146,49 @@
 /* Footer */
 
 .footer{
-    background-color: var(--clr-dark);
-    text-align: center;
-    padding: 2vh;
-    margin: auto;
+  background-color: var(--clr-dark);
+  text-align: center;
+  padding: 2vh;
+  margin: auto;
 
-    bottom: 0;
+  bottom: 0;
 }
 
 .last_update{
-    color: var(--clr-accent);
-    margin: 1vh;
-    font-size: larger;
+  color: var(--clr-accent);
+  margin: 1vh;
+  font-size: larger;
 
 }
 
 .footer_note{
-    color: var(--clr-accent);
-    font-size: larger;
-    margin: 1vh;
+  color: var(--clr-accent);
+  font-size: larger;
+  margin: 1vh;
 }
 
 .footer_link{
-    list-style: none;
-    color: var(--clr-accent);
+  list-style: none;
+  color: var(--clr-accent);
+}
+
+.meal_sides_container {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meal_sides_item {
+  flex: 0 0 calc(20% - 10px); /* Adjust width of items and gap between them */
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.meal_with_background {
+  background-image: url('testpic.jpeg');
+  background-size: cover;
+  background-position: center;
 }
