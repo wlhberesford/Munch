@@ -29,7 +29,12 @@
 
     <div class="current_food_div"onload = "setUpCarousels()">
         <div class="current_dh_div" >
+            <div class="Carousel-Button-Div">
+                <button class="prev" onclick="test.prevSlide()">❮</button>
+            </div>
+            <div class="Carousel_Container">
             <h3 class="current_dh" id="commons_now">Commons</h3>
+
             <div class="Station-Carousel" id="Carousel-Commons">
                 <div class="Station-Slide" id="Commons-Card-Bakery">
                     <h4>Bakery</h4>
@@ -82,6 +87,11 @@
                     <p>Sides</p>
                 </div>
             </div>
+            </div>
+            <div class="Carousel-Button-Div">
+                <button class="next" onclick="test.nextSlide()">❯</button>
+            </div>
+
         </div>
         <div class="current_dh_div">
             <h3 class="current_dh" id="sage_now">Russell Sage</h3>
@@ -137,7 +147,7 @@
                     <p>Meal</p>
                     <p>Sides</p>
                 </div>
-
+        </div>
         </div>
         <div class="current_dh_div">
             <h3 class="current_dh" id="barh_now">BARH</h3>
@@ -185,6 +195,8 @@
 
 
         </div>
+        
+
         <div class="current_dh_div">
             <h3 class="current_dh" id="blit_now">Blitman</h3>
             
@@ -243,6 +255,7 @@
 
 
     </div>
+    
     <div class="footer">
         <p class="last_update">Last updated __ mins/hours/days/years ago</p>
         <p class="footer_note">Munch is an RCOS project <a class="footer_link" href="https://new.rcos.io/projects/munch/?semester=202401">new.rcos.io</a> 
