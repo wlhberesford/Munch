@@ -191,8 +191,6 @@ def get_menu(url, name):
             current_category = current_category.find_next_sibling("div", class_="bite-menu-course")
             current_list = current_list.find_next_sibling("ul", class_="bite-menu-item")
 
-
-
     if lunch_avail == 0:
 
         main_div = lunch_items[0]
@@ -377,6 +375,8 @@ def get_menu(url, name):
 
     final_dict["last_updated"]=get_current_time()
 
+    final_dict["hours"]=get_hrs(name)
+
     savingJson(final_dict, name+"_data.json")
 
     return final_dict
@@ -419,41 +419,37 @@ def get_hrs(dining_name):
    return hours_list
 
 def menu_sage(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','sage')
-    hours = get_hrs('russell-sage')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','russell-sage')
+    #hours = get_hrs('russell-sage')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"Russell Sage"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_commons(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons')
-    hours = get_hrs('commons-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons-dining-hall')
+    #hours = get_hrs('commons-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"Commons"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_blitman(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman')
-    hours = get_hrs('blitman-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman-dining-hall')
+    #hours = get_hrs('blitman-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"Blitman"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_barh(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh')
-    hours = get_hrs('barh-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh-dining-hall')
+    #hours = get_hrs('barh-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"BARH"
     }
     return render(request, 'munchapp/dining_halls.html', context)
