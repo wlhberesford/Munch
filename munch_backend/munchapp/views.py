@@ -11,6 +11,7 @@ import requests
 
 from bs4 import BeautifulSoup
 #pip install beautifulsoup4
+
 from datetime import datetime
 
 from .models import Post
@@ -423,7 +424,7 @@ def menu_sage(request):
     context = {
         'menu': menu,
         'hours': hours,
-        'dining_hall':"Russel Sage"
+        'dining_hall':"Russell Sage"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
@@ -453,7 +454,7 @@ def menu_barh(request):
     context = {
         'menu': menu,
         'hours': hours,
-        'dining_hall':"BarH"
+        'dining_hall':"BARH"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
