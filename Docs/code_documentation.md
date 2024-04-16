@@ -1,27 +1,27 @@
 # asgi.py
-1. The 'os' module is imported to interact with the operating system.
-2. The 'get_asgi_application' function from Django's ASGI module is imported. This function is used to create an instance of the Django application.
-3. The environment variable 'DJANGO_SETTINGS_MODULE' is set to 'munch_backend.settings'. This specifies the settings file for the Django project.
-4. An instance of the Django application is created using 'get_asgi_application()' and assigned to the variable 'application'. This application can be served by an ASGI server.
+1. The `os` module is imported to interact with the operating system.
+2. The `get_asgi_application` function from Django's ASGI module is imported. This function is used to create an instance of the Django application.
+3. The environment variable `DJANGO_SETTINGS_MODULE` is set to `munch_backend.settings`. This specifies the settings file for the Django project.
+4. An instance of the Django application is created using `get_asgi_application()` and assigned to the variable `application`. This application can be served by an ASGI server.
 
 - This setup allows the Django project to be served asynchronously, supporting high-performance operations and features like WebSockets and long-poll HTTP.
 
 # settings.py
-1. 'BASE_DIR': The base directory of the project.
-2. 'SECRET_KEY': A secret key for this Django installation used for cryptographic signing.
-3. 'DEBUG': A boolean that turns on/off debug mode.
-4. 'ALLOWED_HOSTS': A list of host/domain names that this Django site can serve.
-5. 'INSTALLED_APPS': A list of all Django applications activated in this instance of Django.
-6. 'MIDDLEWARE': A list of middleware to be used in the order defined in this list.
-7. 'ROOT_URLCONF': The Python import path to your root URL configuration.
-8. 'TEMPLATES': A list of configurations for Django's template engine.
-9. 'WSGI_APPLICATION': The Python import path to the WSGI application object.
-10. 'DATABASES': The settings for all databases to be used with Django.
-11. 'AUTH_PASSWORD_VALIDATORS': A list of validators used to check the strength of passwords.
-12. 'LANGUAGE_CODE' and 'TIME_ZONE': Settings for internationalization.
-13. 'USE_I18N' and 'USE_TZ': Boolean values specifying whether Django should use internationalization and timezone support.
-14. 'STATIC_URL': The URL to use when referring to static files.
-15. 'DEFAULT_AUTO_FIELD': The default primary key to use for models.
+1. `BASE_DIR`: The base directory of the project.
+2. `SECRET_KEY`: A secret key for this Django installation used for cryptographic signing.
+3. `DEBUG`: A boolean that turns on/off debug mode.
+4. `ALLOWED_HOSTS`: A list of host/domain names that this Django site can serve.
+5. `INSTALLED_APPS`: A list of all Django applications activated in this instance of Django.
+6. `MIDDLEWARE`: A list of middleware to be used in the order defined in this list.
+7. `ROOT_URLCONF`: The Python import path to your root URL configuration.
+8. `TEMPLATES`: A list of configurations for Django's template engine.
+9. `WSGI_APPLICATION`: The Python import path to the WSGI application object.
+10. `DATABASES`: The settings for all databases to be used with Django.
+11. `AUTH_PASSWORD_VALIDATORS`: A list of validators used to check the strength of passwords.
+12. `LANGUAGE_CODE` and `TIME_ZONE`: Settings for internationalization.
+13. `USE_I18N` and `USE_TZ`: Boolean values specifying whether Django should use internationalization and timezone support.
+14. `STATIC_URL`: The URL to use when referring to static files.
+15. `DEFAULT_AUTO_FIELD`: The default primary key to use for models.
 
 - This file contains configurations and settings for the Django project. Each setting has a specific purpose and altering these settings affects how the Django project works.
 
