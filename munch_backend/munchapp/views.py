@@ -151,6 +151,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
+            text_category = text_category.replace(" ", "_")
             breakfast_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
@@ -174,7 +175,9 @@ def get_menu(url, name):
                         for img in img_tags:
                             if "alt" in img.attrs:
                                 food_tags.append(img["alt"])
-                        
+
+                    
+
                     calories = ""
                     li_div2 = i.find_all("div", class_="col-xs-3 text-right")
                     if li_div2 is None:
@@ -203,6 +206,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = (text_category[0].get_text())
 
+            text_category = text_category.replace(" ", "_")
             lunch_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
@@ -226,7 +230,9 @@ def get_menu(url, name):
                         for img in img_tags:
                             if "alt" in img.attrs:
                                 food_tags.append(img["alt"])
-                        
+                    
+                    
+                    
                     calories = ""
                     li_div2 = i.find_all("div", class_="col-xs-3 text-right")
                     if li_div2 is None:
@@ -255,6 +261,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
+            text_category = text_category.replace(" ", "_")
             dinner_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
@@ -278,6 +285,8 @@ def get_menu(url, name):
                         for img in img_tags:
                             if "alt" in img.attrs:
                                 food_tags.append(img["alt"])
+
+                    
                         
                     calories = ""
                     li_div2 = i.find_all("div", class_="col-xs-3 text-right")
@@ -307,6 +316,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
+            text_category = text_category.replace(" ", "_")
             brunch_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
@@ -331,6 +341,8 @@ def get_menu(url, name):
                             if "alt" in img.attrs:
                                 food_tags.append(img["alt"])
                         
+                    
+                    
                     calories = ""
                     li_div2 = i.find_all("div", class_="col-xs-3 text-right")
                     if li_div2 is None:
@@ -458,10 +470,16 @@ def about(request):
     return HttpResponse('<h1>RCOS Munch Dining Hall Project RPI</h1>')
 
 def home(request):
+
+    sage = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','russell-sage')
+    commons = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons-dining-hall')
+    blitman = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman-dining-hall')
+    barh = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh-dining-hall')
+
     context = {
-    #"(context) dictionary"
-        'posts': Post.objects.all(),
-        'title': 'Munch Home' 
-        #'key': from above
+        'sage':sage,
+        'commons':commons,
+        'blitman':blitman,
+        'barh':barh
     }
     return render(request, 'munchapp/index.html', context)

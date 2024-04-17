@@ -1,12 +1,6 @@
 {
     "breakfast": {
         "BAKERY": {
-            "Chocolate Syrup": {
-                "calories": 23,
-                "tags": [
-                    "vegetarian"
-                ]
-            },
             "Vanilla Belgian Waffle": {
                 "calories": 261,
                 "tags": [
@@ -17,10 +11,11 @@
                     "contains gluten"
                 ]
             },
-            "Strawberry Topping": {
-                "calories": 92,
+            "Pancake Syrup": {
+                "calories": 112,
                 "tags": [
-                    "vegetarian"
+                    "vegetarian",
+                    "vegan"
                 ]
             },
             "Whipped Topping": {
@@ -31,29 +26,20 @@
                     "contains soy"
                 ]
             },
-            "Pancake Syrup": {
-                "calories": 112,
+            "Chocolate Syrup": {
+                "calories": 23,
                 "tags": [
-                    "vegetarian",
-                    "vegan"
+                    "vegetarian"
                 ]
-            }
-        },
-        "ENTREE": {
-            "Bacon": {
-                "calories": 35,
-                "tags": []
+            },
+            "Strawberry Topping": {
+                "calories": 92,
+                "tags": [
+                    "vegetarian"
+                ]
             }
         },
         "GRILL": {
-            "Bacon And Scrambled Egg Breakfast Bowl": {
-                "calories": 290,
-                "tags": [
-                    "contains milk",
-                    "contains egg",
-                    "contains soy"
-                ]
-            },
             "Warm Pancake Syrup": {
                 "calories": 112,
                 "tags": [
@@ -61,12 +47,32 @@
                     "vegan"
                 ]
             },
-            "Scrambled Eggs": {
-                "calories": 191,
+            "Egg And Cheese Bagel": {
+                "calories": 197,
                 "tags": [
                     "vegetarian",
                     "contains milk",
                     "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Ham, Egg And Cheese Bagel": {
+                "calories": 226,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Hash Brown Patty": {
+                "calories": 151,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
                     "contains soy"
                 ]
             },
@@ -77,27 +83,20 @@
                     "contains soy"
                 ]
             },
-            "Pork Sausage Link": {
-                "calories": 95,
+            "One Turkey Sausage Link": {
+                "calories": 45,
                 "tags": []
             },
-            "French Toast": {
-                "calories": 112,
+            "Sausage Patties": {
+                "calories": 350,
+                "tags": []
+            },
+            "Scrambled Eggs": {
+                "calories": 191,
                 "tags": [
                     "vegetarian",
-                    "mindful",
                     "contains milk",
                     "contains egg",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Fried Tater Tots": {
-                "calories": 252,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
                     "contains soy"
                 ]
             },
@@ -112,12 +111,11 @@
         },
         "MISCELLANEOUS": {},
         "SALAD": {
-            "Assorted Seasonal Fresh Fruit": {
-                "calories": 88,
+            "Low Fat Strawberry Yogurt": {
+                "calories": 25,
                 "tags": [
                     "vegetarian",
-                    "vegan",
-                    "mindful"
+                    "contains milk"
                 ]
             },
             "Low Fat Vanilla Yogurt": {
@@ -128,15 +126,16 @@
                     "contains milk"
                 ]
             },
-            "Low Fat Strawberry Yogurt": {
-                "calories": 25,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
             "Fruit Salad": {
                 "calories": 36,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
                 "tags": [
                     "vegetarian",
                     "vegan",
@@ -145,8 +144,8 @@
             }
         },
         "SOUP": {
-            "Oatmeal": {
-                "calories": 114,
+            "Grits": {
+                "calories": 89,
                 "tags": [
                     "vegetarian",
                     "vegan",
@@ -156,12 +155,16 @@
         }
     },
     "lunch": {
-        "ACTION_STATION": {
-            "Italian Roasted Sausage": {
-                "calories": 83,
-                "tags": []
+        "ACTION STATION": {
+            "Blanched Fresh Broccoli": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
             },
-            "Penne Pasta": {
+            "Cavatappi Pasta": {
                 "calories": 197,
                 "tags": [
                     "vegetarian",
@@ -171,25 +174,24 @@
                     "contains gluten"
                 ]
             },
-            "Fire Roasted Tomato Sauce": {
-                "calories": 7,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            }
-        },
-        "BAKERY": {
-            "Whipped Topping": {
-                "calories": 22,
+            "Alfredo Cheese Sauce": {
+                "calories": 98,
                 "tags": [
                     "vegetarian",
                     "contains milk",
-                    "contains soy"
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
                 ]
             },
-            "Chocolate Syrup": {
-                "calories": 23,
+            "Grilled Chicken Thigh": {
+                "calories": 60,
+                "tags": []
+            }
+        },
+        "BAKERY": {
+            "Strawberry Topping": {
+                "calories": 92,
                 "tags": [
                     "vegetarian"
                 ]
@@ -204,32 +206,29 @@
                     "contains gluten"
                 ]
             },
+            "Chocolate Syrup": {
+                "calories": 23,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Whipped Topping": {
+                "calories": 22,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
             "Pancake Syrup": {
                 "calories": 112,
                 "tags": [
                     "vegetarian",
                     "vegan"
                 ]
-            },
-            "Strawberry Topping": {
-                "calories": 92,
-                "tags": [
-                    "vegetarian"
-                ]
             }
         },
         "DELI": {
-            "Smoked Ham": {
-                "calories": 37,
-                "tags": []
-            },
-            "Pepper Jack Cheese, Sliced": {
-                "calories": 53,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
             "American Cheese": {
                 "calories": 47,
                 "tags": [
@@ -242,18 +241,23 @@
                 "calories": 64,
                 "tags": []
             },
+            "Smoked Ham": {
+                "calories": 37,
+                "tags": []
+            },
+            "Pepper Jack Cheese, Sliced": {
+                "calories": 53,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
             "Cheddar Cheese": {
                 "calories": 57,
                 "tags": [
                     "vegetarian",
                     "contains milk"
                 ]
-            }
-        },
-        "ENTREE": {
-            "Garlic Grilled Chicken": {
-                "calories": 50,
-                "tags": []
             }
         },
         "GRILL": {
@@ -267,32 +271,13 @@
                     "contains gluten"
                 ]
             },
-            "Cheeseburger": {
-                "calories": 373,
+            "Southern Bbq Chicken Breast Sandwich": {
+                "calories": 561,
                 "tags": [
                     "contains milk",
+                    "contains egg",
                     "contains wheat",
                     "contains soy",
-                    "contains sesame",
-                    "contains gluten"
-                ]
-            },
-            "Grilled Cheese Sandwich": {
-                "calories": 261,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Hamburger": {
-                "calories": 312,
-                "tags": [
-                    "contains wheat",
-                    "contains soy",
-                    "contains sesame",
                     "contains gluten"
                 ]
             },
@@ -301,6 +286,24 @@
                 "tags": [
                     "vegetarian",
                     "vegan",
+                    "contains soy"
+                ]
+            },
+            "Bbq Pulled Pork  Sandwich": {
+                "calories": 250,
+                "tags": [
+                    "contains wheat",
+                    "contains soy",
+                    "contains sesame",
+                    "contains gluten"
+                ]
+            },
+            "Creamy Coleslaw": {
+                "calories": 93,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
                     "contains soy"
                 ]
             }
@@ -317,9 +320,17 @@
                     "contains gluten"
                 ]
             },
-            "The Hawaiian": {
-                "calories": 283,
+            "Tomato Basil Marinara": {
+                "calories": 18,
                 "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Margherita Pizza": {
+                "calories": 256,
+                "tags": [
+                    "vegetarian",
                     "contains milk",
                     "contains wheat",
                     "contains soy",
@@ -345,15 +356,17 @@
                     "contains gluten"
                 ]
             },
-            "Tomato Basil Marinara": {
-                "calories": 18,
+            "8\" Chicken Alfredo Pizza": {
+                "calories": 687,
                 "tags": [
-                    "vegetarian",
-                    "vegan"
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
                 ]
             },
-            "Rotini Pasta": {
-                "calories": 214,
+            "Penne Pasta": {
+                "calories": 197,
                 "tags": [
                     "vegetarian",
                     "vegan",
@@ -363,45 +376,27 @@
                 ]
             }
         },
-        "POWER_PLANT": {
-            "Grilled Vegetables": {
-                "calories": 33,
+        "POWER PLANT": {
+            "Refried Black Beans": {
+                "calories": 101,
                 "tags": [
                     "vegetarian",
                     "vegan",
                     "mindful"
                 ]
             },
-            "Basmati Rice": {
-                "calories": 93,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Veggie Cacciatore": {
-                "calories": 154,
+            "Tofu & Vegetable Fajita": {
+                "calories": 354,
                 "tags": [
                     "vegetarian",
                     "mindful",
-                    "contains soy"
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
                 ]
             }
         },
         "SALAD": {
-            "Deli Turkey Breast": {
-                "calories": 51,
-                "tags": []
-            },
-            "Blanched Fresh Broccoli": {
-                "calories": 11,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
             "Ranch Dressing": {
                 "calories": 48,
                 "tags": [
@@ -409,137 +404,6 @@
                     "contains milk",
                     "contains egg",
                     "contains soy"
-                ]
-            },
-            "Chopped Romaine": {
-                "calories": 5,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Yoplait Low Fat Vanilla Yogurt": {
-                "calories": 24,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Hardboiled Eggs": {
-                "calories": 44,
-                "tags": [
-                    "vegetarian",
-                    "contains egg"
-                ]
-            },
-            "Spring Mix": {
-                "calories": 4,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Flax Seeds": {
-                "calories": 56,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            },
-            "Fat Free Italian Dressing": {
-                "calories": 27,
-                "tags": [
-                    "vegetarian"
-                ]
-            },
-            "Fresh Strawberries": {
-                "calories": 14,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Fresh Button Mushrooms": {
-                "calories": 6,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Hummus": {
-                "calories": 78,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "contains sesame"
-                ]
-            },
-            "Crumbled Bacon": {
-                "calories": 48,
-                "tags": []
-            },
-            "Homestyle Croutons": {
-                "calories": 62,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains gluten"
-                ]
-            },
-            "Low Fat Strawberry Yogurt": {
-                "calories": 25,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Sliced Jalapeno Peppers": {
-                "calories": 4,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Cherry Tomatoes": {
-                "calories": 5,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Diced Bacon": {
-                "calories": 72,
-                "tags": []
-            },
-            "Fresh Cucumber": {
-                "calories": 4,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Fresh Blueberries": {
-                "calories": 5,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Fresh Cantaloupe Cubes": {
-                "calories": 10,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
                 ]
             },
             "Fresh Honeydew Melon Cubes": {
@@ -550,19 +414,40 @@
                     "mindful"
                 ]
             },
-            "Fresh Red Onions": {
-                "calories": 11,
+            "Fat Free Italian Dressing": {
+                "calories": 27,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Fresh Blueberries": {
+                "calories": 5,
                 "tags": [
                     "vegetarian",
                     "vegan",
                     "mindful"
                 ]
             },
-            "Balsamic Vinaigrette": {
-                "calories": 103,
+            "Deli Turkey Breast": {
+                "calories": 51,
+                "tags": []
+            },
+            "Diced Bacon": {
+                "calories": 72,
+                "tags": []
+            },
+            "Yoplait Low Fat Vanilla Yogurt": {
+                "calories": 24,
                 "tags": [
                     "vegetarian",
-                    "contains soy"
+                    "contains milk"
+                ]
+            },
+            "Thousand Island Dressing": {
+                "calories": 139,
+                "tags": [
+                    "vegetarian",
+                    "contains egg"
                 ]
             },
             "Roasted Red Grape Tomatoes": {
@@ -580,390 +465,6 @@
                     "mindful"
                 ]
             },
-            "Thousand Island Dressing": {
-                "calories": 139,
-                "tags": [
-                    "vegetarian",
-                    "contains egg"
-                ]
-            }
-        },
-        "SIMPLE_SERVINGS": {
-            "Balsamic Roasted Vegetables": {
-                "calories": 63,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Simply Pan Roasted All Natural Pork Chop": {
-                "calories": 284,
-                "tags": []
-            },
-            "Baked Potato": {
-                "calories": 114,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Cajun Seasoning": {
-                "calories": 21,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            }
-        },
-        "SOUP": {
-            "Texas Chili": {
-                "calories": 259,
-                "tags": [
-                    "contains wheat",
-                    "contains gluten"
-                ]
-            },
-            "Tomato Basil Soup": {
-                "calories": 47,
-                "tags": [
-                    "vegetarian",
-                    "mindful"
-                ]
-            }
-        },
-        "TRADITIONS": {
-            "Herbed Grilled Chicken Thigh": {
-                "calories": 231,
-                "tags": []
-            },
-            "Garlic Mashed Potatoes": {
-                "calories": 173,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Roasted Vegetables": {
-                "calories": 32,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            }
-        }
-    },
-    "dinner": {
-        "ACTION_STATION": {
-            "Penne Pasta": {
-                "calories": 197,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful",
-                    "contains wheat",
-                    "contains gluten"
-                ]
-            },
-            "Italian Roasted Sausage": {
-                "calories": 83,
-                "tags": []
-            },
-            "Fire Roasted Tomato Sauce": {
-                "calories": 7,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            }
-        },
-        "BAKERY": {
-            "Whipped Topping": {
-                "calories": 22,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains soy"
-                ]
-            },
-            "Chocolate Syrup": {
-                "calories": 23,
-                "tags": [
-                    "vegetarian"
-                ]
-            },
-            "Vanilla Belgian Waffle": {
-                "calories": 261,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Pancake Syrup": {
-                "calories": 112,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            },
-            "Strawberry Topping": {
-                "calories": 92,
-                "tags": [
-                    "vegetarian"
-                ]
-            }
-        },
-        "DELI": {
-            "American Cheese": {
-                "calories": 47,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains soy"
-                ]
-            },
-            "Pepper Jack Cheese, Sliced": {
-                "calories": 53,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Smoked Ham": {
-                "calories": 37,
-                "tags": []
-            },
-            "Cheddar Cheese": {
-                "calories": 57,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Roast Beef": {
-                "calories": 64,
-                "tags": []
-            }
-        },
-        "GRILL": {
-            "Black Bean Burger Patty": {
-                "calories": 118,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Hamburger": {
-                "calories": 312,
-                "tags": [
-                    "contains wheat",
-                    "contains soy",
-                    "contains sesame",
-                    "contains gluten"
-                ]
-            },
-            "Grilled Cheese Sandwich": {
-                "calories": 261,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "French Fries": {
-                "calories": 205,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "contains soy"
-                ]
-            },
-            "Cheeseburger": {
-                "calories": 373,
-                "tags": [
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains sesame",
-                    "contains gluten"
-                ]
-            }
-        },
-        "MISCELLANEOUS": {},
-        "PIZZA": {
-            "Cheese Pizza": {
-                "calories": 248,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Alfredo Cheese Sauce": {
-                "calories": 98,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "The Hawaiian": {
-                "calories": 283,
-                "tags": [
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Rotini Pasta": {
-                "calories": 214,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful",
-                    "contains wheat",
-                    "contains gluten"
-                ]
-            },
-            "Pepperoni Pizza": {
-                "calories": 285,
-                "tags": [
-                    "contains milk",
-                    "contains wheat",
-                    "contains soy",
-                    "contains gluten"
-                ]
-            },
-            "Tomato Basil Marinara": {
-                "calories": 18,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            }
-        },
-        "POWER_PLANT": {
-            "Aromatic Basmati Rice": {
-                "calories": 173,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Balsamic Basil Roasted Vegetables": {
-                "calories": 61,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            },
-            "Chickpea Stew (chana Masala)": {
-                "calories": 117,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            }
-        },
-        "SALAD": {
-            "Chopped Romaine": {
-                "calories": 5,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Ranch Dressing": {
-                "calories": 48,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains egg",
-                    "contains soy"
-                ]
-            },
-            "Fresh Honeydew Melon Cubes": {
-                "calories": 10,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Deli Turkey Breast": {
-                "calories": 51,
-                "tags": []
-            },
-            "Blanched Fresh Broccoli": {
-                "calories": 11,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
-            "Roasted Red Grape Tomatoes": {
-                "calories": 419,
-                "tags": [
-                    "vegetarian",
-                    "vegan"
-                ]
-            },
-            "Homestyle Croutons": {
-                "calories": 62,
-                "tags": [
-                    "vegetarian",
-                    "contains milk",
-                    "contains wheat",
-                    "contains gluten"
-                ]
-            },
-            "Yoplait Low Fat Vanilla Yogurt": {
-                "calories": 24,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
-            "Hardboiled Eggs": {
-                "calories": 44,
-                "tags": [
-                    "vegetarian",
-                    "contains egg"
-                ]
-            },
-            "Fat Free Italian Dressing": {
-                "calories": 27,
-                "tags": [
-                    "vegetarian"
-                ]
-            },
-            "Fresh Strawberries": {
-                "calories": 14,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
-            },
             "Spring Mix": {
                 "calories": 4,
                 "tags": [
@@ -972,9 +473,29 @@
                     "mindful"
                 ]
             },
-            "Diced Bacon": {
-                "calories": 72,
-                "tags": []
+            "Chopped Romaine": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Fresh Red Onions": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Sliced Jalapeno Peppers": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
             },
             "Fresh Cantaloupe Cubes": {
                 "calories": 10,
@@ -984,20 +505,6 @@
                     "mindful"
                 ]
             },
-            "Balsamic Vinaigrette": {
-                "calories": 103,
-                "tags": [
-                    "vegetarian",
-                    "contains soy"
-                ]
-            },
-            "Low Fat Strawberry Yogurt": {
-                "calories": 25,
-                "tags": [
-                    "vegetarian",
-                    "contains milk"
-                ]
-            },
             "Flax Seeds": {
                 "calories": 56,
                 "tags": [
@@ -1005,12 +512,16 @@
                     "vegan"
                 ]
             },
-            "Crumbled Bacon": {
-                "calories": 48,
-                "tags": []
+            "Fresh Spinach": {
+                "calories": 7,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
             },
-            "Fresh Blueberries": {
-                "calories": 5,
+            "Julienne Red Peppers": {
+                "calories": 9,
                 "tags": [
                     "vegetarian",
                     "vegan",
@@ -1024,12 +535,11 @@
                     "contains milk"
                 ]
             },
-            "Shredded Carrots": {
-                "calories": 6,
+            "Balsamic Vinaigrette": {
+                "calories": 103,
                 "tags": [
                     "vegetarian",
-                    "vegan",
-                    "mindful"
+                    "contains soy"
                 ]
             },
             "Fresh Cucumber": {
@@ -1040,11 +550,575 @@
                     "mindful"
                 ]
             },
-            "Thousand Island Dressing": {
-                "calories": 139,
+            "Homestyle Croutons": {
+                "calories": 62,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Low Fat Strawberry Yogurt": {
+                "calories": 25,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Fresh Strawberries": {
+                "calories": 14,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Crumbled Bacon": {
+                "calories": 48,
+                "tags": []
+            },
+            "Blanched Fresh Broccoli": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Cherry Tomatoes": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Hardboiled Eggs": {
+                "calories": 44,
                 "tags": [
                     "vegetarian",
                     "contains egg"
+                ]
+            },
+            "Hummus": {
+                "calories": 78,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains sesame"
+                ]
+            },
+            "Julienne Green Peppers": {
+                "calories": 6,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SIMPLE SERVINGS": {
+            "Roasted Vegetables": {
+                "calories": 9,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Herb Grilled Chicken Thigh": {
+                "calories": 231,
+                "tags": []
+            },
+            "Garlic Roasted Red Bliss Potatoes": {
+                "calories": 95,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            }
+        },
+        "SOUP": {
+            "Chicken Noodle Soup": {
+                "calories": 83,
+                "tags": [
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Creamy Broccoli & Cheddar Soup": {
+                "calories": 203,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "TRADITIONS": {
+            "6\" Flour Tortilla": {
+                "calories": 87,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Sour Cream": {
+                "calories": 28,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Beef Fajita Meat": {
+                "calories": 129,
+                "tags": []
+            },
+            "Grilled Fajita Vegetables": {
+                "calories": 25,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Shredded Lettuce": {
+                "calories": 2,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Cilantro Jasmine Rice": {
+                "calories": 185,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Guacamole": {
+                "calories": 37,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Chicken Fajita Meat": {
+                "calories": 151,
+                "tags": []
+            },
+            "Shredded Cheddar Cheese": {
+                "calories": 56,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Black Bean & Corn Salsa": {
+                "calories": 17,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            }
+        }
+    },
+    "dinner": {
+        "ACTION STATION": {
+            "Cavatappi Pasta": {
+                "calories": 197,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Alfredo Cheese Sauce": {
+                "calories": 98,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Blanched Fresh Broccoli": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Grilled Chicken Thigh": {
+                "calories": 60,
+                "tags": []
+            }
+        },
+        "BAKERY": {
+            "Chocolate Syrup": {
+                "calories": 23,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Whipped Topping": {
+                "calories": 22,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
+            "Pancake Syrup": {
+                "calories": 112,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Vanilla Belgian Waffle": {
+                "calories": 261,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Strawberry Topping": {
+                "calories": 92,
+                "tags": [
+                    "vegetarian"
+                ]
+            }
+        },
+        "DELI": {
+            "Smoked Ham": {
+                "calories": 37,
+                "tags": []
+            },
+            "Roast Beef": {
+                "calories": 64,
+                "tags": []
+            },
+            "American Cheese": {
+                "calories": 47,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
+            "Pepper Jack Cheese, Sliced": {
+                "calories": 53,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Cheddar Cheese": {
+                "calories": 57,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            }
+        },
+        "GRILL": {
+            "Black Bean Burger Patty": {
+                "calories": 118,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Southern Bbq Chicken Breast Sandwich": {
+                "calories": 561,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Creamy  Coleslaw": {
+                "calories": 187,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Bbq Pulled Pork  Sandwich": {
+                "calories": 250,
+                "tags": [
+                    "contains wheat",
+                    "contains soy",
+                    "contains sesame",
+                    "contains gluten"
+                ]
+            },
+            "French Fries": {
+                "calories": 205,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy"
+                ]
+            }
+        },
+        "MISCELLANEOUS": {},
+        "PIZZA": {
+            "Cheese Pizza": {
+                "calories": 248,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Tomato Basil Marinara": {
+                "calories": 18,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Margherita Pizza": {
+                "calories": 256,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Pepperoni Pizza": {
+                "calories": 285,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Penne Pasta": {
+                "calories": 197,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Alfredo Cheese Sauce": {
+                "calories": 98,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "POWER PLANT": {
+            "Asian Vegetable Lo Mein": {
+                "calories": 92,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Roasted Vegetables": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Steamed White Rice": {
+                "calories": 140,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SALAD": {
+            "Fat Free Italian Dressing": {
+                "calories": 27,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Homestyle Croutons": {
+                "calories": 62,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Yoplait Low Fat Vanilla Yogurt": {
+                "calories": 24,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Sliced Jalapeno Peppers": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Spring Mix": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Flax Seeds": {
+                "calories": 56,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Fresh Spinach": {
+                "calories": 7,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Fresh Honeydew Melon Cubes": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Crumbled Bacon": {
+                "calories": 48,
+                "tags": []
+            },
+            "Balsamic Vinaigrette": {
+                "calories": 103,
+                "tags": [
+                    "vegetarian",
+                    "contains soy"
+                ]
+            },
+            "Shredded Cheddar Cheese": {
+                "calories": 111,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Fresh Strawberries": {
+                "calories": 14,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Cherry Tomatoes": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Hardboiled Eggs": {
+                "calories": 44,
+                "tags": [
+                    "vegetarian",
+                    "contains egg"
+                ]
+            },
+            "Low Fat Strawberry Yogurt": {
+                "calories": 25,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Julienne Green Peppers": {
+                "calories": 6,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Fresh Cantaloupe Cubes": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Chopped Romaine": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Roasted Red Grape Tomatoes": {
+                "calories": 419,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Blanched Fresh Broccoli": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
                 ]
             },
             "Fresh Red Onions": {
@@ -1063,79 +1137,138 @@
                     "contains sesame"
                 ]
             },
-            "Cherry Tomatoes": {
+            "Fresh Cucumber": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Julienne Red Peppers": {
+                "calories": 9,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Ranch Dressing": {
+                "calories": 48,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Fresh Blueberries": {
                 "calories": 5,
                 "tags": [
                     "vegetarian",
                     "vegan",
                     "mindful"
                 ]
-            }
-        },
-        "SIMPLE_SERVINGS": {
-            "Roasted Corn": {
-                "calories": 74,
-                "tags": [
-                    "vegetarian",
-                    "vegan",
-                    "mindful"
-                ]
             },
-            "Grilled Pork Tenderloin": {
-                "calories": 178,
+            "Deli Turkey Breast": {
+                "calories": 51,
                 "tags": []
             },
-            "Brown Rice": {
-                "calories": 90,
+            "Thousand Island Dressing": {
+                "calories": 139,
+                "tags": [
+                    "vegetarian",
+                    "contains egg"
+                ]
+            },
+            "Shredded Carrots": {
+                "calories": 6,
                 "tags": [
                     "vegetarian",
                     "vegan",
                     "mindful"
                 ]
+            }
+        },
+        "SIMPLE SERVINGS": {
+            "Steamed Jasmine Rice": {
+                "calories": 196,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Spicy Slow Roasted Peppers & Onions": {
+                "calories": 57,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Beef Fajita Meat": {
+                "calories": 129,
+                "tags": []
             }
         },
         "SOUP": {
-            "Tomato Basil Soup": {
-                "calories": 47,
+            "Chicken Noodle Soup": {
+                "calories": 83,
                 "tags": [
-                    "vegetarian",
-                    "mindful"
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
                 ]
             },
-            "Texas Chili": {
-                "calories": 259,
+            "Creamy Broccoli & Cheddar Soup": {
+                "calories": 203,
                 "tags": [
+                    "vegetarian",
+                    "contains milk",
                     "contains wheat",
+                    "contains soy",
                     "contains gluten"
                 ]
             }
         },
         "TRADITIONS": {
-            "Oven Roasted Greek Potatoes": {
-                "calories": 99,
+            "Steamed White Rice": {
+                "calories": 140,
                 "tags": [
                     "vegetarian",
                     "vegan",
                     "mindful"
                 ]
             },
-            "Glazed Carrots": {
-                "calories": 91,
+            "Garlic Lemon Ginger Broccoli": {
+                "calories": 29,
                 "tags": [
                     "vegetarian",
-                    "contains milk",
-                    "contains soy"
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
                 ]
             },
-            "Greek Lemon Chicken Thigh": {
-                "calories": 205,
-                "tags": []
+            "Braised Korean Pork Bowl": {
+                "calories": 551,
+                "tags": [
+                    "contains egg",
+                    "contains shellfish",
+                    "contains wheat",
+                    "contains soy",
+                    "contains sesame",
+                    "contains gluten"
+                ]
             }
         }
     },
     "last_updated": {
-        "date": "2024-04-17",
-        "time": "15:39"
+        "date": "2024-04-16",
+        "time": "16:29"
     },
     "hours": [
         "Breakfast (Monday, Tuesday, Wednesday, Thursday, Friday): 7:00AM - 10:00AM",

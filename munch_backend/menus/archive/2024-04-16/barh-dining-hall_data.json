@@ -1,0 +1,518 @@
+{
+    "breakfast": {
+        "GRILL": {
+            "Egg, Potato, Turkey Sausage & Cheese Bowl": {
+                "calories": 302,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Whipped Topping": {
+                "calories": 22,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
+            "Scrambled Eggs": {
+                "calories": 191,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Raspberry Syrup": {
+                "calories": 26,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "One Turkey Sausage Link": {
+                "calories": 45,
+                "tags": []
+            },
+            "Caramelized Apples": {
+                "calories": 135,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Chocolate Sauce": {
+                "calories": 226,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
+            "Fresh Berry Compote": {
+                "calories": 91,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Caramel Topping": {
+                "calories": 71,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Mexican Scrambled Eggs": {
+                "calories": 207,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "French Toast Sticks": {
+                "calories": 225,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Hash Brown Patty": {
+                "calories": 151,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy"
+                ]
+            },
+            "Diced Peach": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "MISCELLANEOUS": {},
+        "SALAD BAR": {
+            "Fresh Blueberries": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Low Fat Strawberry Yogurt": {
+                "calories": 400,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains milk"
+                ]
+            },
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Mandarin Oranges": {
+                "calories": 33,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Low Fat Vanilla Yogurt": {
+                "calories": 97,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains milk"
+                ]
+            },
+            "Fresh Honeydew Melon Cubes": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SOUP": {
+            "Oatmeal": {
+                "calories": 114,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        }
+    },
+    "dinner": {
+        "ACTION STATION": {
+            "Alfredo Sauce": {
+                "calories": 195,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Tomato Basil Marinara": {
+                "calories": 18,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Penne Pasta": {
+                "calories": 197,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            }
+        },
+        "CHEFS TABLE": {
+            "Roasted Vegetables": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Herbed Roasted Potato Wedges": {
+                "calories": 101,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Roast Pork Loin With Mustard Herb Crust": {
+                "calories": 340,
+                "tags": []
+            }
+        },
+        "DELI": {
+            "Tomato Slices": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "American Cheese": {
+                "calories": 47,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains soy"
+                ]
+            },
+            "Diced Peaches": {
+                "calories": 15,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Pickle Spear": {
+                "calories": 8,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            },
+            "Hummus": {
+                "calories": 185,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy",
+                    "contains sesame"
+                ]
+            },
+            "Iceberg Lettuce": {
+                "calories": 16,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Roasted Turkey Breast": {
+                "calories": 91,
+                "tags": []
+            },
+            "Shaved Ham": {
+                "calories": 30,
+                "tags": []
+            }
+        },
+        "MISCELLANEOUS": {},
+        "PIZZA": {
+            "Pepperoni Pizza": {
+                "calories": 277,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Cheese Pizza": {
+                "calories": 248,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Lasagna Pizza": {
+                "calories": 383,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "POWER PLANT": {
+            "Simple Spicy Vegetable Quinoa": {
+                "calories": 100,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SALAD BAR": {
+            "Sliced Black Olives": {
+                "calories": 27,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Diced Yellow Onions": {
+                "calories": 3,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Blue Cheese Dressing": {
+                "calories": 144,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Chopped Romaine": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Fresh Baby Carrots": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Hardboiled Eggs": {
+                "calories": 44,
+                "tags": [
+                    "vegetarian",
+                    "contains egg"
+                ]
+            },
+            "Cheddar Cheese": {
+                "calories": 57,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "French Bread Croutons": {
+                "calories": 67,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Crumbled Feta Cheese": {
+                "calories": 75,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Mixed Greens": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Fresh Celery": {
+                "calories": 5,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Ranch Dressing": {
+                "calories": 97,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Grape Tomatoes": {
+                "calories": 10,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Yoplait Low Fat Vanilla Yogurt": {
+                "calories": 24,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Balsamic Vinaigrette": {
+                "calories": 103,
+                "tags": [
+                    "vegetarian",
+                    "contains soy"
+                ]
+            },
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Thousand Island Dressing": {
+                "calories": 139,
+                "tags": [
+                    "vegetarian",
+                    "contains egg"
+                ]
+            },
+            "Crumbled Bacon": {
+                "calories": 18,
+                "tags": []
+            },
+            "Craisins": {
+                "calories": 28,
+                "tags": [
+                    "vegetarian",
+                    "mindful"
+                ]
+            },
+            "Fresh Cucumber": {
+                "calories": 4,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Low Fat Strawberry Yogurt": {
+                "calories": 25,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Fresh Red Onions": {
+                "calories": 11,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SOUP": {
+            "Loaded Baked Potato Chowder": {
+                "calories": 182,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        }
+    },
+    "last_updated": {
+        "date": "2024-04-16",
+        "time": "16:30"
+    },
+    "hours": [
+        "Breakfast (Monday, Tuesday, Wednesday, Thursday, Friday): 7:00AM - 9:30AM",
+        "Dinner (Monday, Tuesday, Wednesday, Thursday, Friday): 5:00PM - 9:00PM",
+        "Brunch (Saturday, Sunday): 11:00AM - 1:00PM"
+    ]
+}

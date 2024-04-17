@@ -1,0 +1,306 @@
+{
+    "breakfast": {
+        "BREAKFAST": {
+            "Bacon, Egg And Cheese Muffin": {
+                "calories": 355,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Fried Egg O'muffin Sandwich": {
+                "calories": 312,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Fried Egg O'muffin With Sausage": {
+                "calories": 418,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Eggs Scrambled With Sausage & Peppers": {
+                "calories": 214,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Belgian Waffles": {
+                "calories": 357,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "CONDIMENT/GARNISH": {
+            "Vanilla Greek Yogurt": {
+                "calories": 23,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            }
+        },
+        "DESSERT": {
+            "S'mores Donut": {
+                "calories": 385,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "ENTREE": {
+            "One Cage Free Fried Egg": {
+                "calories": 108,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Corned Beef Hash": {
+                "calories": 133,
+                "tags": [
+                    "contains milk",
+                    "contains soy"
+                ]
+            }
+        },
+        "MISCELLANEOUS": {},
+        "SNACK": {
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "STARCH": {
+            "Home Fried Potatoes": {
+                "calories": 158,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            }
+        }
+    },
+    "dinner": {
+        "APPETIZER": {
+            "Vegetable Potstickers": {
+                "calories": 150,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains wheat",
+                    "contains soy",
+                    "contains sesame",
+                    "contains gluten"
+                ]
+            }
+        },
+        "DESSERT": {
+            "Chocolate Chip Cookie": {
+                "calories": 139,
+                "tags": [
+                    "vegetarian",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Carrot Cake": {
+                "calories": 147,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains tree nuts",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            }
+        },
+        "ENTREE": {
+            "Roasted Sausage Mild Italian Rope": {
+                "calories": 165,
+                "tags": []
+            },
+            "Chicken Tenders": {
+                "calories": 381,
+                "tags": [
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Italian Meatball": {
+                "calories": 178,
+                "tags": [
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "MISCELLANEOUS": {},
+        "PIZZA": {
+            "Individual Vegetable Pizza": {
+                "calories": 502,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "SALAD": {
+            "Blue Ribbon Slaw": {
+                "calories": 50,
+                "tags": [
+                    "vegetarian",
+                    "mindful"
+                ]
+            }
+        },
+        "SANDWICH_-_COLD": {
+            "Twisted Turkey Wrap": {
+                "calories": 173,
+                "tags": [
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "SNACK": {
+            "Low Fat Vanilla Yogurt": {
+                "calories": 97,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains milk"
+                ]
+            },
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "STARCH": {
+            "Penne Pasta": {
+                "calories": 197,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Shoestring Fries": {
+                "calories": 201,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy"
+                ]
+            }
+        },
+        "STOCK_&_SAUCE": {
+            "Marinara Sauce": {
+                "calories": 49,
+                "tags": [
+                    "vegetarian"
+                ]
+            },
+            "Alfredo Sauce": {
+                "calories": 195,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "VEGETABLE": {
+            "Saut\u00e9ed Mushrooms": {
+                "calories": 16,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Sauteed Onions": {
+                "calories": 21,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Sauteed Peppers & Onions": {
+                "calories": 39,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Simply Sauteed Spinach": {
+                "calories": 23,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        }
+    },
+    "last_updated": {
+        "date": "2024-04-17",
+        "time": "15:40"
+    },
+    "hours": [
+        "Breakfast (Monday, Tuesday, Wednesday, Thursday, Friday): 7:00AM - 9:30AM",
+        "Brunch (Saturday, Sunday): 10:30AM - 1:30PM",
+        "Dinner (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday): 5:00PM - 8:00PM"
+    ]
+}

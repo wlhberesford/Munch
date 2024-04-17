@@ -1,0 +1,319 @@
+{
+    "breakfast": {
+        "BAKERY": {
+            "Double Chocolate Chip Muffin": {
+                "calories": 173,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "BREAKFAST": {
+            "Scrambled Egg & Cheese On Bagel": {
+                "calories": 297,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Scrambled Eggs": {
+                "calories": 191,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Chocolate Chip Pancakes": {
+                "calories": 375,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Egg & Cheese Bagel With Sausage": {
+                "calories": 501,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "CONDIMENT/GARNISH": {
+            "Vanilla Greek Yogurt": {
+                "calories": 23,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Shredded Cheddar Cheese": {
+                "calories": 111,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            }
+        },
+        "ENTREE": {
+            "One Cage Free Fried Egg": {
+                "calories": 108,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains soy"
+                ]
+            },
+            "Bacon Slices": {
+                "calories": 70,
+                "tags": []
+            },
+            "Hickory Smoked Pit Ham": {
+                "calories": 73,
+                "tags": []
+            }
+        },
+        "MISCELLANEOUS": {},
+        "SALAD": {
+            "Fruit Salad": {
+                "calories": 48,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "SNACK": {
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Low Fat Strawberry Yogurt": {
+                "calories": 25,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            }
+        },
+        "STARCH": {
+            "Hash Brown Patty": {
+                "calories": 132,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy"
+                ]
+            }
+        }
+    },
+    "dinner": {
+        "BAKERY": {
+            "Yellow Taco Shell": {
+                "calories": 51,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "6\" Hearty Grain Tortillas": {
+                "calories": 173,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            }
+        },
+        "CONDIMENT/GARNISH": {
+            "Sweet & Sour Sauce": {
+                "calories": 63,
+                "tags": [
+                    "vegetarian",
+                    "contains soy"
+                ]
+            },
+            "Shredded Cheddar Cheese": {
+                "calories": 111,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            },
+            "Shredded Cheddar Jack Cheese": {
+                "calories": 214,
+                "tags": [
+                    "vegetarian",
+                    "contains milk"
+                ]
+            }
+        },
+        "DESSERT": {
+            "Dutch Apple Pie": {
+                "calories": 475,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Caramel Macchiato Cake": {
+                "calories": 104,
+                "tags": [
+                    "vegetarian",
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            }
+        },
+        "ENTREE": {
+            "Fried Chicken Breast Parmesan": {
+                "calories": 446,
+                "tags": [
+                    "contains milk",
+                    "contains egg",
+                    "contains wheat",
+                    "contains soy",
+                    "contains gluten"
+                ]
+            },
+            "Shrimp Fried Rice": {
+                "calories": 533,
+                "tags": [
+                    "vegetarian",
+                    "contains soy"
+                ]
+            },
+            "Braised Shredded Chicken": {
+                "calories": 76,
+                "tags": []
+            },
+            "Old-fashioned Beef Stew": {
+                "calories": 132,
+                "tags": []
+            },
+            "Asian Noodle Stir Fry": {
+                "calories": 178,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains soy",
+                    "contains sesame",
+                    "contains gluten"
+                ]
+            }
+        },
+        "FILLING/FROSTING": {
+            "Beef Taco Meat": {
+                "calories": 106,
+                "tags": []
+            }
+        },
+        "MISCELLANEOUS": {},
+        "SALAD": {
+            "Blue Ribbon Slaw": {
+                "calories": 50,
+                "tags": [
+                    "vegetarian",
+                    "mindful"
+                ]
+            }
+        },
+        "SNACK": {
+            "Assorted Seasonal Fresh Fruit": {
+                "calories": 88,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            }
+        },
+        "STARCH": {
+            "Baja Black Beans": {
+                "calories": 91,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful"
+                ]
+            },
+            "Shoestring Fries": {
+                "calories": 201,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "contains soy"
+                ]
+            },
+            "Penne Pasta": {
+                "calories": 100,
+                "tags": [
+                    "vegetarian",
+                    "vegan",
+                    "mindful",
+                    "contains wheat",
+                    "contains gluten"
+                ]
+            },
+            "Mashed Potatoes": {
+                "calories": 92,
+                "tags": [
+                    "vegetarian",
+                    "mindful",
+                    "contains milk"
+                ]
+            }
+        },
+        "STOCK & SAUCE": {
+            "Marinara Sauce": {
+                "calories": 22,
+                "tags": [
+                    "vegetarian",
+                    "vegan"
+                ]
+            }
+        }
+    },
+    "last_updated": {
+        "date": "2024-04-16",
+        "time": "16:30"
+    },
+    "hours": [
+        "Breakfast (Monday, Tuesday, Wednesday, Thursday, Friday): 7:00AM - 9:30AM",
+        "Brunch (Saturday, Sunday): 10:30AM - 1:30PM",
+        "Dinner (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday): 5:00PM - 8:00PM"
+    ]
+}
