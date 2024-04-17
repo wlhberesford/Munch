@@ -72,6 +72,8 @@ This is used to provide users with up-to-date information about dining hall loca
 
 - The `get_walking_directions()` function sends a request to the Google Maps Directions API to obtain walking directions between two points. It specifies the origin and destination coordinates, travel mode as walking, and includes a Google Maps API key in the request parameters. After receiving a response, it extracts the polyline points representing the walking route from the JSON data and returns them.
 
+- The `get_current_weather()` function retrieves and parses weather data for a given location from the OpenWeatherMap API. The functiopn begins by defining the API key and the base URL for the OpenWeatherMap API. It then makes a GET request to the API, passing the location and API key as parameters. If the request in unsuccessful, it rases an exception. If it is successful, it parses the weather data from the response. It then returns the main condition, a more detail description, and the current temperature in Fahrenehit and Celsius.
+
 # models.py
 This is a Django model for a `Post` object. This is what it does:
 

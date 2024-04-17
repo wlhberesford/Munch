@@ -1,7 +1,7 @@
 # Instructions
 
 1. Clone the repository into your home directory and follow the steps.
-    - <img src="https://github.com/wlhberesford/Munch.git" width=70% height=70%>
+    - https://github.com/wlhberesford/Munch.git
 
 2. Make sure you have Python and Django installed
 
