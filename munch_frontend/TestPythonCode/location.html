@@ -1,0 +1,39 @@
+<!--
+This html file is test dummy code that is used to display the location on the website
+Correctly does not work as intended and needs to be fixed. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Implementation</title>
+</head>
+<body>
+    <h1>Distance Calculation</h1>
+    <p>Enter two locations:</p>
+    <input type="text" id="location1" placeholder="Location 1">
+    <input type="text" id="location2" placeholder="Location 2">
+    <button onclick="calculateDistance()">Calculate Distance</button>
+    <p id="distanceResult"></p>
+
+    <script>
+        function calculateDistance() {
+            var location1 = document.getElementById("location1").value;
+            var location2 = document.getElementById("location2").value;
+
+            // Perform distance calculation (example using Haversine formula)
+            var distance = haversineDistance(location1, location2);
+
+            document.getElementById("distanceResult").innerText = "Distance between " + location1 + " and " + location2 + ": " + distance + " km";
+        }
+
+        // Haversine formula to calculate distance between two points on Earth
+        function haversineDistance(location1, location2) {
+            // Calculate distance...
+            return Math.random() * 100; // Dummy value for demonstration
+        }
+    </script>
+</body>
+</html>
