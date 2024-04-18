@@ -59,10 +59,10 @@ function getCurrentMeal(){
     }
 }
 
-let commons=new SlideCarousel();
-let sage=new SlideCarousel();
-let blitman=new SlideCarousel();
-let barh=new SlideCarousel();
+var commons=new SlideCarousel();
+var sage=new SlideCarousel();
+var blitman=new SlideCarousel();
+var barh=new SlideCarousel();
 
 console.log("READY");
 
@@ -73,9 +73,8 @@ function setUpCarousels(){
   barh.setUp("Barh-Card");
 
 
-  console.log("READY");
+  console.log("SETUP COMPLETE");
 }
-console.log("READY");
 
 
 

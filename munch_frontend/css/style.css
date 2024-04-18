@@ -21,6 +21,7 @@
   padding: 0;
 }
 
+
 /* HEADER - logo and nav */
 .logo_div{
   background-color: var(--clr-accent);
@@ -94,22 +95,36 @@
 }
 
 /* BODY - Current food at dining halls */
+
+body{
+  margin: 0;
+}
+
+
 .current_food_div{
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
-
-
 }
 
 #current_food_title{
-  margin-top: 25vh;
   color: var(--clr-dark);
   text-align: center;
   font-size: 5dvh;
 }
+@media (min-width: 910px) {
+  #current_food_title{
+    margin-top: 25vh;
+  }
+}
+@media (max-width: 910px) {
+  #current_food_title{
+    margin-top: 30vh;
+  }
+}
+
 
 #current_food_title::after{
   content: '';
@@ -124,6 +139,7 @@
 .current_dh_div{
   padding: 5%;
   margin: 20px;
+  height:fit-content;
 
   text-align: center;
   
@@ -136,19 +152,33 @@
   align-items: center;
 
 
-  
+}
+
+.Current_dh_body{
+  display: flex;
+  margin: 0;
 }
 
 .current_dh{
   color: var(--clr-light);
-  margin-top: 0%;
+  margin: 0%;
+
 
   font-size: 4dvh;
+}
 
+#current_dh::after{
+  content: '';
+  display: block;
+  margin: auto;
+  background-color: var(--clr-dark);
+  width: 100%;
+  height: 2px;
 }
 
 .Carousel_Container{
-  width: 80%;
+  width: 100%;
+  height: fit-content;
   margin: 0;
   padding: 0;
 
@@ -161,10 +191,51 @@
   padding: 0;
 }
 
+.Station-Carousel{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+
+}
+
+.Station-Slide{
+  width: 0;
+  height: 0;
+  
+  
+  transition: transform 0.3s ease;
+  visibility: hidden;
+}
+
+.Station-Slide[data-active]{
+  width: 100%;
+  height: 100%;
+
+  margin: 0%;
+  
+  transition: transform 0.3s ease;
+  visibility: visible;
+
+
+  text-align: center;
+  align-items: center;
+}
+
+.Station-Card-Title{
+  padding: auto;
+  margin: 0;
+}
+
+
 .prev,.next{
   margin: 0;
   padding: 0;
+  top: 50%;
 }
+.prev { left: 0; }
+.next { right: 0; }
 
 
 /* Footer */

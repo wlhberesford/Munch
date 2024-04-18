@@ -24,72 +24,73 @@
         </ul>
     </div>
     <h2 class="section_title" id="current_food_title">What's For Lunch</h2>
-    
 
-
-    <div class="current_food_div"onload = "setUpCarousels()">
+    <div class="current_food_div" onload = "setUpCarousels()">
         <div class="current_dh_div" >
-            <div class="Carousel-Button-Div">
-                <button class="prev" onclick="test.prevSlide()">❮</button>
-            </div>
-            <div class="Carousel_Container">
             <h3 class="current_dh" id="commons_now">Commons</h3>
 
-            <div class="Station-Carousel" id="Carousel-Commons">
-                <div class="Station-Slide" id="Commons-Card-Bakery">
-                    <h4>Bakery</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
+            <div class="Current_dh_body">
+                
+                
+                <div class="Carousel_Container">
+                <div class="Station-Carousel" id="Carousel-Commons">
+                    <button class="prev" onclick="commons.prevSlide()">❮</button>
+
+                    <div class="Station-Slide"data-active id="Commons-Card-Bakery">
+                        <h4 class="Station-Card-Title">Bakery</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Grill">
+                        <h4 class="Station-Card-Title">Grill</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Salad">
+                        <h4 class="Station-Card-Title">Salad</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Saute">
+                        <h4 class="Station-Card-Title">Saute</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Chefs-Table">
+                        <h4 class="Station-Card-Title">Chef's Table</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Deli">
+                        <h4 class="Station-Card-Title">Deli</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Pasifica">
+                        <h4 class="Station-Card-Title">Pasifica</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Pizza">
+                        <h4 class="Station-Card-Title">Pizza</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Power-Plant">
+                        <h4 class="Station-Card-Title">Power Plant</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <div class="Station-Slide" id="Commons-Card-Simple-Servings">
+                        <h4 class="Station-Card-Title">Simple-Servings</h4>
+                        <p>Meal</p>
+                        <p>Sides</p>
+                    </div>
+                    <button class="next" onclick="commons.nextSlide()">❯</button>
+
                 </div>
-                <div class="Station-Slide" id="Commons-Card-Grill">
-                    <h4>Grill</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
                 </div>
-                <div class="Station-Slide" id="Commons-Card-Salad">
-                    <h4>Salad</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Saute">
-                    <h4>Saute</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Chefs-Table">
-                    <h4>Chef's Table</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Deli">
-                    <h4>Deli</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Pasifica">
-                    <h4>Pasifica</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Pizza">
-                    <h4>Pizza</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Power-Plant">
-                    <h4>Power Plant</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-                <div class="Station-Slide" id="Commons-Card-Simple-Servings">
-                    <h4>Simple-Servings</h4>
-                    <p>Meal</p>
-                    <p>Sides</p>
-                </div>
-            </div>
-            </div>
-            <div class="Carousel-Button-Div">
-                <button class="next" onclick="test.nextSlide()">❯</button>
+                
             </div>
 
         </div>
@@ -97,7 +98,7 @@
             <h3 class="current_dh" id="sage_now">Russell Sage</h3>
             <div class="Station-Carousel" id="Carousel-Commons">
 
-                <div class="Station-Slide" id="Sage-Card-Bakery">
+                <div class="Station-Slide"data-active id="Sage-Card-Bakery">
                     <h4>Bakery</h4>
                     <p>Meal</p>
                     <p>Sides</p>
@@ -152,7 +153,7 @@
         <div class="current_dh_div">
             <h3 class="current_dh" id="barh_now">BARH</h3>
 
-            <div class="Station-Slide" id="Barh-Card-Action-Station">
+            <div class="Station-Slide"data-active id="Barh-Card-Action-Station">
                 <h4>Action Station</h4>
                 <p>Meal</p>
                 <p>Sides</p>
@@ -200,7 +201,7 @@
         <div class="current_dh_div">
             <h3 class="current_dh" id="blit_now">Blitman</h3>
             
-            <div class="Station-Slide" id="Blitman-Card-Breakfast">
+            <div class="Station-Slide"data-active id="Blitman-Card-Breakfast">
                 <h4>Breakfast</h4>
                 <p>Meal</p>
                 <p>Sides</p>
