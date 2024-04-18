@@ -23,16 +23,20 @@ Correctly does not work as intended and needs to be fixed.
             var location1 = document.getElementById("location1").value;
             var location2 = document.getElementById("location2").value;
 
-            // Perform distance calculation (example using Haversine formula)
-            var distance = haversineDistance(location1, location2);
-
-            document.getElementById("distanceResult").innerText = "Distance between " + location1 + " and " + location2 + ": " + distance + " km";
-        }
-
-        // Haversine formula to calculate distance between two points on Earth
-        function haversineDistance(location1, location2) {
-            // Calculate distance...
-            return Math.random() * 100; // Dummy value for demonstration
+            fetch('/calculate_distance', {
+                method: 'POST',
+                body: JSON.stringify({ location1: location1, location2: location2 }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("distanceResult").innerText = "Distance between " + location1 + " and " + location2 + ": " + data.distance + " km";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     </script>
 </body>
