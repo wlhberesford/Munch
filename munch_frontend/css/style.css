@@ -137,7 +137,6 @@ body{
 
 
 .current_dh_div{
-  padding: 5%;
   margin: 20px;
   height:fit-content;
 
@@ -150,6 +149,7 @@ body{
 
   justify-content: space-between;
   align-items: center;
+  width:max-content;
 
 
 }
@@ -162,18 +162,22 @@ body{
 .current_dh{
   color: var(--clr-light);
   margin: 0%;
-
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
 
   font-size: 4dvh;
 }
 
-#current_dh::after{
+.current_dh::after{
   content: '';
   display: block;
   margin: auto;
-  background-color: var(--clr-dark);
+  background-color: var(--clr-light);
   width: 100%;
   height: 2px;
+  
 }
 
 .Carousel_Container{
@@ -232,8 +236,26 @@ body{
 .prev,.next{
   margin: 0;
   padding: 0;
-  top: 50%;
+  align-self: center;
+  height: 30vh;
+  width: 5vw;
+  border-radius: 10%;
+
+  color:  var(--clr-light);
+  background-color: var(--clr-dark);
+  outline-width: 0;
+
 }
+.prev:hover{
+  color:  var(--clr-dark);
+  background-color: var(--clr-light);
+}
+.next:hover{
+  background-color: var(--clr-light);
+  color:  var(--clr-dark);
+
+}
+
 .prev { left: 0; }
 .next { right: 0; }
 
