@@ -230,6 +230,7 @@ body{
 .Station-Card-Title{
   padding: auto;
   margin: 0;
+  font-size: x-large;
 }
 
 
@@ -259,6 +260,20 @@ body{
 .prev { left: 0; }
 .next { right: 0; }
 
+.food-list{
+  margin: 0;
+  padding: 0%;
+  top: 50%;
+
+  list-style: none;
+}
+
+.food-item{
+  margin: 2vh;
+  padding: 0%;
+
+  font-size: large;
+}
 
 /* Footer */
 
