@@ -88,6 +88,9 @@ If any changes are made to this model, migrations must be made by using the comm
 # tests.py
 This is just a testing file to help catch errors and to ensure that code is working as expected.
 
+# testLocations.py
+This is a file that tests the location class by calling various methods and implements it to the frontend for users to see information about dining hall locations, such as the one closest to them
+
 # urls.py
 This Django URL configuration specifies the URL patterns for a web application. Here's a summary of what it does:
 
