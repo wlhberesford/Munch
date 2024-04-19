@@ -1,27 +1,27 @@
 # asgi.py
-1. The 'os' module is imported to interact with the operating system.
-2. The 'get_asgi_application' function from Django's ASGI module is imported. This function is used to create an instance of the Django application.
-3. The environment variable 'DJANGO_SETTINGS_MODULE' is set to 'munch_backend.settings'. This specifies the settings file for the Django project.
-4. An instance of the Django application is created using 'get_asgi_application()' and assigned to the variable 'application'. This application can be served by an ASGI server.
+1. The `os` module is imported to interact with the operating system.
+2. The `get_asgi_application` function from Django's ASGI module is imported. This function is used to create an instance of the Django application.
+3. The environment variable `DJANGO_SETTINGS_MODULE` is set to `munch_backend.settings`. This specifies the settings file for the Django project.
+4. An instance of the Django application is created using `get_asgi_application()` and assigned to the variable `application`. This application can be served by an ASGI server.
 
 - This setup allows the Django project to be served asynchronously, supporting high-performance operations and features like WebSockets and long-poll HTTP.
 
 # settings.py
-1. 'BASE_DIR': The base directory of the project.
-2. 'SECRET_KEY': A secret key for this Django installation used for cryptographic signing.
-3. 'DEBUG': A boolean that turns on/off debug mode.
-4. 'ALLOWED_HOSTS': A list of host/domain names that this Django site can serve.
-5. 'INSTALLED_APPS': A list of all Django applications activated in this instance of Django.
-6. 'MIDDLEWARE': A list of middleware to be used in the order defined in this list.
-7. 'ROOT_URLCONF': The Python import path to your root URL configuration.
-8. 'TEMPLATES': A list of configurations for Django's template engine.
-9. 'WSGI_APPLICATION': The Python import path to the WSGI application object.
-10. 'DATABASES': The settings for all databases to be used with Django.
-11. 'AUTH_PASSWORD_VALIDATORS': A list of validators used to check the strength of passwords.
-12. 'LANGUAGE_CODE' and 'TIME_ZONE': Settings for internationalization.
-13. 'USE_I18N' and 'USE_TZ': Boolean values specifying whether Django should use internationalization and timezone support.
-14. 'STATIC_URL': The URL to use when referring to static files.
-15. 'DEFAULT_AUTO_FIELD': The default primary key to use for models.
+1. `BASE_DIR`: The base directory of the project.
+2. `SECRET_KEY`: A secret key for this Django installation used for cryptographic signing.
+3. `DEBUG`: A boolean that turns on/off debug mode.
+4. `ALLOWED_HOSTS`: A list of host/domain names that this Django site can serve.
+5. `INSTALLED_APPS`: A list of all Django applications activated in this instance of Django.
+6. `MIDDLEWARE`: A list of middleware to be used in the order defined in this list.
+7. `ROOT_URLCONF`: The Python import path to your root URL configuration.
+8. `TEMPLATES`: A list of configurations for Django's template engine.
+9. `WSGI_APPLICATION`: The Python import path to the WSGI application object.
+10. `DATABASES`: The settings for all databases to be used with Django.
+11. `AUTH_PASSWORD_VALIDATORS`: A list of validators used to check the strength of passwords.
+12. `LANGUAGE_CODE` and `TIME_ZONE`: Settings for internationalization.
+13. `USE_I18N` and `USE_TZ`: Boolean values specifying whether Django should use internationalization and timezone support.
+14. `STATIC_URL`: The URL to use when referring to static files.
+15. `DEFAULT_AUTO_FIELD`: The default primary key to use for models.
 
 - This file contains configurations and settings for the Django project. Each setting has a specific purpose and altering these settings affects how the Django project works.
 
@@ -72,6 +72,8 @@ This is used to provide users with up-to-date information about dining hall loca
 
 - The `get_walking_directions()` function sends a request to the Google Maps Directions API to obtain walking directions between two points. It specifies the origin and destination coordinates, travel mode as walking, and includes a Google Maps API key in the request parameters. After receiving a response, it extracts the polyline points representing the walking route from the JSON data and returns them.
 
+- The `get_current_weather()` function retrieves and parses weather data for a given location from the OpenWeatherMap API. The functiopn begins by defining the API key and the base URL for the OpenWeatherMap API. It then makes a GET request to the API, passing the location and API key as parameters. If the request in unsuccessful, it rases an exception. If it is successful, it parses the weather data from the response. It then returns the main condition, a more detail description, and the current temperature in Fahrenehit and Celsius.
+
 # models.py
 This is a Django model for a `Post` object. This is what it does:
 
@@ -85,6 +87,12 @@ If any changes are made to this model, migrations must be made by using the comm
 
 # tests.py
 This is just a testing file to help catch errors and to ensure that code is working as expected.
+
+# testLocations.py
+This is a file that tests the location class in the follwing way: 
+
+- The `calculate_distance()` function calculates the distance between two given locations using the Haversine Distance Formula
+- The `display_closest_dining_hall()` function calls multiple mehtods from the location class and implements it to create a map. The map marks two locations, the user and the closest dining hall, and provides walking directions to the destination. A map with a line is displayed to the frontend in order to provide easy functionality to the user.
 
 # urls.py
 This Django URL configuration specifies the URL patterns for a web application. Here's a summary of what it does:
