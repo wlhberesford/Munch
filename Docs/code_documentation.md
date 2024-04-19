@@ -89,7 +89,10 @@ If any changes are made to this model, migrations must be made by using the comm
 This is just a testing file to help catch errors and to ensure that code is working as expected.
 
 # testLocations.py
-This is a file that tests the location class by calling various methods and implements it to the frontend for users to see information about dining hall locations, such as the one closest to them
+This is a file that tests the location class in the follwing way: 
+
+- The `calculate_distance()` function calculates the distance between two given locations using the Haversine Distance Formula
+- The `display_closest_dining_hall()` function calls multiple mehtods from the location class and implements it to create a map. The map marks two locations, the user and the closest dining hall, and provides walking directions to the destination. A map with a line is displayed to the frontend in order to provide easy functionality to the user.
 
 # urls.py
 This Django URL configuration specifies the URL patterns for a web application. Here's a summary of what it does:
