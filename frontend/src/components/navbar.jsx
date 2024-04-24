@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavigationBar() {
   return (
-    <div className="navigation" style={{ padding: '10px', display: 'flex', justifyContent: 'space-around' }}>
+    <div className="navbar">
       <NavLink to="/commons" activeClassName="active">Commons</NavLink>
       <NavLink to="/russelsage" activeClassName="active">Russel Sage</NavLink>
       <NavLink to="/barh" activeClassName="active">BARH</NavLink>

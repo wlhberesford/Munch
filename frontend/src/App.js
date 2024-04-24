@@ -7,6 +7,7 @@ import Commons from './pages/Commons';
 import RusselSage from './pages/RusselSage';
 import Barh from './pages/Barh';
 import Blitman from './pages/Blitman';
+import './theme.css'; 
 
 function App() {
   return (
