@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Slideshow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Slideshow</title>
 <link rel="stylesheet" href="test_slide_style.css">
 </head>
 <body>
-<div id="slideshow" class="slideshow" onclick="nextSlide()">
-  <img src="image1.jpg" class="slide active">
-  <img src="image2.jpg" class="slide">
-  <img src="image3.jpg" class="slide">
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="image1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="image2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="image3.jpg" style="width:100%">
+    </div>
+    <button class="next">Next</button>
 </div>
+
 <script src="test_slide_script.js"></script>
 </body>
 </html>
