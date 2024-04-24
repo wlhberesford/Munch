@@ -1,4 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
+from . forms import CreateUserForm, LoginUserForm
+# For user registration
+from django.contrib.auth.models import auth
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 
 #Run the commented pip installs if you haven't installed
 
@@ -465,3 +471,49 @@ def home(request):
         #'key': from above
     }
     return render(request, 'munchapp/index.html', context)
+
+def register (request):
+    form = CreateUserForm()
+
+    if request.method == "POST":
+        form = CreateUserForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+
+            return redirect("login")
+
+
+    context = {'registerform':form}
+
+    return render(request, 'munchapp/register.html', context=context)
+
+def login (request):
+    form = LoginUserForm()
+
+    if request.method == "POST":
+        #form = LoginUserForm(request.POST)
+        form = LoginUserForm(request, data = request.POST)
+
+        if form.is_valid():
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
+            user = authenticate (request, username=username, password=password)
+            
+            if user is not None:
+                auth.login(request, user)
+                #messages.success(request, f'Hello, {username.title()}, welcome')
+                return render(request,'munchapp/userhome.html')
+
+    #messages.error(request, f'Invalid Username or Password please try again')
+    context = {'loginform':form}
+    
+    return render(request, 'munchapp/login.html', context=context)
+
+def userhome (request):
+    return render(request, 'munchapp/userhome.html')
+
+
+

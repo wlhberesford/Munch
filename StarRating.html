@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Rating</title>
+<style>
+  .star-rating {
+    display: inline-block;
+  }
+  .star {
+    cursor: pointer;
+    color: #ccc;
+  }
+  .star.rated {
+    color: #ffd700;
+  }
+</style>
+</head>
+<body>
+<div class="star-rating">
+  <!-- Generate stars dynamically -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var ratingElement = document.querySelector('.star-rating');
+      for (var i = 0; i < 5; i++) {
+        var star = document.createElement('span');
+        star.className = 'star';
+        star.innerHTML = '&#9733;'; // Unicode star character
+        star.dataset.ratingValue = i + 1;
+        star.addEventListener('mouseover', hoverStar);
+        star.addEventListener('click', clickStar);
+        ratingElement.appendChild(star);
+      }
+    });
+
+    function hoverStar(event) {
+      var ratingValue = event.target.dataset.ratingValue;
+      var stars = document.querySelectorAll('.star');
+      stars.forEach(function(star, index) {
+        if (index < ratingValue) {
+          star.classList.add('rated');
+        } else {
+          star.classList.remove('rated');
+        }
+      });
+    }
+
+    function clickStar(event) {
+      var ratingValue = event.target.dataset.ratingValue;
+      var stars = document.querySelectorAll('.star');
+      stars.forEach(function(star, index) {
+        if (index < ratingValue) {
+          star.classList.add('rated');
+        } else {
+          star.classList.remove('rated');
+        }
+      });
+      // Save the ratingValue somewhere or send it to the server
+    }
+  </script>
+</div>
+</body>
+</html>
