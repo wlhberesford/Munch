@@ -1,0 +1,19 @@
+.hours-of-operations {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dining-location {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dining-location h3 {
+    color: #cc0000;
+}
+
+.dining-location p {
+    margin: 5px 0;
+}

@@ -8,6 +8,8 @@ function NavigationBar() {
       <NavLink to="/russelsage" activeClassName="active">Russel Sage</NavLink>
       <NavLink to="/barh" activeClassName="active">BARH</NavLink>
       <NavLink to="/blitman" activeClassName="active">Blitman</NavLink>
+      <NavLink to="/hours" activeClassName="active">Hours of Operations</NavLink> 
+
     </div>
   );
 }

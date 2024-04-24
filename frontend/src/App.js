@@ -7,6 +7,7 @@ import Commons from './pages/Commons';
 import RusselSage from './pages/RusselSage';
 import Barh from './pages/Barh';
 import Blitman from './pages/Blitman';
+import Hours from './pages/Hours';
 import './theme.css'; 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/russelsage" element={<RusselSage />} />
         <Route path="/barh" element={<Barh />} />
         <Route path="/blitman" element={<Blitman />} />
+        <Route path="/Hours" element={<Hours />} />
       </Routes>
       <Footer />
     </Router>
