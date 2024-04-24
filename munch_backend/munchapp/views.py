@@ -512,6 +512,12 @@ def login (request):
     
     return render(request, 'munchapp/login.html', context=context)
 
+def logout (request):
+    auth.logout(request)
+
+    return render(request, 'munchapp/index.html')
+
+
 def userhome (request):
     return render(request, 'munchapp/userhome.html')
 

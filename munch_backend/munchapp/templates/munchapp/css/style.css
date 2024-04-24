@@ -231,12 +231,8 @@
 
 /* Backend work creating login buttons  */
 
-.login_button{
-  display: flex;
-  justify-content: center;
-}
 
-button{
+l_button{
   background-color: #801f12; 
   border: 2px solid black;
   color: white;
@@ -246,7 +242,7 @@ button{
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 8px;
-  
+
   /*testing positions*/
 
   position: absolute;
@@ -259,4 +255,42 @@ button{
   each side.
   z index is used for the order of buttons and elements on the page.
   */
+}
+
+
+.login_button{
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+r_button{
+  background-color: #801f12; 
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+
+  /*testing positions*/
+
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  z-index: 1;
+  /* position absolute is used for positoning relative
+  to the nearest ancestor block.
+  Top and right 10px tells the button to have 10px space between
+  each side.
+  z index is used for the order of buttons and elements on the page.
+  */
+}
+.register_button{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
 }
