@@ -74,6 +74,7 @@ def get_hours(location_name, locations_hours):
     """
     return locations_hours.get(location_name, [])
 
+
 def get_locations(location_hours):
     """
     Get a list of location names
