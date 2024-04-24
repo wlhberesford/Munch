@@ -12,12 +12,47 @@
     background-color: #fff8f0; /* Light color for the background */
   }
 
+  .header {
+    background-color: #1e1e24; /* Dark color for the header */
+    color: #fff; /* Light text color for readability */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Ensures header stays above other content */
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-buttons button {
+    background-color: #92140c; /* Accent color for buttons */
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .header-buttons button:hover {
+    background-color: #5d0803; /* Darker accent color on hover */
+  }
+
   .meals-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 50px;
     flex-wrap: wrap;
+    margin-top: 70px; /* Adjusted margin to create space under the header */
+    margin-left: 130px;
   }
 
   .meal-item {
@@ -31,15 +66,15 @@
   }
 
   .favorites-sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 200px;
-    height: 100%;
     background: #1e1e24; /* Dark color for sidebar */
     overflow-y: auto;
     border-right: 1px solid #ddd;
     color: #fff; /* Light text color for readability */
+    position: fixed;
+    top: 99px; /* Adjusted top position to start below the header */
+    left: 0;
+    height: calc(100% - 70px); /* Ensures the sidebar fills the remaining height */
   }
 
   .favorite-button {
@@ -66,6 +101,17 @@
 </style>
 </head>
 <body>
+<div class="header">
+  <h1>Favorites Feature</h1>
+  <div class="header-buttons">
+    <button onclick="window.location.href = 'index.html';">Home</button>
+    <button onclick="window.location.href = 'commons.html';">Commons</button>
+    <button onclick="window.location.href = 'russell_sage.html';">Sage</button>
+    <button onclick="window.location.href = 'Barh.html';">BarH</button>
+    <button onclick="window.location.href = 'blitman.html';">Blitman</button>
+  </div>
+</div>
+
 <div class="favorites-sidebar">
   <h3>Favorites</h3>
   <ul id="favorites-list"></ul>
