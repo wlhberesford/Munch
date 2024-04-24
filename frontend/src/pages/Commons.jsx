@@ -1,25 +1,16 @@
-
 import React from 'react';
 
 function Commons() {
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Commons Dining Hall</h2>
-      <p style={{ textAlign: 'center', marginTop: '-25px' }}>1999 Burdett Ave, Troy, NY, 12180</p>
-      <select name="simpleDropdown" id="simpleDropdown">
-        <option value="option1">Breakfast</option>
-        <option value="option4">Brunch</option>
-        <option value="option2">Lunch</option>
-        <option value="option3">Dinner</option>
-      </select>
-      <div style={{ display: 'flex' }}>
-        <div style={{ flex: 1, boxSizing: 'border-box', padding: '10px' }}>
-          <h3>Grill</h3>
-          <h4>Station Name</h4>
-          <p>Meal</p>
-          <p>Sides</p>
-        </div>
-      </div>
+    <div>
+      <h2>Commons Dining Menu</h2>
+      <p><strong>Breakfast:</strong> Oatmeal, Bagels, Yogurt Parfait</p>
+      <p><strong>Lunch:</strong> Grilled Chicken Sandwich, Sweet Potato Fries, Tomato Soup</p>
+      <p><strong>Dinner:</strong> Beef Stir Fry, White Rice, Spring Rolls</p>
+      <h3>Hours of Operation</h3>
+      <p><strong>Breakfast:</strong> 6:30 AM - 9:30 AM</p>
+      <p><strong>Lunch:</strong> 11:30 AM - 1:30 PM</p>
+      <p><strong>Dinner:</strong> 4:30 PM - 7:30 PM</p>
     </div>
   );
 }

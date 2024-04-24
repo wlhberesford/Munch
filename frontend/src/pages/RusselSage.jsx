@@ -1,17 +1,16 @@
-
 import React from 'react';
 
 function RusselSage() {
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Russell Sage Dining Hall</h2>
-      <p style={{ textAlign: 'center', marginTop: '-25px' }}>1649 15th St, Troy, NY 12180</p>
-      <select name="simpleDropdown" id="simpleDropdown">
-        <option value="option1">Breakfast</option>
-        <option value="option4">Brunch</option>
-        <option value="option2">Lunch</option>
-        <option value="option3">Dinner</option>
-      </select>
+    <div>
+      <h2>Russel Sage Dining Menu</h2>
+      <p><strong>Breakfast:</strong> Belgian Waffles, Sausage, Mixed Berries</p>
+      <p><strong>Lunch:</strong> Veggie Burger, Onion Rings, Greek Salad</p>
+      <p><strong>Dinner:</strong> Roast Chicken, Mashed Potatoes, Green Beans</p>
+      <h3>Hours of Operation</h3>
+      <p><strong>Breakfast:</strong> 8:00 AM - 11:00 AM</p>
+      <p><strong>Lunch:</strong> 12:00 PM - 2:00 PM</p>
+      <p><strong>Dinner:</strong> 5:00 PM - 7:00 PM</p>
     </div>
   );
 }
