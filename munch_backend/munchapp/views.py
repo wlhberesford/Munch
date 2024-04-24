@@ -4,7 +4,7 @@ from . forms import CreateUserForm, LoginUserForm
 # For user registration
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate, login, logout
-
+from django.contrib import messages
 
 #Run the commented pip installs if you haven't installed
 
@@ -492,7 +492,7 @@ def register (request):
 
             form.save()
 
-            return redirect("login/")
+            return redirect("login")
 
 
     context = {'registerform':form}
@@ -503,6 +503,7 @@ def login (request):
     form = LoginUserForm()
 
     if request.method == "POST":
+        #form = LoginUserForm(request.POST)
         form = LoginUserForm(request, data = request.POST)
 
         if form.is_valid():
@@ -510,13 +511,16 @@ def login (request):
             password = request.POST.get('password')
 
             user = authenticate (request, username=username, password=password)
-            if user:
+            
+            if user is not None:
                 auth.login(request, user)
-                messages.success(request,f 'Hello, {username.title()}, welcome')
-                return redirect('userhome')
+                #messages.success(request, f'Hello, {username.title()}, welcome')
+                return render(request,'munchapp/userhome.html')
 
-    messages.error(request, f'Invalid Username or Password please try again')
-    return render(request, 'munchapp/login.html')
+    #messages.error(request, f'Invalid Username or Password please try again')
+    context = {'loginform':form}
+    
+    return render(request, 'munchapp/login.html', context=context)
 
 def userhome (request):
     return render(request, 'munchapp/userhome.html')
