@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lightbox Feature</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .image-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+  }
+
+  .lightbox-content {
+    margin: 5% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<!-- Trigger the Modal -->
+<div class="image-container">
+  <img src="Munch_logo_v1.1.png" alt="Placeholder Image" style="width:auto;max-width:300px;cursor:pointer" onclick="openLightbox();">
+</div>
+
+<!-- The Modal -->
+<div id="lightboxModal" class="lightbox">
+  <!-- The Close Button -->
+  <span class="close-btn" onclick="closeLightbox()">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="lightbox-content" src="Munch_logo_v1.1.png" alt="Enlarge Image">
+</div>
+
+<script>
+function openLightbox() {
+  document.getElementById('lightboxModal').style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById('lightboxModal').style.display = "none";
+}
+</script>
+</body>
+</html>
