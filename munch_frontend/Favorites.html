@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorites Feature</title>
+<style>
+  body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0; /* Light color for the background */
+  }
+
+  .meals-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .meal-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #1e1e24; /* Dark color for the borders */
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff; /* Using white for contrast */
+  }
+
+  .favorites-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #1e1e24; /* Dark color for sidebar */
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    color: #fff; /* Light text color for readability */
+  }
+
+  .favorite-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .non-favorite {
+    color: #ccc; /* Grey color for non-favorites */
+  }
+
+  .favorite {
+    color: #92140c; /* Accent color for favorites */
+  }
+
+  h3 {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    background: #92140c; /* Accent color for header in sidebar */
+  }
+</style>
+</head>
+<body>
+<div class="favorites-sidebar">
+  <h3>Favorites</h3>
+  <ul id="favorites-list"></ul>
+</div>
+
+<div class="meals-container">
+  <!-- Sample meals with detailed names -->
+  <div class="meal-item">
+    <div>Meal #1 - Chicken Alfredo</div>
+    <button class="favorite-button non-favorite" onclick="toggleFavorite(this, 'Chicken Alfredo')">❤</button>
+  </div>
+  <div class="meal-item">
+    <div>Meal #2 - Vegan Salad</div>
+    <button class="favorite-button non-favorite" onclick="toggleFavorite(this, 'Vegan Salad')">❤</button>
+  </div>
+  <div class="meal-item">
+    <div>Meal #3 - Grilled Salmon</div>
+    <button class="favorite-button non-favorite" onclick="toggleFavorite(this, 'Grilled Salmon')">❤</button>
+  </div>
+  <div class="meal-item">
+    <div>Meal #4 - Spaghetti Bolognese</div>
+    <button class="favorite-button non-favorite" onclick="toggleFavorite(this, 'Spaghetti Bolognese')">❤</button>
+  </div>
+  <div class="meal-item">
+    <div>Meal #5 - Mushroom Risotto</div>
+    <button class="favorite-button non-favorite" onclick="toggleFavorite(this, 'Mushroom Risotto')">❤</button>
+  </div>
+</div>
+
+<script>
+function toggleFavorite(button, mealName) {
+  button.classList.toggle('non-favorite');
+  button.classList.toggle('favorite');
+  const favoritesList = document.getElementById('favorites-list');
+  if (button.classList.contains('favorite')) {
+    const listItem = document.createElement('li');
+    listItem.textContent = mealName;
+    favoritesList.appendChild(listItem);
+  } else {
+    const items = favoritesList.querySelectorAll('li');
+    items.forEach(item => {
+      if (item.textContent === mealName) favoritesList.removeChild(item);
+    });
+  }
+}
+</script>
+</body>
+</html>
