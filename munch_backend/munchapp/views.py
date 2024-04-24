@@ -17,6 +17,7 @@ import requests
 
 from bs4 import BeautifulSoup
 #pip install beautifulsoup4
+
 from datetime import datetime
 
 from .models import Post
@@ -60,7 +61,6 @@ def savingJson(saved_dict, name):
 def get_menu(url, name):
     #This parses the menu from the dining hall assuming its current website format, will not work if website changes
 
-    
     if os.path.exists(os.path.join("menus",(name+"_data.json"))):
         path = os.path.join("menus",(name+"_data.json"))
         
@@ -78,8 +78,6 @@ def get_menu(url, name):
                     os.makedirs(archive_folder, exist_ok=True)
                     new_path = os.path.join(archive_folder, name + "_data.json")
                     shutil.move(path, new_path)
-                    os.remove(path)
-
 
     data = requests.get(url)
     soup = BeautifulSoup(data.content, "html.parser")
@@ -159,7 +157,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
-            breakfast_elements[text_category] = []
+            breakfast_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
             for i in li_elements:
@@ -194,13 +192,10 @@ def get_menu(url, name):
                             calories = "0"
                         calories = int(calories)
                         
-                    temp = {text: [calories, food_tags]}
-                    breakfast_elements[text_category].append(temp)
+                    breakfast_elements[text_category][text] = {"calories":calories, "tags":food_tags}
 
             current_category = current_category.find_next_sibling("div", class_="bite-menu-course")
             current_list = current_list.find_next_sibling("ul", class_="bite-menu-item")
-
-
 
     if lunch_avail == 0:
 
@@ -214,7 +209,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = (text_category[0].get_text())
 
-            lunch_elements[text_category] = []
+            lunch_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
             for i in li_elements:
@@ -248,9 +243,8 @@ def get_menu(url, name):
                         if (calories == ""):
                             calories = "0"
                         calories = int(calories)
-                        
-                    temp = {text: [calories, food_tags]}
-                    lunch_elements[text_category].append(temp)
+
+                    lunch_elements[text_category][text] = {"calories":calories, "tags":food_tags}
 
             current_category = current_category.find_next_sibling("div", class_="bite-menu-course")
             current_list = current_list.find_next_sibling("ul", class_="bite-menu-item")
@@ -267,7 +261,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
-            dinner_elements[text_category] = []
+            dinner_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
             for i in li_elements:
@@ -302,8 +296,7 @@ def get_menu(url, name):
                             calories = "0"
                         calories = int(calories)
                         
-                    temp = {text: [calories, food_tags]}
-                    dinner_elements[text_category].append(temp)
+                    dinner_elements[text_category][text] = {"calories":calories, "tags":food_tags}
 
             current_category = current_category.find_next_sibling("div", class_="bite-menu-course")
             current_list = current_list.find_next_sibling("ul", class_="bite-menu-item")
@@ -320,7 +313,7 @@ def get_menu(url, name):
             text_category = current_category.find_all("h5")
             text_category = text_category[0].get_text()
 
-            brunch_elements[text_category] = []
+            brunch_elements[text_category] = dict()
 
             li_elements = current_list.find_all("li")
             for i in li_elements:
@@ -355,8 +348,7 @@ def get_menu(url, name):
                             calories = "0"
                         calories = int(calories)
                         
-                    temp = {text: [calories, food_tags]}
-                    brunch[text_category].append(temp)
+                    brunch_elements[text_category][text] = {"calories":calories, "tags":food_tags}
 
             current_category = current_category.find_next_sibling("div", class_="bite-menu-course")
             current_list = current_list.find_next_sibling("ul", class_="bite-menu-item")
@@ -388,6 +380,8 @@ def get_menu(url, name):
         final_dict["dinner"] = dinner_elements
 
     final_dict["last_updated"]=get_current_time()
+
+    final_dict["hours"]=get_hrs(name)
 
     savingJson(final_dict, name+"_data.json")
 
@@ -431,42 +425,38 @@ def get_hrs(dining_name):
    return hours_list
 
 def menu_sage(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','sage')
-    hours = get_hrs('russell-sage')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15285&locationId=76929002&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','russell-sage')
+    #hours = get_hrs('russell-sage')
     context = {
         'menu': menu,
-        'hours': hours,
-        'dining_hall':"Russel Sage"
+        'dining_hall':"Russell Sage"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_commons(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons')
-    hours = get_hrs('commons-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15465&locationId=76929001&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','commons-dining-hall')
+    #hours = get_hrs('commons-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"Commons"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_blitman(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman')
-    hours = get_hrs('blitman-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15288&locationId=76929015&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall','blitman-dining-hall')
+    #hours = get_hrs('blitman-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
         'dining_hall':"Blitman"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
 def menu_barh(request):
-    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh')
-    hours = get_hrs('barh-dining-hall')
+    menu = get_menu('https://menus.sodexomyway.com/BiteMenu/Menu?menuId=15286&locationId=76929003&whereami=http://rpi.sodexomyway.com/dining-near-me/commons-dining-hall', 'barh-dining-hall')
+    #hours = get_hrs('barh-dining-hall')
     context = {
         'menu': menu,
-        'hours': hours,
-        'dining_hall':"BarH"
+        'dining_hall':"BARH"
     }
     return render(request, 'munchapp/dining_halls.html', context)
 
