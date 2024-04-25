@@ -207,6 +207,30 @@
 
 .meal_rating {
   margin-top: 0px;
+  font-size: 0; /* Hide text */
+}
+
+.meal_rating::before {
+  content: "\2605\2605\2605\2605\2605"; /* Unicode star character */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.meal_picture {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  overflow: hidden; /* Ensures the picture stays within the div */
+  border-radius: 50%; /* Makes the picture round */
+  margin: 0 auto; /* Centers the div horizontally */
+  display: flex; /* Use flexbox to center vertically */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+.meal_picture img {
+  margin-top: 10px;
+  max-width: 100%; /* Ensures the picture fills the div */
+  max-height: 100%; /* Ensures the picture fills the div */
+  display: block; /* Removes any extra space below the image */
 }
 
 
