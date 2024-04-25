@@ -35,18 +35,6 @@ def get_day():
 
 def savingJson(saved_dict, name):
 
-    '''
-    if nums==0:
-        with open('breakfast.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    if (nums == 1):
-        with open('lunch.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    if (nums ==2):
-        with open('dinner.json', 'w') as json_file:
-            json.dump(dictionarytest, json_file, indent=4)
-    '''
-
     folder = "menus"
     if not os.path.exists(folder):
         os.makedirs(folder)
@@ -474,16 +462,14 @@ def home(request):
 
 def register (request):
     form = CreateUserForm()
-
+    #variable form = (forms.py) form template using django
     if request.method == "POST":
         form = CreateUserForm(request.POST)
-
+        #fetches the info from the form and saves it to the variable
+        #If it is valid then a new user is registered
         if form.is_valid():
-
             form.save()
-
             return redirect("login")
-
 
     context = {'registerform':form}
 
@@ -491,30 +477,27 @@ def register (request):
 
 def login (request):
     form = LoginUserForm()
+    #variable form = (forms.py) from django's template
 
     if request.method == "POST":
-        #form = LoginUserForm(request.POST)
         form = LoginUserForm(request, data = request.POST)
 
         if form.is_valid():
             username = request.POST.get('username')
             password = request.POST.get('password')
-
+            #If the user has given a matching username with password we can authenticate this
             user = authenticate (request, username=username, password=password)
-            
+            #If the user is found, we log them in, if not there will be an error
             if user is not None:
                 auth.login(request, user)
-                #messages.success(request, f'Hello, {username.title()}, welcome')
                 return render(request,'munchapp/userhome.html')
 
-    #messages.error(request, f'Invalid Username or Password please try again')
     context = {'loginform':form}
     
     return render(request, 'munchapp/login.html', context=context)
 
 def logout (request):
     auth.logout(request)
-
     return render(request, 'munchapp/index.html')
 
 

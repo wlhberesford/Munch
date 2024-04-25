@@ -6,9 +6,10 @@
     <form method = "POST" autocomplete = "off">
 
         {% csrf_token %}
+        <!--Used for secure logins and registration-->
 
         {{registerform.as_p}}
-
+        <!-- This is the django template with our selected variables-->
         <input type="submit" value = "Register"/>
 
     </form>

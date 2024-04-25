@@ -1,0 +1,132 @@
+Introduction:
+Hello, my name is Ryan and I joined this project to work on backend development. I wanted to learn more about managing a database and hope that
+my code and notes here can help the next developer in any way possible.
+
+
+Basic:
+To run the server you must install all nescessary applications such as python, django, etc... This should be found in the requirements file.
+python manage.py runserver
+^ Is the command to run once inside the munch_backend folder
+We are using Python 3.11.9
+^(Note, if you are using a different version please have all members use same version. Also use make migration when using new version so previous data transfers over)
+
+
+
+
+Resources I've used:
+https://www.youtube.com/watch?v=hNOrcz2y4c4
+https://www.youtube.com/watch?v=Z3qTXmT0yoI
+https://www.youtube.com/watch?v=qcJZN1pvG6A&list=PL0Zuz27SZ-6NamGNr7dEqzNFEcZ_FAUVX
+https://www.youtube.com/watch?v=c-QsfbznSXI
+https://www.youtube.com/watch?v=WuyKxdLcw3w
+https://learndjango.com/
+^Highly reccommend (Ultime hub for Django information)
+https://docs.djangoproject.com/en/5.0/topics/auth/default/#how-to-log-a-user-in
+
+
+
+
+
+Django specific:
+To login into the admin panel use the login:
+You can do this by running the server and copying the address given in the command prompt and adding /admin to the end.
+MunchAdmin  (for admin)
+test@example.com
+testingmunch123
+
+MunchTestUser   (regular users)     For regular users you can run the program and add /login after the address.
+munchapptesting321
+
+testingU2
+example2@example.com
+youknowthepassword
+
+
+
+Below and indented is some of my django notes regarding database and migrations.
+    python manage.py makemigrations
+    used to update the database when making new changes
+
+    to query the database and view the database we can use the shell to work with the model
+    python manage.py shell
+
+    from munchapp.models import Post
+    from django.contrib.auth.models import User
+    these allow the developer to work in the shell with the app's model 'Post' and gives access to the User
+
+    in shell 
+    user = User.objects.get(id=1)
+    user = User.objects.filter(username='').first()
+    user.post_set.create(title = '', content = '')
+
+    post_# = Post(title = '', content = '', author = user)
+    post_# = Post(title = '', content = '', author_id = user.id)
+
+    User.objects.all()
+    Post.objects.all()
+    post = Post.objects.first()
+    post. any variables
+
+    to see all user's posts  (We want to change this in the future to dining hall as the user and treat posts as meal_card_info)
+    user.post_set.all()
+
+
+
+    #.models from models file in current directory
+
+    #testing data in the db.sqlite3 file
+    #to access, python manage.py shell
+    #type from munchapp.models import Post
+    #type from django.contrib.auth.models import User
+    #this allows developers to access posts and users
+
+    #User.objects.all()
+    #Post.objects.all()
+    #user = User.objects.get(id=1)
+    #OR user = User.objects.filter(username='').first()
+    #To create post post_# = Post(title = '', content = '', author = user)
+
+
+    #.models from models file in current directory
+
+    #testing data in the db.sqlite3 file
+    #to access, python manage.py shell
+    #type from munchapp.models import Post
+    #type from django.contrib.auth.models import User
+    #this allows developers to access posts and users
+
+    #User.objects.all()
+    #Post.objects.all()
+    #user = User.objects.get(id=1)
+    #OR user = User.objects.filter(username='').first()
+    #To create post post_# = Post(title = '', content = '', author = user)
+
+Our original plan was to webscrape the data from the dining halls and store them in the django db. However this process was taking a while,
+and we decided to switch to storing the information in json files and reading from them.
+If you decide to continue working with Django's database and models I salute you.
+
+
+
+
+
+
+Github:
+Gain access to the github through the leader adding new contributors.
+I reccommend everyone working on the project create their own branches. This will help prevent merge errors in the future and make tracking individual progress easier.
+To create a branch go to the github website and click the branch tab and create a new one.
+Use git branch to check which branch you are currently in.
+Use git checkout xxxxx and replace the xxxxx with your branch name. Git checkout allows you to switch between branches (cannot switch branches with uncommitted work)
+I find it best to make sure your current main branch is up to date and your branch is to. I do this by running the following commands:
+git checkout main   (pulls from github and updates your local main branch)
+git pull
+
+git checkout my_branch1.0   (pulls from your main branch and merges it with your local branch and pushes the update to the online branch)
+git merge origin/main
+git push
+
+I also use this command to push updates to my branch.
+git add .   (adds all edited files ready to commit)
+git commit -m "example" (adds a message to the commit and remember to keep it short)
+
+
+
